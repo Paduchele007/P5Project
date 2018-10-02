@@ -10,8 +10,16 @@ Microphone_Left = audiorecorder(Freq,BitsSample,Channels,3);
 get(Microphone_Right);
 get(Microphone_Left);
 
-recordblocking(Microphone_Right,10);
+record(Microphone_Right,10);
+record(Microphone_Left,10);
 
-Test_Recording = getaudiodata(Microphone_Right);
-plot(Test_Recording);
+pause(10);
+
+Test_Recording_Right = getaudiodata(Microphone_Right);
+Test_Recording_Left = getaudiodata(Microphone_Left);
+
+figure
+hold on
+plot(Test_Recording_Right);
+plot(Test_Recording_Left);
 
