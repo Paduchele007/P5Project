@@ -1,8 +1,8 @@
 Freq = 48000;    %Sampling rate frequency in Hz
 BitsSample = 16;    %Bits per sample 
 Channels = 1;   %Channels 1(Mono) or 2(Stereo)
-ID_Left=3;
-ID_Right=1;
+ID_Left=4;  % audiodevinfo for more info
+ID_Right=2;
 
 Microphone_Right = audiorecorder(Freq,BitsSample,Channels,1);
 Microphone_Left = audiorecorder(Freq,BitsSample,Channels,3);
