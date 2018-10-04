@@ -1,12 +1,18 @@
-Freq = 48000;    %Sampling rate frequency in Hz
-BitsSample = 16;    %Bits per sample 
-Channels = 1;   %Channels 1(Mono) or 2(Stereo)
-ID_Left=4;  % audiodevinfo for more info
-ID_Right=2;
+%% CLEANING EVERYTHING
+clc
+clear
 
-Microphone_Right = audiorecorder(Freq,BitsSample,Channels,1);
-Microphone_Left = audiorecorder(Freq,BitsSample,Channels,3);
+%% SETUP
+Freq = 48000;           %Sampling rate frequency in Hz
+BitsSample = 16;        %Bits per sample 
+Channels = 1;           %Channels 1(Mono) or 2(Stereo)
+ID_Left=3;              
+ID_Right=1;             %audiodevinfo for more info
 
+Microphone_Right = audiorecorder(Freq,BitsSample,Channels,ID_Right);
+Microphone_Left = audiorecorder(Freq,BitsSample,Channels,ID_Left);
+
+%% RECORDING
 get(Microphone_Right);
 get(Microphone_Left);
 
@@ -18,8 +24,22 @@ pause(10);
 Test_Recording_Right = getaudiodata(Microphone_Right);
 Test_Recording_Left = getaudiodata(Microphone_Left);
 
+%% PLOTTING
 figure
 hold on
 plot(Test_Recording_Right);
 plot(Test_Recording_Left);
 
+%% SAVING FILES
+filename1 = 'RightMicSample.flac';
+audiowrite(filename1,Test_Recording_Right,48000);
+filename2 = 'LeftMicSample.flac';
+audiowrite(filelist2,Test_Recording_Left,48000);
+
+%% IMPORTING SIGNALS FOR SIGNAL ANALYZER
+%{
+rightMicSample = ['RightMicSample.flac'];
+[x,Freq] = audioread(rightMicSample);
+leftMicSample = ['LeftMicSample.flac'];
+[y,Freq] = audioread(leftMicSample);
+%}
