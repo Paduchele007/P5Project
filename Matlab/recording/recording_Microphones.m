@@ -37,10 +37,9 @@ filename2 = 'LeftMicSample.flac';
 audiowrite(filename2,Test_Recording_Left,48000);
 
 %% IMPORTING SIGNALS FOR SIGNAL ANALYZER
-%{
+
 rightMicSample = ['RightMicSample.flac'];
-[x,Freq] = audioread(rightMicSample);
+[x,~] = audioread(rightMicSample);
 leftMicSample = ['LeftMicSample.flac'];
 [y,Freq] = audioread(leftMicSample);
 
-%}
