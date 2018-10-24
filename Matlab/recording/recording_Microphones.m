@@ -1,6 +1,6 @@
 %% CLEANING EVERYTHING
-clc
-clear
+clc;
+clear;
 
 %% SETUP
 Freq = 48000;           %Sampling rate frequency in Hz
