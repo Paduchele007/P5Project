@@ -4,3 +4,7 @@
 *.gz
 
 Report/master\.pdf
+
+Matlab/recording/LeftMicSample\.flac
+
+*.flac
