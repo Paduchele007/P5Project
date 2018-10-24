@@ -1,5 +1,4 @@
 %% CLEANUP
-
 close all;
 clc;
 clear;
@@ -15,7 +14,6 @@ u = (1:length(y)) / Freq;
 
 
 %% DISPLAY SIGNALS
-
 figure('Name', 'Recorded Smamples', 'NumberTitle', 'off')
 
 subplot(2,1,1);
@@ -31,3 +29,5 @@ axis tight;
 title('Right Microphone')
 xlabel('Time[s]', 'interpreter', 'latex', 'FontSize', 15);
 ylabel('Amplitude');
+%% PLAY
+play(

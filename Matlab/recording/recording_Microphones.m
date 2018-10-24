@@ -42,5 +42,4 @@ rightMicSample = ['RightMicSample.flac'];
 [x,Freq] = audioread(rightMicSample);
 leftMicSample = ['LeftMicSample.flac'];
 [y,Freq] = audioread(leftMicSample);
-
 %}
