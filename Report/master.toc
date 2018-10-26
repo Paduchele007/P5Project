@@ -21,8 +21,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Chapter 3}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Examples}{5}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}How Does Sections, Subsections, and Subsections Look?}{5}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}This is a Subsection}{5}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{This is a Subsubsection}{5}{subsubsection*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{A Paragraph}{5}{paragraph*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{A Subparagraph}{6}{subparagraph*.13}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Conclusion}{7}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{9}{chapter*.12}
+\contentsline {chapter}{Bibliography}{9}{chapter*.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendix A name}{11}{appendix.A}

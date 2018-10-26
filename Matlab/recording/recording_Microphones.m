@@ -1,11 +1,11 @@
 %% CLEANING EVERYTHING
-clc
-clear
+clc;
+clear;
 
 %% SETUP
 Freq = 48000;           %Sampling rate frequency in Hz
 BitsSample = 16;        %Bits per sample 
-Channels = 1;           %Channels 1(Mono) or 2(Stereo)
+Channels = 2;           %Channels 1(Mono) or 2(Stereo)
 ID_Left=3;              
 ID_Right=1;             %audiodevinfo for more info
 
@@ -31,9 +31,9 @@ plot(Test_Recording_Right);
 plot(Test_Recording_Left);
 
 %% SAVING FILES
-filename1 = 'RightMicSample.flac';
+filename1 = 'RightMicSample4.flac';
 audiowrite(filename1,Test_Recording_Right,48000);
-filename2 = 'LeftMicSample.flac';
+filename2 = 'LeftMicSample4.flac';
 audiowrite(filename2,Test_Recording_Left,48000);
 
 %% IMPORTING SIGNALS FOR SIGNAL ANALYZER
@@ -42,4 +42,4 @@ rightMicSample = ['RightMicSample.flac'];
 [x,~] = audioread(rightMicSample);
 leftMicSample = ['LeftMicSample.flac'];
 [y,Freq] = audioread(leftMicSample);
-
+%}
