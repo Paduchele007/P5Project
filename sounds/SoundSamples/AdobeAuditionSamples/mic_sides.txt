@@ -1,0 +1,7 @@
+1 is right for the listener and 2 is left
+recording 6 is from the listeners left
+recording 7 is from the listeners right
+recording 8 is noise in the room
+recording 9 is from the 0deg
+recording 10 is from the 50deg to the left
+recording 11 is from the 50deg to the right
