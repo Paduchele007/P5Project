@@ -1,0 +1,9 @@
+10cm apart
+1 - left
+2 - center
+3 - right
+20cm apart
+5 - left 40deg 1kHz
+6 - right 40deg 1kHz
+7 - center  1kHz
+
