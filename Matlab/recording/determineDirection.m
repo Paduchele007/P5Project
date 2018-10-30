@@ -6,10 +6,10 @@ clear;
 
 %% IMPORT SIGNALS
 
-leftMic = ['D:\GitHub\P5Project\P5Project\Sounds\SoundSamples\TitasTalking\LeftMicSampleCenter.flac'];
+leftMic = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatLeftMic.wav'];
 [x,Freq] = audioread(leftMic);
 t = (1:length(x)) / Freq;
-rightMic = ['D:\GitHub\P5Project\P5Project\Sounds\SoundSamples\TitasTalking\RightMicSampleCenter.flac'];
+rightMic = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatRightMic.wav'];
 [y,Freq] = audioread(rightMic);
 u = (1:length(y)) / Freq;
 
@@ -78,15 +78,19 @@ end
 %}
 
 %% PLOT SIGNALS ON TOP
-figure('Name', 'Titas Talking', 'NumberTitle', 'off')
-subplot(3,1,1)
+figure('Name', 'Titas Talking', 'NumberTitle', 'off');
+subplot(3,1,1);
 plot(t,x, 'r');
-subplot(3,1,2)
-plot(u,y, 'b')
-subplot(3,1,3)
-plot(t,x, 'r')
+axis tight;
+subplot(3,1,2);
+plot(u,y, 'b');
+axis tight;
+subplot(3,1,3);
+plot(t,x, 'r');
 hold on;
-plot(u,y, 'b')
+plot(u,y, 'b');
+axis tight;
+
 
 %% FIND HIGHEST VALUE SAMPLES
 %{
@@ -118,7 +122,7 @@ end
 %}
 
 %% DETERMINE MULTIPLE INTERVAL DELAYS
-
+%{
 highestValuexIndex = 1;
 lowestValuexIndex = 1;
 for i = 10000:1000:length(x)
@@ -156,3 +160,4 @@ for i = 10000:1000:length(y)
         lowestValueyVector(lowestValueyIndex) = lowestValuey;
         lowestValueyIndex = lowestValueyIndex + 1;
 end
+%}
