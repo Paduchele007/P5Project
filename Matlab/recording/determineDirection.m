@@ -6,12 +6,29 @@ clear;
 
 %% IMPORT SIGNALS
 
-leftMic = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatLeftMic.wav'];
-[x,Freq] = audioread(leftMic);
-t = (1:length(x)) / Freq;
-rightMic = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatRightMic.wav'];
-[y,Freq] = audioread(rightMic);
-u = (1:length(y)) / Freq;
+signal1 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegRightChatLeftMic.wav'];
+[a,Freq1] = audioread(signal1);
+w = (1:length(a)) / Freq1;
+
+signal2 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegRightChatRightMic.wav'];
+[b,Freq2] = audioread(signal2);
+x = (1:length(b)) / Freq2;
+
+signal3 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegLeftChatLeftMic.wav'];
+[c,Freq3] = audioread(signal3);
+y = (1:length(c)) / Freq3;
+
+signal4 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegLeftChatRightMic.wav'];
+[d,Freq4] = audioread(signal4);
+z = (1:length(d)) / Freq4;
+
+signal5 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatLeftMic.wav'];
+[e,Freq5] = audioread(signal3);
+q = (1:length(e)) / Freq5;
+
+signal6 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatRightMic.wav'];
+[f,Freq6] = audioread(signal4);
+p = (1:length(f)) / Freq6;
 
 
 %% DISPLAY SIGNALS
@@ -78,18 +95,60 @@ end
 %}
 
 %% PLOT SIGNALS ON TOP
-figure('Name', 'Titas Talking', 'NumberTitle', 'off');
+figure('Name', '50 Deg Right Chat', 'NumberTitle', 'off');
+
 subplot(3,1,1);
-plot(t,x, 'r');
+plot(w,a, 'r');
 axis tight;
+title('Left Microphone(Should Be Second)');
+
 subplot(3,1,2);
-plot(u,y, 'b');
+plot(x,b, 'b');
 axis tight;
+title('Right Microphone(Should Be First)');
+
 subplot(3,1,3);
-plot(t,x, 'r');
+plot(w,a,'r');
 hold on;
-plot(u,y, 'b');
+plot(x,b,'b');
 axis tight;
+title('Both Microphones');
+
+figure('Name', '50 Deg Left Chat', 'NumberTitle', 'off');
+subplot(3,1,1);
+plot(y,c, 'r');
+axis tight;
+title('Left Microphone(Should Be First)');
+
+subplot(3,1,2);
+plot(z,d, 'b');
+axis tight;
+title('Right Microphone(Should Be Second)');
+
+subplot(3,1,3);
+plot(y,c, 'r');
+hold on;
+plot(z,d, 'b');
+axis tight;
+title('Both Microphones');
+
+figure('Name', 'Center Chat', 'NumberTitle', 'off')
+subplot(3,1,1);
+plot(q,e, 'r');
+axis tight;
+title('Left Microphone');
+
+subplot(3,1,2);
+plot(p,f, 'b');
+axis tight;
+title('Right Microphone');
+
+subplot(3,1,3);
+plot(q,e, 'r');
+hold on;
+plot(p,f, 'b');
+axis tight;
+title('Should be kind of the same');
 
 
 %% FIND HIGHEST VALUE SAMPLES
