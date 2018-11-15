@@ -1,0 +1,23 @@
+clc;
+clear;
+load('RecordSession15thNov.mat')
+l  = length(dataRR)
+delay=8
+for i=1:l-delay
+    shiftedLR(i)=data(i+delay);
+end
+shiftedLR=transpose(shiftedLR);
+
+for i=1:l-delay
+    noiseDataR(i)=shiftedLR(i)-dataRR(i); 
+end
+
+ noiseDataR=transpose(noiseDataR);
+ 
+for i=1:l-delay
+    newDataR(i)=dataRR(i)-noiseDataR(i); 
+end
+
+newDataR=transpose(newDataR);
+
+ 

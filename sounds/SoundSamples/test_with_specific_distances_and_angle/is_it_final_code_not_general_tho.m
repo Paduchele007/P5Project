@@ -1,23 +1,23 @@
 clc;
 clear;
-load('already_shifted_vectors.mat')
-l  = length(dataRR)
-delay=9
+load('RecordSession15thNov.mat')
+l  = length(dataRB)
+delay=8
 for i=1:l-delay
-    shiftedLR(i)=dataLR(i+delay);
+    shiftedRB(i)=dataRB(i+delay);
 end
-shiftedLR=transpose(shiftedLR);
+shiftedRB=transpose(shiftedRB);
 
 for i=1:l-delay
-    noiseDataR(i)=shiftedLR(i)-dataRR(i); 
+    noiseDataB(i)=shiftedRB(i)-dataLB(i); 
 end
 
- noiseDataR=transpose(noiseDataR);
+ noiseDataB=transpose(noiseDataB);
  
 for i=1:l-delay
-    newDataR(i)=dataRR(i)-noiseDataR(i); 
+    newDataB(i)=dataLB(i)-noiseDataB(i); 
 end
 
-newDataR=transpose(newDataR);
+newDataB=transpose(newDataB);
 
  
