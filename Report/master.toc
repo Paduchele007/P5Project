@@ -41,19 +41,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Analog to digital conversion}{7}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Directional Noise Elimination}{9}{chapter.5}
+\contentsline {chapter}{\numberline {5}Noise Filtering}{9}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Delimitation}{11}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Component List}{11}{section.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Microphones characteristics}{11}{subsection.6.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Measurements scenarios}{11}{subsection.6.1.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Setup}{11}{subsection.6.1.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Analog to digital conversion}{11}{section.6.2}
+\contentsline {chapter}{\numberline {6}Directional Noise Elimination}{11}{chapter.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Neural Network Speech Isolation}{13}{chapter.7}
 \defcounter {refsection}{0}\relax 
@@ -67,17 +57,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {8.4}Comparing all three methods and combining them}{15}{section.8.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Delimitation}{17}{chapter.9}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Component List}{17}{section.9.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Microphones characteristics}{17}{subsection.9.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.2}Measurements scenarios}{17}{subsection.9.1.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.3}Setup}{17}{subsection.9.1.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.2}Analog to digital conversion}{17}{section.9.2}
+\contentsline {chapter}{\numberline {9}Results}{17}{chapter.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {10}Future Work}{19}{chapter.10}
 \defcounter {refsection}{0}\relax 
