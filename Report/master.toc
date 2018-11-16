@@ -17,24 +17,72 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subparagraph}{A Subparagraph}{2}{subparagraph*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Chapter 2 name}{3}{chapter.2}
+\contentsline {chapter}{\numberline {2}Problem Analysis}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Chapter 3}{5}{chapter.3}
+\contentsline {section}{\numberline {2.1}Problem Description}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Examples}{5}{section.3.1}
+\contentsline {section}{\numberline {2.2}Problem Delimitation}{3}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}How Does Sections, Subsections, and Subsections Look?}{5}{section.3.2}
+\contentsline {section}{\numberline {2.3}Initiating Problem}{3}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}This is a Subsection}{5}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {3}Mathematical Analysis}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{This is a Subsubsection}{5}{subsubsection*.11}
+\contentsline {section}{\numberline {3.1}Geometric Structure}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{A Paragraph}{5}{paragraph*.12}
+\contentsline {chapter}{\numberline {4}Development}{7}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{A Subparagraph}{6}{subparagraph*.13}
+\contentsline {section}{\numberline {4.1}Component List}{7}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusion}{7}{chapter.4}
+\contentsline {subsection}{\numberline {4.1.1}Microphones characteristics}{7}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{9}{chapter*.16}
+\contentsline {subsection}{\numberline {4.1.2}Measurements scenarios}{7}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix A name}{11}{appendix.A}
+\contentsline {subsection}{\numberline {4.1.3}Setup}{7}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Analog to digital conversion}{7}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Directional Noise Elimination}{9}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Delimitation}{11}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Component List}{11}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Microphones characteristics}{11}{subsection.6.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Measurements scenarios}{11}{subsection.6.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Setup}{11}{subsection.6.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Analog to digital conversion}{11}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Neural Network Speech Isolation}{13}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Comparison}{15}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Synthetic Samples}{15}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Recorded Samples}{15}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Live events}{15}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Comparing all three methods and combining them}{15}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Delimitation}{17}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Component List}{17}{section.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1.1}Microphones characteristics}{17}{subsection.9.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1.2}Measurements scenarios}{17}{subsection.9.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1.3}Setup}{17}{subsection.9.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Analog to digital conversion}{17}{section.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Future Work}{19}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Conclusion}{21}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{23}{chapter*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix A name}{25}{appendix.A}
