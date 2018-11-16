@@ -2,14 +2,19 @@ clc;
 clear;
 load('RecordSession15thNov.mat')
 l  = length(dataRB)
-delay=8
+delay=6
 for i=1:l-delay
-    shiftedRB(i)=dataRB(i+delay);
+    shiftedLB(i)=dataLB(i+delay);
 end
-shiftedRB=transpose(shiftedRB);
+shiftedLB=transpose(shiftedLB);
 
 for i=1:l-delay
-    noiseDataB(i)=shiftedRB(i)-dataLB(i); 
+    shiftedLB(i)=dataLB(i+delay);
+end
+shiftedLB=transpose(shiftedLB);
+
+for i=1:l-delay
+    noiseDataB(i)=(2*shiftedLB(i)-dataRB(i)-dataLB(i))/2;
 end
 
  noiseDataB=transpose(noiseDataB);
