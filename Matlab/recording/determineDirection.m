@@ -6,217 +6,103 @@ clear;
 
 %% IMPORT SIGNALS
 
-signal1 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegRightChatLeftMic.wav'];
+signal1 = ['D:\GitHub\P5Project\Adobe Audition\19NovAfterTheMeeting\19NovAfterTheMeeting_Recorded\Left_Both_80_deg.wav'];
 [a,Freq1] = audioread(signal1);
 w = (1:length(a)) / Freq1;
 
-signal2 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegRightChatRightMic.wav'];
+signal2 = ['D:\GitHub\P5Project\Adobe Audition\19NovAfterTheMeeting\19NovAfterTheMeeting_Recorded\Right_Both_80_deg.wav'];
 [b,Freq2] = audioread(signal2);
 x = (1:length(b)) / Freq2;
 
-signal3 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegLeftChatLeftMic.wav'];
-[c,Freq3] = audioread(signal3);
-y = (1:length(c)) / Freq3;
-
-signal4 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\50DegLeftChatRightMic.wav'];
-[d,Freq4] = audioread(signal4);
-z = (1:length(d)) / Freq4;
-
-signal5 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatLeftMic.wav'];
-[e,Freq5] = audioread(signal3);
-q = (1:length(e)) / Freq5;
-
-signal6 = ['D:\GitHub\P5Project\P5Project\Sounds\AdobeAuditionSamples\CentreChatRightMic.wav'];
-[f,Freq6] = audioread(signal4);
-p = (1:length(f)) / Freq6;
+%% SPLIT SIGNALS
+% a1 = a(1:500000);
+% a2 = a(750000:1100000);
+% a3 = a(1400000:1800000);
+% a4 = a(2000000:2400000);
+% a5 = a(2600000:2900000);
+% 
+% b1 = b(1:500000);
+% b2 = b(750000:1100000);
+% b3 = b(1400000:1800000);
+% b4 = b(2000000:2400000);
+% b5 = b(2600000:2900000);
 
 
-%% DISPLAY SIGNALS
-%{
-figure('Name', 'Recorded Smamples', 'NumberTitle', 'off')
-
-subplot(2,1,1);
-plot(t,x(1:1:length(x)), 'b');
-axis tight;
-title('Left Microphone')
-xlabel('Time[s]', 'interpreter', 'latex', 'FontSize', 15);
-ylabel('Amplitude');
-
-subplot(2,1,2);
-plot(u,y(1:1:length(y)), 'r');
-axis tight;
-title('Right Microphone')
-xlabel('Time[s]', 'interpreter', 'latex', 'FontSize', 15);
-ylabel('Amplitude');
-%}
-
-%% DISPLAY SIGNALS FIRST 500 SAMPLES
-%{
-figure('Name', 'Recorded Smamples', 'NumberTitle', 'off')
-
-subplot(2,1,1);
-plot(t(1:1:450000),x(1:1:450000),'b');
-axis tight;
-title('Left Microphone')
-xlabel('Time[s]', 'interpreter', 'latex', 'FontSize', 15);
-ylabel('Amplitude');
-
-subplot(2,1,2);
-plot(u(1:1:450000),y(1:1:450000),'r');
-axis tight;
-title('Right Microphone')
-xlabel('Time[s]', 'interpreter', 'latex', 'FontSize', 15);
-ylabel('Amplitude');
-%}
-
-%% SEARCH FOR CLOSEST VALUE SAMPLE 
-%{
-absoluteValue = ones;
-for i = 1:1:500
-    if i < 500
-        for j = 1:1:i+500
-            absoluteValue1(i) = abs(x(i) - x(j));
-            if absoluteValue1(i) < 0.2 && absoluteValue1(i) < absoluteValue(i)
-                absoluteValue(i) = absoluteValue1(i);
-                closestSample(i) = j;
-                
-            end
-        end
-    else
-        for j = i-499:1:i+500
-            absoluteValue1(i) = abs(x(i) - x(j));
-            if absoluteValue1(i) < 0.2 && absoluteValue1(i) < absoluteValue(i)
-                absoluteValue(i) = absoluteValue1(i);
-                closestSample(i) = j;
-            end
-        end
-    end
-end
-%}
-
-%% PLOT SIGNALS ON TOP
-figure('Name', '50 Deg Right Chat', 'NumberTitle', 'off');
-
-subplot(3,1,1);
-plot(w,a, 'r');
-axis tight;
-title('Left Microphone(Should Be Second)');
-
-subplot(3,1,2);
-plot(x,b, 'b');
-axis tight;
-title('Right Microphone(Should Be First)');
-
-subplot(3,1,3);
-plot(w,a,'r');
-hold on;
-plot(x,b,'b');
-axis tight;
-title('Both Microphones');
-
-figure('Name', '50 Deg Left Chat', 'NumberTitle', 'off');
-subplot(3,1,1);
-plot(y,c, 'r');
-axis tight;
-title('Left Microphone(Should Be First)');
-
-subplot(3,1,2);
-plot(z,d, 'b');
-axis tight;
-title('Right Microphone(Should Be Second)');
-
-subplot(3,1,3);
-plot(y,c, 'r');
-hold on;
-plot(z,d, 'b');
-axis tight;
-title('Both Microphones');
-
-figure('Name', 'Center Chat', 'NumberTitle', 'off')
-subplot(3,1,1);
-plot(q,e, 'r');
-axis tight;
-title('Left Microphone');
-
-subplot(3,1,2);
-plot(p,f, 'b');
-axis tight;
-title('Right Microphone');
-
-subplot(3,1,3);
-plot(q,e, 'r');
-hold on;
-plot(p,f, 'b');
-axis tight;
-title('Should be kind of the same');
-
-
-%% FIND HIGHEST VALUE SAMPLES
-%{
-highestValuex = 0;
-lowestValuex = 0;
-for i = 1:1:length(x);
-    if x(i) > highestValuex;
-        highestValuex = x(i);
-        highestValuexindex = i;
-    end
-    if x(i) < lowestValuex
-        lowestValuex = x(i);
-        lowestValuexindex = i;
+%% GET MAXIMUM VALUES
+maximumA = max(a);
+j = 1;
+for i = 1:length(a)
+    if maximumA == a(i)
+        maxVectorA(j) = i;
+        j = j + 1;
     end
 end
 
-highestValuey = 0;
-lowestValuey = 0;
-for i = 1:1:length(y);
-    if y(i) > highestValuey;
-        highestValuey = y(i);
-        highestValueyindex = i;
-    end
-    if y(i) < lowestValuey;
-        lowestValuey = y(i);
-        lowestValueyindex = i;
+maximumB = max(b);
+k = 1;
+for i = 1:length(b)
+    if maximumB == b(i)
+        maxVectorB(k) = i;
+        k = k + 1;
     end
 end
-%}
 
-%% DETERMINE MULTIPLE INTERVAL DELAYS
-%{
-highestValuexIndex = 1;
-lowestValuexIndex = 1;
-for i = 10000:1000:length(x)
-    highestValuex = 0;
-    lowestValuex = 0;
-        for j = i-999:1:i+1000;
-            if x(j) > highestValuex;
-                highestValuex = x(i);
-            end
-            if x(j) < lowestValuex;
-                lowestValuex = x(i);
-            end
-        end
-        highestValuexVector(highestValuexIndex) = highestValuex;
-        highestValuexIndex = highestValuexIndex + 1;
-        lowestValuexVector(lowestValuexIndex) = lowestValuex;
-        lowestValuexIndex = lowestValuexIndex + 1;
+%% GET SAMPLE DELAY
+r = 1;
+if j > k
+    for p = 1:length(maxVectorB)
+        delay(r) = maxVectorB(p) - maxVectorA(p);
+        r = r + 1;
+    end
+else
+    for p = 1:length(maxVectorA)
+        delay(r) = maxVectorA(p) - maxVectorB(p);
+        r = r + 1;
+    end
 end
 
-highestValueyIndex = 1;
-lowestValueyIndex = 1;
-for i = 10000:1000:length(y)
-    highestValuey = 0;
-    lowestValuey = 0;
-        for j = i-999:1:i+1000;
-            if y(j) > highestValuey;
-                highestValuey = y(i);
-            end
-            if y(j) < lowestValuey;
-                lowestValuey = y(i);
-            end
-        end
-        highestValueyVector(highestValueyIndex) = highestValuey;
-        highestValueyIndex = highestValueyIndex + 1;
-        lowestValueyVector(lowestValueyIndex) = lowestValuey;
-        lowestValueyIndex = lowestValueyIndex + 1;
-end
-%}
+%% SHIFT ALL SIGNALS
+
+shiftedB = zeros(size(b));
+ if delay(1) >0
+   shiftedB(delay(1)+1:end) = b(1:end-delay(1));
+ elseif delay(1) <0
+   shiftedB(1:end+delay(1)) = b(-delay(1)+1:end);
+ end
+
+% shiftedB1 = zeros(size(b1));
+% if delay(1) >0
+%   shiftedB1(delay(1)+1:end) = b1(1:end-delay(1));
+% elseif delay(1) <0
+%   shiftedB1(1:end+delay(1)) = b1(-delay(1)+1:end);
+% end
+% 
+% shiftedB2 = zeros(size(b2));
+% if delay(1) >0
+%   shiftedB2(delay(1)+1:end) = b2(1:end-delay(1));
+% elseif delay(1) <0
+%   shiftedB2(1:end+delay(1)) = b2(-delay(1)+1:end);
+% end
+% 
+% shiftedB3 = zeros(size(b3));
+% if delay(1) >0
+%   shiftedB3(delay(1)+1:end) = b3(1:end-delay(1));
+% elseif delay(1) <0
+%   shiftedB3(1:end+delay(1)) = b3(-delay(1)+1:end);
+% end
+% 
+% shiftedB4 = zeros(size(b4));
+% if delay(1) >0
+%   shiftedB4(delay(1)+1:end) = b4(1:end-delay(1));
+% elseif delay(1) <0
+%   shiftedB4(1:end+delay(1)) = b4(-delay(1)+1:end);
+% end
+% 
+% shiftedB5 = zeros(size(b5));
+% if delay(1) >0
+%   shiftedB5(delay(1)+1:end) = b5(1:end-delay(1));
+% elseif delay(1) <0
+%   shiftedB5(1:end+delay(1)) = b5(-delay(1)+1:end);
+% end
+
+%% 
