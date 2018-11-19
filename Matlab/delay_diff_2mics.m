@@ -1,12 +1,12 @@
 clc;
 clear;
 v=343.22 %speed of sound
-gap =0.015; %between mics
+gap =0.6; %between mics
 dist=1; %whatever
 t=1/48000; %1/sampling freq 
 delay=1; %just so while works
-theta=90; %starts at 90deg, for biggest delay and gets smaller
-while (t<delay) 
+theta=80; %starts at 90deg, for biggest delay and gets smaller
+%while (t<delay) 
 %dist = input('Enter distance from microphones to source: ');
 %theta = input('Enter angle of source: ');
 thetaRad = degtorad(theta);
@@ -34,5 +34,5 @@ delay=abs((sqrt(d1^2+h^2)/v)-(sqrt(d2^2+h^2)/v))
 % 
 % delay=abs(t1-t2)
 theta
-theta=theta-1;
-end
+% theta=theta-1;
+% end
