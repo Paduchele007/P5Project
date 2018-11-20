@@ -1,4 +1,4 @@
-% gives distance for the signal to travel to each microphones 
+% Gives distance for the signal to travel to each microphones 
 % 1st microphone is left 
 % 2nd microphone is right
 function [dist1, dist2] = dDifference(thetaRad,gap)

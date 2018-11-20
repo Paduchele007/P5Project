@@ -1,5 +1,8 @@
 %% Function gives 2 ratios, which can be used as gain to signals
-%  needed inputs: angle of first source, angle of second source (degrees) 
+%  Needed inputs: angle of first source(degrees), 
+%  angle of second source (degrees) 
+%  angle is possitive in clockwise direction and 
+%  0 is right in the center, 90 is all the way to the right
 %  and gap between microphones in meters
 %
 %  first ratio will give a gain by how much we should multiply source 1,
@@ -10,7 +13,6 @@
 % inspiration: http://www.sengpielaudio.com/calculator-gainloss.htm
 % http://www.sengpielaudio.com/calculator-gainloss.htm
 % http://www.sengpielaudio.com/calculator-distance.htm
-
 
 function [r1, r2] =ratio(theta1,theta2,gap)
 thetaRad1 = deg2rad(theta1);
