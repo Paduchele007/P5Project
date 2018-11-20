@@ -1,8 +1,7 @@
 clc;
 clear;
 v=343.22 %speed of sound
-gap =0.6; %between mics
-dist=1; %whatever
+gap =0.6; % distance between mics
 t=1/48000; %1/sampling freq 
 delay=1; %just so while works
 theta=80; %starts at 90deg, for biggest delay and gets smaller
