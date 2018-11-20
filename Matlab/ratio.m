@@ -7,6 +7,11 @@
 % 
 %  second ratio will give a gain by how much we should multiply source 2,
 %  captured by second microphone in relation to first microphone
+% inspiration: http://www.sengpielaudio.com/calculator-gainloss.htm
+% http://www.sengpielaudio.com/calculator-gainloss.htm
+% http://www.sengpielaudio.com/calculator-distance.htm
+
+
 function [r1, r2] =ratio(theta1,theta2,gap)
 thetaRad1 = deg2rad(theta1);
 thetaRad2 = deg2rad(theta2);

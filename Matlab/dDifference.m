@@ -1,3 +1,6 @@
+% gives distance for the signal to travel to each microphones 
+% 1st microphone is left 
+% 2nd microphone is right
 function [dist1, dist2] = dDifference(thetaRad,gap)
 v=343.22; %speed of sound
 d1=sin(thetaRad)+gap/2; %from y to 1'st mic
