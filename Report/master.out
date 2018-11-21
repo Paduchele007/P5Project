@@ -21,17 +21,18 @@
 \BOOKMARK [0][-]{chapter.5}{5 Noise Filtering}{}% 21
 \BOOKMARK [1][-]{section.5.1}{5.1 Research}{chapter.5}% 22
 \BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Voice frequency analysis}{section.5.1}% 23
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Filtering characteristics}{section.5.1}% 24
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Filter characteristics}{section.5.1}% 24
 \BOOKMARK [2][-]{subsection.5.1.3}{5.1.3 Results}{section.5.1}% 25
-\BOOKMARK [0][-]{chapter.6}{6 Directional Noise Elimination}{}% 26
-\BOOKMARK [0][-]{chapter.7}{7 Neural Network Speech Isolation}{}% 27
-\BOOKMARK [0][-]{chapter.8}{8 Comparison}{}% 28
-\BOOKMARK [1][-]{section.8.1}{8.1 Synthetic Samples}{chapter.8}% 29
-\BOOKMARK [1][-]{section.8.2}{8.2 Recorded Samples}{chapter.8}% 30
-\BOOKMARK [1][-]{section.8.3}{8.3 Live events}{chapter.8}% 31
-\BOOKMARK [1][-]{section.8.4}{8.4 Comparing all three methods and combining them}{chapter.8}% 32
-\BOOKMARK [0][-]{chapter.9}{9 Results}{}% 33
-\BOOKMARK [0][-]{chapter.10}{10 Future Work}{}% 34
-\BOOKMARK [0][-]{chapter.11}{11 Conclusion}{}% 35
-\BOOKMARK [0][-]{chapter*.10}{Bibliography}{}% 36
-\BOOKMARK [0][-]{appendix.A}{A Appendix A name}{}% 37
+\BOOKMARK [2][-]{subsection.5.1.4}{5.1.4 Conclusion}{section.5.1}% 26
+\BOOKMARK [0][-]{chapter.6}{6 Directional Noise Elimination}{}% 27
+\BOOKMARK [0][-]{chapter.7}{7 Neural Network Speech Isolation}{}% 28
+\BOOKMARK [0][-]{chapter.8}{8 Comparison}{}% 29
+\BOOKMARK [1][-]{section.8.1}{8.1 Synthetic Samples}{chapter.8}% 30
+\BOOKMARK [1][-]{section.8.2}{8.2 Recorded Samples}{chapter.8}% 31
+\BOOKMARK [1][-]{section.8.3}{8.3 Live events}{chapter.8}% 32
+\BOOKMARK [1][-]{section.8.4}{8.4 Comparing all three methods and combining them}{chapter.8}% 33
+\BOOKMARK [0][-]{chapter.9}{9 Results}{}% 34
+\BOOKMARK [0][-]{chapter.10}{10 Future Work}{}% 35
+\BOOKMARK [0][-]{chapter.11}{11 Conclusion}{}% 36
+\BOOKMARK [0][-]{chapter*.19}{Bibliography}{}% 37
+\BOOKMARK [0][-]{appendix.A}{A Appendix A name}{}% 38
