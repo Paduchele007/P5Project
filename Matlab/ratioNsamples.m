@@ -35,7 +35,7 @@ thetaRad2 = deg2rad(theta2);
 r1=fdistL/fdistR;
 r2=sdistL/sdistR;
 %% Delay in samples
-d1 = (((fdistL/v)-(fdistR/v))*48000);
-d2 = (((sdistL/v)-(sdistR/v))*48000);
+d1 = round(((fdistL/v)-(fdistR/v))*48000);
+d2 = round(((sdistL/v)-(sdistR/v))*48000);
 end
 
