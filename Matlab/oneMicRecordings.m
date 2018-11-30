@@ -3,19 +3,21 @@
 close all;
 clc;
 clear;
-
+gap=0.152;
 %% IMPORT SIGNALS
 
-signal1 = ['D:\GitHub\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\razvan.wav'];
+signal1 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\razvan.wav'];
 [a,Freq1] = audioread(signal1);
 w = (1:length(a)) / Freq1;
 
-signal2 = ['D:\GitHub\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\paulius.wav'];
+signal2 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\paulius.wav'];
 [b,Freq2] = audioread(signal2);
 x = (1:length(b)) / Freq2;
 
+
 %% ADD SIGNALS
-[r1, r2, d1, d2] = ratioNsamples(-80, 80, 0.6);
+[r1, d1] = ratioNsamples(-90, gap);
+[r2, d2] = ratioNsamples(-90, gap);
 
 resizedA = a(1:580000);
 resizedB = b(1:580000);
@@ -39,9 +41,9 @@ subtractedSignal2 = shiftedLeftMicBothChatRazvanPaulius1 - rightMicBothChatRazva
 
 %% SAVE SIGNAL
 
-filename1 = 'subtractedSignal1.flac';
+filename1 = 'subtractedSignalR.flac';
 audiowrite(filename1,subtractedSignal1,48000);
-filename2 = 'subtractedSignal2.flac';
+filename2 = 'subtractedSignalP.flac';
 audiowrite(filename2,subtractedSignal2,48000);
 filename3 = 'leftMicBothChat.flac';
 audiowrite(filename3,leftMicBothChatRazvanPaulius,48000);
