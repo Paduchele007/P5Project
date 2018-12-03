@@ -37,68 +37,74 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Initiating Problem}{4}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Mathematical Analysis}{5}{chapter.3}
+\contentsline {chapter}{\numberline {3}Development}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Geometric Structure}{5}{section.3.1}
+\contentsline {section}{\numberline {3.1}Component List}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Development}{7}{chapter.4}
+\contentsline {subsection}{\numberline {3.1.1}Introduction}{5}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Component List}{7}{section.4.1}
+\contentsline {subsection}{\numberline {3.1.2}Microphones characteristics}{5}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Microphones characteristics}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {3.1.3}Measurements scenarios}{5}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Measurements scenarios}{7}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {3.1.4}Setup}{5}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Setup}{7}{subsection.4.1.3}
+\contentsline {section}{\numberline {3.2}Analog to digital conversion}{5}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Analog to digital conversion}{7}{section.4.2}
+\contentsline {chapter}{\numberline {4}Noise Filtering}{7}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Noise Filtering}{9}{chapter.5}
+\contentsline {section}{\numberline {4.1}Research}{7}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Research}{9}{section.5.1}
+\contentsline {subsection}{\numberline {4.1.1}Voice frequency analysis}{7}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Voice frequency analysis}{9}{subsection.5.1.1}
+\contentsline {paragraph}{}{7}{paragraph*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{9}{paragraph*.15}
+\contentsline {subsection}{\numberline {4.1.2}Filter characteristics}{7}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Filter characteristics}{9}{subsection.5.1.2}
+\contentsline {paragraph}{}{7}{paragraph*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{9}{paragraph*.16}
+\contentsline {section}{\numberline {4.2}Results}{7}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Results}{9}{section.5.2}
+\contentsline {paragraph}{}{7}{paragraph*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{9}{paragraph*.17}
+\contentsline {paragraph}{}{8}{paragraph*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{10}{paragraph*.18}
+\contentsline {paragraph}{}{8}{paragraph*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{10}{paragraph*.20}
+\contentsline {paragraph}{}{10}{paragraph*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{12}{paragraph*.22}
+\contentsline {section}{\numberline {4.3}Conclusion}{10}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Conclusion}{12}{section.5.3}
+\contentsline {paragraph}{}{10}{paragraph*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{12}{paragraph*.24}
+\contentsline {chapter}{\numberline {5}Directional Noise Elimination}{11}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Directional Noise Elimination}{13}{chapter.6}
+\contentsline {section}{\numberline {5.1}Introduction}{11}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Neural Network Speech Isolation}{15}{chapter.7}
+\contentsline {section}{\numberline {5.2}Concept}{11}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Comparison}{17}{chapter.8}
+\contentsline {section}{\numberline {5.3}Development}{11}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.1}Synthetic Samples}{17}{section.8.1}
+\contentsline {section}{\numberline {5.4}Conclusion}{11}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.2}Recorded Samples}{17}{section.8.2}
+\contentsline {chapter}{\numberline {6}Neural Network Speech Isolation}{13}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.3}Live events}{17}{section.8.3}
+\contentsline {chapter}{\numberline {7}Comparison}{15}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8.4}Comparing all three methods and combining them}{17}{section.8.4}
+\contentsline {section}{\numberline {7.1}Synthetic Samples}{15}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Results}{19}{chapter.9}
+\contentsline {section}{\numberline {7.2}Recorded Samples}{15}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Future Work}{21}{chapter.10}
+\contentsline {section}{\numberline {7.3}Live events}{15}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}Conclusion}{23}{chapter.11}
+\contentsline {section}{\numberline {7.4}Comparing all three methods and combining them}{15}{section.7.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{25}{chapter*.25}
+\contentsline {chapter}{\numberline {8}Results}{17}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix A name}{27}{appendix.A}
+\contentsline {chapter}{\numberline {9}Future Work}{19}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Conclusion}{21}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{23}{chapter*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix A name}{25}{appendix.A}
