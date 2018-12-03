@@ -33,8 +33,8 @@ rightMicRightChatPaulius = r2 * rightMicRightChatPaulius;
 rightMicBothChatRazvanPaulius = rightMicLeftChatRazvan + rightMicRightChatPaulius;
 leftMicBothChatRazvanPaulius = leftMicLeftChatRazvan + leftMicRightChatPaulius;
 
-shiftedLeftMicBothChatRazvanPaulius = shiftFunction(-d2, leftMicBothChatRazvanPaulius);
-shiftedLeftMicBothChatRazvanPaulius1 = shiftFunction(d1, leftMicBothChatRazvanPaulius);
+shiftedLeftMicBothChatRazvanPaulius = shiftFunction(-d1, leftMicBothChatRazvanPaulius);
+shiftedLeftMicBothChatRazvanPaulius1 = shiftFunction(d2, leftMicBothChatRazvanPaulius);
 
 subtractedSignal1 = shiftedLeftMicBothChatRazvanPaulius - rightMicBothChatRazvanPaulius;
 subtractedSignal2 = shiftedLeftMicBothChatRazvanPaulius1 - rightMicBothChatRazvanPaulius;
