@@ -10,3 +10,7 @@ Report/master\.pdf
 Matlab/ratio\.asv
 
 *.asv
+
+*.vsdx
+
+*.~vsdx
