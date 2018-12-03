@@ -61,25 +61,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}Voice frequency analysis}{7}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{7}{paragraph*.18}
+\contentsline {paragraph}{}{7}{paragraph*.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Filter characteristics}{7}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{7}{paragraph*.19}
+\contentsline {paragraph}{}{7}{paragraph*.21}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Results}{7}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{7}{paragraph*.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{8}{paragraph*.21}
+\contentsline {paragraph}{}{7}{paragraph*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{8}{paragraph*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{10}{paragraph*.25}
+\contentsline {paragraph}{}{8}{paragraph*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{10}{paragraph*.27}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Conclusion}{10}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{10}{paragraph*.27}
+\contentsline {paragraph}{}{10}{paragraph*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Directional Noise Elimination}{11}{chapter.5}
 \defcounter {refsection}{0}\relax 
@@ -109,6 +109,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {10}Conclusion}{21}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{23}{chapter*.28}
+\contentsline {chapter}{Bibliography}{23}{chapter*.30}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Appendix A name}{25}{appendix.A}
