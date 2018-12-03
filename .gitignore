@@ -14,3 +14,17 @@ Matlab/ratio\.asv
 *.vsdx
 
 *.~vsdx
+
+*.aux
+
+*.log
+
+*.out
+
+*.pdf
+
+*.tdo
+
+*.toc
+
+*.synctex.gz
