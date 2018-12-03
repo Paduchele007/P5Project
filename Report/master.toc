@@ -93,22 +93,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Neural Network Speech Isolation}{13}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Comparison}{15}{chapter.7}
+\contentsline {chapter}{\numberline {7}Results}{15}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Synthetic Samples}{15}{section.7.1}
+\contentsline {chapter}{\numberline {8}Future Work}{17}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Recorded Samples}{15}{section.7.2}
+\contentsline {chapter}{\numberline {9}Conclusion}{19}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Live events}{15}{section.7.3}
+\contentsline {chapter}{Bibliography}{21}{chapter*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Comparing all three methods and combining them}{15}{section.7.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Results}{17}{chapter.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Future Work}{19}{chapter.9}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Conclusion}{21}{chapter.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{23}{chapter*.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix A name}{25}{appendix.A}
+\contentsline {chapter}{\numberline {A}Appendix A name}{23}{appendix.A}
