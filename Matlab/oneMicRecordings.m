@@ -3,7 +3,7 @@
 close all;
 clc;
 clear;
-gap=0.1;
+gap=0.152;
 
 %% IMPORT SIGNALS
 
@@ -16,7 +16,7 @@ signal2 = ['D:\GitHub\P5Project\Adobe Audition\1micRecording\1micRecording_Recor
 x = (1:length(b)) / Freq2;
 
 
-%% ADD SIGNALS
+%% RESIZE
 
 [r1, d1] = ratioNsamples(40, gap);
 [r2, d2] = ratioNsamples(-30, gap);
@@ -24,6 +24,7 @@ x = (1:length(b)) / Freq2;
 resizedA = a(1:580000);
 resizedB = b(1:580000);
 
+%% SHIFT AND GAIN
 rightMicLeftChatRazvan = resizedA;
 leftMicLeftChatRazvan = shiftFunction(d1, resizedA);
 rightMicLeftChatRazvan = r1 * rightMicLeftChatRazvan;
@@ -32,8 +33,12 @@ rightMicRightChatPaulius = resizedB;
 leftMicRightChatPaulius = shiftFunction(d2, resizedB);
 rightMicRightChatPaulius = r2 * rightMicRightChatPaulius;
 
+%% ADD SIGNALS FOR LEFT AND RIGHT MIC
+
 rightMicBothChatRazvanPaulius = rightMicLeftChatRazvan + rightMicRightChatPaulius;
 leftMicBothChatRazvanPaulius = leftMicLeftChatRazvan + leftMicRightChatPaulius;
+
+%% FILTER
 
 shiftedLeftMicBothChatRazvanPaulius = shiftFunction(-d1, leftMicBothChatRazvanPaulius);
 shiftedLeftMicBothChatRazvanPaulius1 = shiftFunction(-d2, leftMicBothChatRazvanPaulius);
