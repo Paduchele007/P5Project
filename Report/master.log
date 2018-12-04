@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.24)  4 DEC 2018 16:47
 entering extended mode
 **./master.tex
@@ -6,22 +7,31 @@ LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
 (setup/preamble.tex
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.24)  4 DEC 2018 16:08
+entering extended mode
+**./master.tex
+(master.tex
+LaTeX2e <2018-04-01> patch level 5
+(setup/preamble.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+>>>>>>> Stashed changes
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+<<<<<<< Updated upstream
 ) ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
 y"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -346,11 +356,28 @@ Package: babel 2018/02/14 3.18 The Babel package
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
 "
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
+=======
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2018/09/26 3.24 The Babel package
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2018/09/26 3.24 Babel switching mechanism
+>>>>>>> Stashed changes
 )
 *************************************
 * Local config file bblopts.cfg used
 *
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+>>>>>>> Stashed changes
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
@@ -358,6 +385,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 ish.ldf"
 Language: english 2017/06/06 v3.3r English support from the babel system
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count88
@@ -366,6 +394,15 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.d
 ef")
 \bbl@dirlevel=\count89
+=======
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/09/26 3.24 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\txtbabel.def")
+\bbl@dirlevel=\count90
+>>>>>>> Stashed changes
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -383,7 +420,11 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+>>>>>>> Stashed changes
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
@@ -431,6 +472,7 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -439,6 +481,14 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 ty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+>>>>>>> Stashed changes
 \captionmargin=\dimen106
 \captionmargin@=\dimen107
 \captionwidth=\dimen108
@@ -447,18 +497,30 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen111
 \caption@hangindent=\dimen112
 )
-\c@ContinuedFloat=\count90
+\c@caption@flags=\count91
+\c@ContinuedFloat=\count92
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+>>>>>>> Stashed changes
 \col@sep=\dimen113
+\ar@mcellbox=\box26
 \extrarowheight=\dimen114
 \NC@list=\toks17
 \extratabsurround=\skip43
 \backup@length=\skip44
+\ar@cellbox=\box27
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.
 sty"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+>>>>>>> Stashed changes
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen115
 \lightrulewidth=\dimen116
@@ -470,15 +532,19 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen122
 \cmidrulekern=\dimen123
 \defaultaddspace=\dimen124
-\@cmidla=\count91
-\@cmidlb=\count92
+\@cmidla=\count93
+\@cmidlb=\count94
 \@aboverulesep=\dimen125
 \@belowrulesep=\dimen126
-\@thisruleclass=\count93
-\@lastruleclass=\count94
+\@thisruleclass=\count95
+\@lastruleclass=\count96
 \@thisrulewidth=\dimen127
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\framed\framed.sty"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\framed\framed.sty
+>>>>>>> Stashed changes
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip45
 \fb@frw=\dimen128
@@ -486,12 +552,19 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen130
 \FrameSep=\dimen131
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\background\backgro
 und.sty"
 Package: background 2014/03/04 v2.1 background material
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
 y"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\background\background.st
+y
+Package: background 2014/03/04 v2.1 background material
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+>>>>>>> Stashed changes
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
@@ -501,9 +574,10 @@ tex"
 \XKV@toks=\toks18
 \XKV@tempa@toks=\toks19
 )
-\XKV@depth=\count95
+\XKV@depth=\count97
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\
 tikz.sty"
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
@@ -512,10 +586,20 @@ tikz.sty"
 cs.sty"
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 futil-common.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.s
+ty
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-
+common.tex
+>>>>>>> Stashed changes
 \pgfutil@everybye=\toks20
 \pgfutil@tempdima=\dimen132
 \pgfutil@tempdimb=\dimen133
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 futil-common-lists.tex"))
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
@@ -527,10 +611,24 @@ Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 frcs.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-
+common-lists.tex))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-
+latex.def
+\pgfutil@abb=\box28
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.c
+ode.tex
+>>>>>>> Stashed changes
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf
 core.sty"
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pg
@@ -546,6 +644,23 @@ fkeys.code.tex"
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pg
 fkeysfiltered.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.s
+ty
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.s
+ty
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
+.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.
+code.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysf
+iltered.code.tex
+>>>>>>> Stashed changes
 \pgfkeys@tmptoks=\toks23
 ))
 \pgf@x=\dimen134
@@ -558,20 +673,26 @@ fkeysfiltered.code.tex"
 \pgf@yc=\dimen141
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count96
-\c@pgf@countb=\count97
-\c@pgf@countc=\count98
-\c@pgf@countd=\count99
+\c@pgf@counta=\count98
+\c@pgf@countb=\count99
+\c@pgf@countc=\count100
+\c@pgf@countd=\count101
 \t@pgf@toka=\toks24
 \t@pgf@tokb=\toks25
 \t@pgf@tokc=\toks26
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgf.cfg"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cf
+g
+>>>>>>> Stashed changes
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
@@ -582,10 +703,23 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsyssoftpath.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
+-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
+-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
+softpath.code.tex
+>>>>>>> Stashed changes
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count100
-\pgfsyssoftpath@bigbuffer@items=\count101
+\pgfsyssoftpath@smallbuffer@items=\count102
+\pgfsyssoftpath@bigbuffer@items=\count103
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\
 pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -602,13 +736,32 @@ calc.code.tex"
 util.code.tex")
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 parser.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
+protocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.
+tex
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.c
+ode.tex
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.c
+ode.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser
+.code.tex
+>>>>>>> Stashed changes
 \pgfmath@dimen=\dimen142
-\pgfmath@count=\count102
-\pgfmath@box=\box27
+\pgfmath@count=\count104
+\pgfmath@box=\box29
 \pgfmath@toks=\toks27
 \pgfmath@stack@operand=\toks28
 \pgfmath@stack@operation=\toks29
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 functions.code.tex"
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
@@ -633,6 +786,32 @@ float.code.tex"
 ))
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepoints.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.code.tex
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.basic.code.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.trigonometric.code.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.random.code.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.comparison.code.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.base.code.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.round.code.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.misc.code.tex)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
+ons.integerarithmetics.code.tex)))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.
+code.tex
+\c@pgfmathroundto@lastzeros=\count105
+))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+points.code.tex
+>>>>>>> Stashed changes
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen143
 \pgf@picmaxx=\dimen144
@@ -649,26 +828,42 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen155
 \pgf@zy=\dimen156
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepathconstruct.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+pathconstruct.code.tex
+>>>>>>> Stashed changes
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen157
 \pgf@path@lasty=\dimen158
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorepathusage.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+pathusage.code.tex
+>>>>>>> Stashed changes
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen159
 \pgf@shorten@start@additional=\dimen160
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorescopes.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+scopes.code.tex
+>>>>>>> Stashed changes
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box28
-\pgf@hbox=\box29
-\pgf@layerbox@main=\box30
-\pgf@picture@serial@count=\count104
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count106
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
@@ -676,11 +871,21 @@ File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoretransformations.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+graphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen161
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+transformations.code.tex
+>>>>>>> Stashed changes
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen162
 \pgf@pt@y=\dimen163
 \pgf@pt@temp=\dimen164
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -710,9 +915,41 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcoreexternal.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+quick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+objects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+pathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+arrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen165
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+shade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen166
+\pgf@sys@shading@range@num=\count107
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+image.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+external.code.tex
+>>>>>>> Stashed changes
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box31
+\pgfexternal@startupbox=\box33
 ))
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\p
 gfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
@@ -736,10 +973,36 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
 pgfcomp-version-0-65.sty"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+layers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+transparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
+patterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodules
+hapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box34
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulep
+lot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcom
+p-version-0-65.sty
+>>>>>>> Stashed changes
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen167
 \pgf@nodesepend=\dimen168
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\
 pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
@@ -760,19 +1023,49 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath
 .code.tex")
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcom
+p-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.st
+y
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.
+code.tex))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.
+tex))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.c
+ode.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.
+tex)
+>>>>>>> Stashed changes
 \pgffor@iter=\dimen169
 \pgffor@skip=\dimen170
 \pgffor@stack=\toks30
 \pgffor@toks=\toks31
 ))
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
 flibraryplothandlers.code.tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
+\tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibra
+ryplothandlers.code.tex
+>>>>>>> Stashed changes
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count106
+\pgf@plot@mark@count=\count108
 \pgfplotmarksize=\dimen171
 )
 \tikz@lastx=\dimen172
@@ -781,6 +1074,7 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen175
 \tikzleveldistance=\dimen176
 \tikzsiblingdistance=\dimen177
+<<<<<<< Updated upstream
 \tikz@figbox=\box33
 \tikz@figbox@bg=\box34
 \tikz@tempbox=\box35
@@ -792,13 +1086,27 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
 odulematrix.code.tex"
-File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count111
-\pgfmatrixcurrentcolumn=\count112
-\pgf@matrix@numberofcolumns=\count113
-)
-\tikz@expandcount=\count114
+=======
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count109
+\tikznumberofchildren=\count110
+\tikznumberofcurrentchild=\count111
+\tikz@fig@count=\count112
 
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulem
+atrix.code.tex
+>>>>>>> Stashed changes
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count113
+\pgfmatrixcurrentcolumn=\count114
+\pgf@matrix@numberofcolumns=\count115
+)
+\tikz@expandcount=\count116
+
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
@@ -809,10 +1117,19 @@ Package: everypage 2007/06/20 1.1 Hooks to run on every page
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\afterpage.st
 y"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
+\libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\everypage\everypage.sty
+Package: everypage 2007/06/20 1.1 Hooks to run on every page
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
+>>>>>>> Stashed changes
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks32
-\AP@partial=\box37
-\AP@footins=\box38
+\AP@partial=\box39
+\AP@footins=\box40
 ))
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
 y"
@@ -840,30 +1157,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 "
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count115
+\inf@bad=\count117
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count116
-\leftroot@=\count117
+\uproot@=\count118
+\leftroot@=\count119
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count118
-\DOTSCASE@=\count119
+\classnum@=\count120
+\DOTSCASE@=\count121
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box39
-\strutbox@=\box40
+\Mathstrutbox@=\box41
+\strutbox@=\box42
 \big@size=\dimen180
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count120
-\c@MaxMatrixCols=\count121
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
 \dotsspace@=\muskip10
-\c@parentequation=\count122
-\dspbrk@lvl=\count123
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
 \tag@help=\toks34
-\row@=\count124
-\column@=\count125
-\maxfields@=\count126
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
 \andhelp@=\toks35
 \eqnshift@=\dimen181
 \alignsep@=\dimen182
@@ -890,8 +1207,12 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ntheorem\ntheorem.
 sty"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\ntheorem\ntheorem.sty
+>>>>>>> Stashed changes
 Style `ntheorem', Version 1.33 <2011/08/15>
 Package: ntheorem 2011/08/15 1.33
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -928,8 +1249,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \thm@topsep=\skip55
 \thm@topsepadd=\skip56
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count127
-\c@currNonectr=\count128
+\c@endNonectr=\count129
+\c@currNonectr=\count130
 \mysavskip=\skip57
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
@@ -937,6 +1258,7 @@ Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
 \tagwidth=\dimen192
 \shadecolor=\toks56
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -944,6 +1266,13 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
 ty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+>>>>>>> Stashed changes
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
 sty"
@@ -954,9 +1283,9 @@ Package ifvtex Info: VTeX not detected.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count129
-\Gm@cntv=\count130
-\c@Gm@tempcnt=\count131
+\Gm@cnth=\count131
+\Gm@cntv=\count132
+\c@Gm@tempcnt=\count133
 \Gm@bindingoffset=\dimen193
 \Gm@wd@mp=\dimen194
 \Gm@odd@mp=\dimen195
@@ -967,12 +1296,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen256
 \Gm@dimlist=\toks57
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.
 sty"
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+>>>>>>> Stashed changes
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box41
+\ttl@box=\box43
 \beforetitleunit=\skip58
 \aftertitleunit=\skip59
 \ttl@plus=\dimen257
@@ -982,8 +1316,12 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen260
 \titlewidthfirst=\dimen261
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
 sty"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+>>>>>>> Stashed changes
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip60
@@ -996,19 +1334,27 @@ s
 \f@nch@O@olf=\skip67
 \f@nch@O@orf=\skip68
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count132
 \calc@Bcount=\count133
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count134
+\calc@Bcount=\count135
+>>>>>>> Stashed changes
 \calc@Adimen=\dimen262
 \calc@Bdimen=\dimen263
 \calc@Askip=\skip69
 \calc@Bskip=\skip70
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count134
+\calc@Ccount=\count136
 \calc@Cskip=\skip71
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.
 sty"
 Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
@@ -1016,6 +1362,13 @@ Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
 mds.sty"
 Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
+Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+>>>>>>> Stashed changes
 )
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
@@ -1036,10 +1389,16 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
 sty"
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count135
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count137
+>>>>>>> Stashed changes
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
 .sty"
@@ -1057,6 +1416,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count136
@@ -1070,50 +1430,65 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 y"
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.
 tex"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count138
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
+>>>>>>> Stashed changes
 \@xs@message=\write4
-\integerpart=\count137
-\decimalpart=\count138
+\integerpart=\count139
+\decimalpart=\count140
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count139
-\c@listtotal=\count140
-\c@listcount=\count141
-\c@liststart=\count142
-\c@liststop=\count143
-\c@citecount=\count144
-\c@citetotal=\count145
-\c@multicitecount=\count146
-\c@multicitetotal=\count147
-\c@instcount=\count148
-\c@maxnames=\count149
-\c@minnames=\count150
-\c@maxitems=\count151
-\c@minitems=\count152
-\c@citecounter=\count153
-\c@savedcitecounter=\count154
-\c@uniquelist=\count155
-\c@uniquename=\count156
-\c@refsection=\count157
-\c@refsegment=\count158
-\c@maxextratitle=\count159
-\c@maxextratitleyear=\count160
-\c@maxextradate=\count161
-\c@maxextraalpha=\count162
-\c@abbrvpenalty=\count163
-\c@highnamepenalty=\count164
-\c@lownamepenalty=\count165
-\c@maxparens=\count166
-\c@parenlevel=\count167
-\blx@tempcnta=\count168
-\blx@tempcntb=\count169
-\blx@tempcntc=\count170
-\blx@maxsection=\count171
-\blx@maxsegment@0=\count172
-\blx@notetype=\count173
-\blx@parenlevel@text=\count174
-\blx@parenlevel@foot=\count175
-\blx@sectionciteorder@0=\count176
+\c@tabx@nest=\count141
+\c@listtotal=\count142
+\c@listcount=\count143
+\c@liststart=\count144
+\c@liststop=\count145
+\c@citecount=\count146
+\c@citetotal=\count147
+\c@multicitecount=\count148
+\c@multicitetotal=\count149
+\c@instcount=\count150
+\c@maxnames=\count151
+\c@minnames=\count152
+\c@maxitems=\count153
+\c@minitems=\count154
+\c@citecounter=\count155
+\c@savedcitecounter=\count156
+\c@uniquelist=\count157
+\c@uniquename=\count158
+\c@refsection=\count159
+\c@refsegment=\count160
+\c@maxextratitle=\count161
+\c@maxextratitleyear=\count162
+\c@maxextradate=\count163
+\c@maxextraalpha=\count164
+\c@abbrvpenalty=\count165
+\c@highnamepenalty=\count166
+\c@lownamepenalty=\count167
+\c@maxparens=\count168
+\c@parenlevel=\count169
+\blx@tempcnta=\count170
+\blx@tempcntb=\count171
+\blx@tempcntc=\count172
+\blx@maxsection=\count173
+\blx@maxsegment@0=\count174
+\blx@notetype=\count175
+\blx@parenlevel@text=\count176
+\blx@parenlevel@foot=\count177
+\blx@sectionciteorder@0=\count178
 \labelnumberwidth=\skip72
 \labelalphawidth=\skip73
 \biblabelsep=\skip74
@@ -1124,86 +1499,90 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip79
 \blx@bcfin=\read2
 \blx@bcfout=\write5
-\c@mincomprange=\count177
-\c@maxcomprange=\count178
-\c@mincompwidth=\count179
+\c@mincomprange=\count179
+\c@maxcomprange=\count180
+\c@mincompwidth=\count181
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.de
 f"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-dm.def
+>>>>>>> Stashed changes
 File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count180
-\c@savedafterword=\count181
-\c@annotator=\count182
-\c@savedannotator=\count183
-\c@author=\count184
-\c@savedauthor=\count185
-\c@bookauthor=\count186
-\c@savedbookauthor=\count187
-\c@commentator=\count188
-\c@savedcommentator=\count189
-\c@editor=\count190
-\c@savededitor=\count191
-\c@editora=\count192
-\c@savededitora=\count193
-\c@editorb=\count194
-\c@savededitorb=\count195
-\c@editorc=\count196
-\c@savededitorc=\count197
-\c@foreword=\count198
-\c@savedforeword=\count199
-\c@holder=\count266
-\c@savedholder=\count267
-\c@introduction=\count268
-\c@savedintroduction=\count269
-\c@namea=\count270
-\c@savednamea=\count271
-\c@nameb=\count272
-\c@savednameb=\count273
-\c@namec=\count274
-\c@savednamec=\count275
-\c@translator=\count276
-\c@savedtranslator=\count277
-\c@shortauthor=\count278
-\c@savedshortauthor=\count279
-\c@shorteditor=\count280
-\c@savedshorteditor=\count281
-\c@labelname=\count282
-\c@savedlabelname=\count283
-\c@institution=\count284
-\c@savedinstitution=\count285
-\c@lista=\count286
-\c@savedlista=\count287
-\c@listb=\count288
-\c@savedlistb=\count289
-\c@listc=\count290
-\c@savedlistc=\count291
-\c@listd=\count292
-\c@savedlistd=\count293
-\c@liste=\count294
-\c@savedliste=\count295
-\c@listf=\count296
-\c@savedlistf=\count297
-\c@location=\count298
-\c@savedlocation=\count299
-\c@organization=\count300
-\c@savedorganization=\count301
-\c@origlocation=\count302
-\c@savedoriglocation=\count303
-\c@origpublisher=\count304
-\c@savedorigpublisher=\count305
-\c@publisher=\count306
-\c@savedpublisher=\count307
-\c@language=\count308
-\c@savedlanguage=\count309
-\c@origlanguage=\count310
-\c@savedoriglanguage=\count311
-\c@pageref=\count312
-\c@savedpageref=\count313
+\c@afterword=\count182
+\c@savedafterword=\count183
+\c@annotator=\count184
+\c@savedannotator=\count185
+\c@author=\count186
+\c@savedauthor=\count187
+\c@bookauthor=\count188
+\c@savedbookauthor=\count189
+\c@commentator=\count190
+\c@savedcommentator=\count191
+\c@editor=\count192
+\c@savededitor=\count193
+\c@editora=\count194
+\c@savededitora=\count195
+\c@editorb=\count196
+\c@savededitorb=\count197
+\c@editorc=\count198
+\c@savededitorc=\count199
+\c@foreword=\count266
+\c@savedforeword=\count267
+\c@holder=\count268
+\c@savedholder=\count269
+\c@introduction=\count270
+\c@savedintroduction=\count271
+\c@namea=\count272
+\c@savednamea=\count273
+\c@nameb=\count274
+\c@savednameb=\count275
+\c@namec=\count276
+\c@savednamec=\count277
+\c@translator=\count278
+\c@savedtranslator=\count279
+\c@shortauthor=\count280
+\c@savedshortauthor=\count281
+\c@shorteditor=\count282
+\c@savedshorteditor=\count283
+\c@labelname=\count284
+\c@savedlabelname=\count285
+\c@institution=\count286
+\c@savedinstitution=\count287
+\c@lista=\count288
+\c@savedlista=\count289
+\c@listb=\count290
+\c@savedlistb=\count291
+\c@listc=\count292
+\c@savedlistc=\count293
+\c@listd=\count294
+\c@savedlistd=\count295
+\c@liste=\count296
+\c@savedliste=\count297
+\c@listf=\count298
+\c@savedlistf=\count299
+\c@location=\count300
+\c@savedlocation=\count301
+\c@organization=\count302
+\c@savedorganization=\count303
+\c@origlocation=\count304
+\c@savedoriglocation=\count305
+\c@origpublisher=\count306
+\c@savedorigpublisher=\count307
+\c@publisher=\count308
+\c@savedpublisher=\count309
+\c@language=\count310
+\c@savedlanguage=\count311
+\c@origlanguage=\count312
+\c@savedoriglanguage=\count313
+\c@pageref=\count314
+\c@savedpageref=\count315
 \shorthandwidth=\skip80
 \shortjournalwidth=\skip81
 \shortserieswidth=\skip82
@@ -1221,15 +1600,23 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-compa
 t.def"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def
+>>>>>>> Stashed changes
 File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
+<<<<<<< Updated upstream
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-bibte
 x.def"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-bibtex.def
+>>>>>>> Stashed changes
 File: blx-bibtex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 
 
@@ -1239,38 +1626,55 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
+<<<<<<< Updated upstream
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.
 def"
+=======
+ (C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def
+>>>>>>> Stashed changes
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count314
-\c@textcitetotal=\count315
-\c@textcitemaxnames=\count316
-\c@biburlnumpenalty=\count317
-\c@biburlucpenalty=\count318
-\c@biburllcpenalty=\count319
-\c@smartand=\count320
+\c@textcitecount=\count316
+\c@textcitetotal=\count317
+\c@textcitemaxnames=\count318
+\c@biburlnumpenalty=\count319
+\c@biburlucpenalty=\count320
+\c@biburllcpenalty=\count321
+\c@smartand=\count322
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\numer
 ic.bbx"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\numeric.bbx
+>>>>>>> Stashed changes
 File: numeric.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\stand
 ard.bbx"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bb
+x
+>>>>>>> Stashed changes
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count321
-\c@bbx:relatedtotal=\count322
+\c@bbx:relatedcount=\count323
+\c@bbx:relatedtotal=\count324
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\numer
 ic.cbx"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\numeric.cbx
+>>>>>>> Stashed changes
 File: numeric.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -1286,6 +1690,7 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
+<<<<<<< Updated upstream
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex.
 cfg"
@@ -1293,12 +1698,19 @@ File: biblatex.cfg
 ))
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocbibind\tocbibin
 d.sty"
+=======
+ (C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
+File: biblatex.cfg 
+))
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\tocbibind\tocbibind.sty
+>>>>>>> Stashed changes
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
+<<<<<<< Updated upstream
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lastpage\lastpage.
 sty"
@@ -1311,13 +1723,29 @@ Package: todonotes 2012/07/25
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
 r\tikz\libraries\tikzlibrarypositioning.code.tex"
+=======
+) (C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\lastpage\lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+) (C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\todonotes\todonotes.st
+y
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
+\libraries\tikzlibrarypositioning.code.tex
+>>>>>>> Stashed changes
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count323
+\c@@todonotes@numberoftodonotes=\count325
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
 sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
+>>>>>>> Stashed changes
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
 hyperref.sty"
@@ -1359,54 +1787,66 @@ ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen264
-\Hy@linkcounter=\count324
-\Hy@pagecounter=\count325
+\Hy@linkcounter=\count326
+\Hy@pagecounter=\count327
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+>>>>>>> Stashed changes
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count326
+\Hy@SavedSpaceFactor=\count328
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Hyper figures OFF on input line 4535.
+Package hyperref Info: Link nesting OFF on input line 4540.
+Package hyperref Info: Hyper index ON on input line 4543.
+Package hyperref Info: Plain pages OFF on input line 4550.
+Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count327
-LaTeX Info: Redefining \url on input line 5115.
+Package hyperref Info: Bookmarks ON on input line 4788.
+\c@Hy@tempcnt=\count329
+LaTeX Info: Redefining \url on input line 5141.
 \XeTeXLinkMargin=\dimen265
-\Fld@menulength=\count328
+\Fld@menulength=\count330
 \Field@Width=\dimen266
 \Fld@charsize=\dimen267
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count329
-\c@Item=\count330
-\c@Hfootnote=\count331
+Package hyperref Info: Hyper figures OFF on input line 6396.
+Package hyperref Info: Link nesting OFF on input line 6401.
+Package hyperref Info: Hyper index ON on input line 6404.
+Package hyperref Info: backreferencing OFF on input line 6411.
+Package hyperref Info: Link coloring OFF on input line 6416.
+Package hyperref Info: Link coloring with OCG OFF on input line 6421.
+Package hyperref Info: PDF/A mode OFF on input line 6426.
+LaTeX Info: Redefining \ref on input line 6466.
+LaTeX Info: Redefining \pageref on input line 6470.
+\Hy@abspage=\count331
+\c@Item=\count332
+\c@Hfootnote=\count333
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
 ef"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count332
 \c@bookmark@seq@number=\count333
+=======
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
+\Fld@listcount=\count334
+\c@bookmark@seq@number=\count335
+>>>>>>> Stashed changes
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
@@ -1425,23 +1865,27 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 157.
 
 Package hyperref Info: Option `colorlinks' set `false' on input line 157.
 ) (setup/hyphenations.tex) (setup/macros.tex
-\c@currexactr=\count334
-\c@endexactr=\count335
-\c@exa=\count336
+\c@currexactr=\count336
+\c@endexactr=\count337
+\c@exa=\count338
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\engli
 sh.lbx"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\english.lbx
+>>>>>>> Stashed changes
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count337
-\@quotereset=\count338
+\@quotelevel=\count339
+\@quotereset=\count340
 (master.aux)
 \openout1 = `master.aux'.
 
@@ -1464,19 +1908,23 @@ LaTeX Font Info:    Try loading font information for T1+pplx on input line 5.
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pplx.fd"
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
+<<<<<<< Updated upstream
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
+=======
+(C:\Users\Paulius\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+>>>>>>> Stashed changes
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count339
+\scratchcounter=\count341
 \scratchdimen=\dimen268
-\scratchbox=\box42
-\nofMPsegments=\count340
-\nofMParguments=\count341
+\scratchbox=\box44
+\nofMPsegments=\count342
+\nofMParguments=\count343
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count342
+\MPscratchCnt=\count344
 \MPscratchDim=\dimen269
-\MPnumerator=\count343
-\makeMPintoPDFobject=\count344
+\MPnumerator=\count345
+\makeMPintoPDFobject=\count346
 \everyMPtoPDFconversion=\toks60
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
@@ -1548,7 +1996,7 @@ Package biblatex Info: Reference segment=0 on input line 5.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 5.
-\AtBeginShipoutBox=\box43
+\AtBeginShipoutBox=\box45
 Package hyperref Info: Link coloring OFF on input line 5.
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
@@ -1559,7 +2007,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count345
+\c@section@level=\count347
 )
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
@@ -1613,22 +2061,36 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 42.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 42.
+<<<<<<< Updated upstream
 <AAUgraphics/aau_logo_circle_en.pdf, id=170, 77.28876pt x 77.28876pt>
+=======
+<AAUgraphics/aau_logo_circle_en.pdf, id=130, 77.28876pt x 77.28876pt>
+>>>>>>> Stashed changes
 File: AAUgraphics/aau_logo_circle_en.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_logo_circle_en.pdf>
 Package pdftex.def Info: AAUgraphics/aau_logo_circle_en.pdf  used on input line
  45.
 (pdftex.def)             Requested size: 119.49974pt x 119.51091pt.
+<<<<<<< Updated upstream
 <AAUgraphics/aau_waves.pdf, id=171, 598.235pt x 845.1575pt>
+=======
+<AAUgraphics/aau_waves.pdf, id=131, 598.235pt x 845.1575pt>
+>>>>>>> Stashed changes
 File: AAUgraphics/aau_waves.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_waves.pdf>
 Package pdftex.def Info: AAUgraphics/aau_waves.pdf  used on input line 48.
 (pdftex.def)             Requested size: 597.5489pt x 845.06516pt.
  [1
 
+<<<<<<< Updated upstream
 {C:/Users/tlasi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./AAUgraphi
 cs/aau_waves.pdf> <./AAUgraphics/aau_logo_circle_en.pdf>])
 (sections/colophon.tex
+=======
+{C:/Users/Paulius/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./AAUgrap
+hics/aau_waves.pdf> <./AAUgraphics/aau_logo_circle_en.pdf>]) (sections/colophon
+.tex
+>>>>>>> Stashed changes
 LaTeX Font Info:    Try loading font information for OMS+pplx on input line 4.
 LaTeX Font Info:    No file OMSpplx.fd. on input line 4.
 
@@ -1641,7 +2103,11 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 ]) (sections/titlepages.tex
 \titlepageleftcolumnwidth=\skip95
 \titlepagerightcolumnwidth=\skip96
+<<<<<<< Updated upstream
 <AAUgraphics/aau_logo_en.pdf, id=194, 115.43124pt x 77.28876pt>
+=======
+<AAUgraphics/aau_logo_en.pdf, id=154, 115.43124pt x 77.28876pt>
+>>>>>>> Stashed changes
 File: AAUgraphics/aau_logo_en.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_logo_en.pdf>
 Package pdftex.def Info: AAUgraphics/aau_logo_en.pdf  used on input line 31.
@@ -1778,6 +2244,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Chapter 3.
+<<<<<<< Updated upstream
 
 LaTeX Font Warning: Font shape `OMS/pplx/bx/n' undefined
 (Font)              using `OMS/pplx/m/n' instead
@@ -1804,19 +2271,39 @@ Overfull \hbox (18.88292pt too wide) in paragraph at lines 27--34
 a-sure-ments found in the datasheet[][][].
  []
 
+=======
+
+LaTeX Warning: Citation 'Seaindia' on page 5 undefined on input line 10.
+
+
+LaTeX Font Warning: Font shape `OMS/pplx/bx/n' undefined
+(Font)              using `OMS/pplx/m/n' instead
+(Font)              for symbol `textbullet' on input line 13.
+
+[5
+>>>>>>> Stashed changes
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+<<<<<<< Updated upstream
 [6]
+=======
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+>>>>>>> Stashed changes
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+<<<<<<< Updated upstream
 [7 <./Illustrations/MicData.png>]) (sections/NoiseFiltering.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1850,9 +2337,20 @@ File: Illustrations/100HZto3KHzfilter.png Graphic file (type png)
 Package pdftex.def Info: Illustrations/100HZto3KHzfilter.png  used on input lin
 e 21.
 (pdftex.def)             Requested size: 418.25368pt x 321.88437pt.
+=======
+[6]
+<Illustrations/MicData.png, id=302, 284.56313pt x 394.47375pt>
+File: Illustrations/MicData.png Graphic file (type png)
+<use Illustrations/MicData.png>
+Package pdftex.def Info: Illustrations/MicData.png  used on input line 33.
+(pdftex.def)             Requested size: 200.59193pt x 278.07994pt.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 34.
+>>>>>>> Stashed changes
 
-Overfull \hbox (17.06981pt too wide) in paragraph at lines 21--22
- [][] 
+Overfull \hbox (18.88292pt too wide) in paragraph at lines 30--37
+[] [][] \T1/pplx/m/n/10.95 Other pa-ram-e-ters were found by fol-low-ing the me
+a-sure-ments found in the datasheet[][][].
  []
 
 
@@ -1861,13 +2359,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+<<<<<<< Updated upstream
 [10 <./Illustrations/100HZto17KHzfilter.png>]
+=======
+[7 <./Illustrations/MicData.png>]) (sections/DirectionalNoiseElimination.tex
+>>>>>>> Stashed changes
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+<<<<<<< Updated upstream
 [11 <./Illustrations/100HZto3KHzfilter.png>]
 <Illustrations/400HZto3400Hzfilter.png, id=388, 921.4425pt x 709.14937pt>
 File: Illustrations/400HZto3400Hzfilter.png Graphic file (type png)
@@ -1875,18 +2378,17 @@ File: Illustrations/400HZto3400Hzfilter.png Graphic file (type png)
 Package pdftex.def Info: Illustrations/400HZto3400Hzfilter.png  used on input l
 ine 29.
 (pdftex.def)             Requested size: 418.25368pt x 321.88437pt.
+=======
+[8]
+Chapter 4.
+) (sections/NeuralNetworkSpeechElimination.tex [9
+>>>>>>> Stashed changes
 
-Overfull \hbox (17.06981pt too wide) in paragraph at lines 29--30
- [][] 
- []
 
-) (sections/DirectionalNoiseElimination.tex
+] [10
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
+<<<<<<< Updated upstream
 [12 <./Illustrations/400HZto3400Hzfilter.png>]
 Chapter 5.
 <Illustrations/2sources.jpg, id=397, 362.85562pt x 259.7203pt>
@@ -1922,20 +2424,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15] [16
+=======
+]
+Chapter 5.
+) (sections/Results.tex [11] [12
+>>>>>>> Stashed changes
 
 
 ]
 Chapter 6.
+<<<<<<< Updated upstream
 ) (sections/Results.tex [17] [18
+=======
+) (sections/FutureWork.tex [13] [14
+>>>>>>> Stashed changes
 
 
 ]
 Chapter 7.
+<<<<<<< Updated upstream
 ) (sections/FutureWork.tex [19] [20
+=======
+) (sections/conclusion.tex [15] [16
+>>>>>>> Stashed changes
 
 
 ]
 Chapter 8.
+<<<<<<< Updated upstream
 ) (sections/conclusion.tex [21] [22
 
 
@@ -1946,31 +2462,57 @@ Chapter 9.
 LaTeX Warning: Empty bibliography on input line 31.
 
 (sections/appAname.tex [23] [24
+=======
+) [17] [18
+
+
+] (sections/appAname.tex [19] [20
+>>>>>>> Stashed changes
 
 
 ]
 Appendix A.
+<<<<<<< Updated upstream
 ) [25]
+=======
+) [21]
+>>>>>>> Stashed changes
 \tf@thm=\write9
 \openout9 = `master.thm'.
 
  
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 (master.aux)
+<<<<<<< Updated upstream
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D1CC155893EE09183EF80F7E7A3928E0;2718.
+=======
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 
+>>>>>>> Stashed changes
+
+Package rerunfilecheck Warning: File `master.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `master.out':
+(rerunfilecheck)             Before: 64545478FEBB7CB45DE0B68A2A82DFE2;2001
+(rerunfilecheck)             After:  9C1BA910D69A4B30CFC3C58B4BA1A98C;2001.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                master
@@ -1981,6 +2523,7 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< Updated upstream
  27100 strings out of 493305
  500752 string characters out of 3129802
  922735 words of memory out of 3000000
@@ -2006,4 +2549,47 @@ PDF statistics:
  645 PDF objects out of 1000 (max. 8388607)
  119 named destinations out of 1000 (max. 500000)
  386 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+ 26802 strings out of 492970
+ 494319 string characters out of 3135848
+ 926106 words of memory out of 3000000
+ 30011 multiletter control sequences out of 15000+200000
+ 55389 words of font info for 96 fonts, out of 3000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 64i,14n,80p,986b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{section*.27} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.24} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.21} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.11} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.29} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\Paulius\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ectt0800.pk> <C:\Users\Paulius\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
+n\ec\dpi600\ectt1095.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
+c} <C:\Users\Paulius\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecss1000.pk> <C:\Users\Paulius\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecsx1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Users/Paulius/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpa
+zo/fplmri.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on master.pdf (31 pages, 508699 bytes).
+PDF statistics:
+ 566 PDF objects out of 1000 (max. 8388607)
+ 102 named destinations out of 1000 (max. 500000)
+ 281 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> Stashed changes
 
