@@ -3,27 +3,29 @@
 close all;
 clc;
 clear;
-gap=0.152;
+gap=0.1;
+
 %% IMPORT SIGNALS
 
-signal1 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\razvan.wav'];
+signal1 = ['D:\GitHub\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\razvan.wav'];
 [a,Freq1] = audioread(signal1);
 w = (1:length(a)) / Freq1;
 
-signal2 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\paulius.wav'];
+signal2 = ['D:\GitHub\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\paulius.wav'];
 [b,Freq2] = audioread(signal2);
 x = (1:length(b)) / Freq2;
 
 
 %% ADD SIGNALS
-[r1, d1] = ratioNsamples(-90, gap);
-[r2, d2] = ratioNsamples(-90, gap);
+
+[r1, d1] = ratioNsamples(40, gap);
+[r2, d2] = ratioNsamples(-30, gap);
 
 resizedA = a(1:580000);
 resizedB = b(1:580000);
 
 rightMicLeftChatRazvan = resizedA;
-leftMicLeftChatRazvan = shiftFunction(-d1, resizedA);
+leftMicLeftChatRazvan = shiftFunction(d1, resizedA);
 rightMicLeftChatRazvan = r1 * rightMicLeftChatRazvan;
 
 rightMicRightChatPaulius = resizedB;
@@ -34,7 +36,7 @@ rightMicBothChatRazvanPaulius = rightMicLeftChatRazvan + rightMicRightChatPauliu
 leftMicBothChatRazvanPaulius = leftMicLeftChatRazvan + leftMicRightChatPaulius;
 
 shiftedLeftMicBothChatRazvanPaulius = shiftFunction(-d1, leftMicBothChatRazvanPaulius);
-shiftedLeftMicBothChatRazvanPaulius1 = shiftFunction(d2, leftMicBothChatRazvanPaulius);
+shiftedLeftMicBothChatRazvanPaulius1 = shiftFunction(-d2, leftMicBothChatRazvanPaulius);
 
 subtractedSignal1 = shiftedLeftMicBothChatRazvanPaulius - rightMicBothChatRazvanPaulius;
 subtractedSignal2 = shiftedLeftMicBothChatRazvanPaulius1 - rightMicBothChatRazvanPaulius;
