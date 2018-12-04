@@ -5,7 +5,7 @@ results and conclusions will be shown afterwards.
 \section{Concept}
 Figure \ref{fig:2sources} shows a scenario where directional filtering could be used.
 Source 1 and Source 2 are both talking simultaneously. At the Origin, two microphones 
-left(L) and right(R) are recording both signals.
+left (L) and right (R) are recording both signals.
 
 \begin{figure}[htp]
 	\centering
@@ -41,7 +41,20 @@ delay later, in the directional filtering. Calculations involve using selected a
 microphones and the 
 speed of sound. \\
 \todo{DO WE WRITE ABOUT MATH AND EQUATIONS IN MATLAB HERE OR DO WE JUST SKIP IT.}
+\subsection{Recording samples}
+First, in order to record two microphones in separate tracks directly to computer, we need to give access to multiple inputs and outputs,  
+independently to computers' sound card. To achieve that audio driver caller ASIO4ALL was used. Using this driver, together with recording software, 
+which supports multiple input recording, we were able to record different situations with two microphones at the same time. \\
+\todo{process of setting up for first recordings}
+Recording with two microphones was set in a quiet room with sound panels on the walls and curtains, which reduces echo. Using ruler as a guide microphones were set in place and then angles were marked as guides to know from which direction approximately sound comes from. (Figure \ref{fig:recSetup} ) 
 
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=1\textwidth]{Illustrations/JustSetup.jpg}
+	\caption{Setup for recording}
+	\label{fig:recSetup}
+\end{figure}
 \subsection{Filtering}
-All of the directional filtering is done by applying the logic in the figure
+All of the directional filtering is done by applying the logic in the figure \ref{fig:IdeaDiagram} to the Matlab script. 
 \section{Conclusion}

@@ -33,6 +33,7 @@
 \BOOKMARK [1][-]{section.5.3}{5.3 Idea for filtering}{chapter.5}% 32
 \BOOKMARK [1][-]{section.5.4}{5.4 Development}{chapter.5}% 33
 \BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Finding delay in samples}{section.5.4}% 34
+<<<<<<< Updated upstream
 \BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Filtering}{section.5.4}% 35
 \BOOKMARK [1][-]{section.5.5}{5.5 Conclusion}{chapter.5}% 36
 \BOOKMARK [0][-]{chapter.6}{6 Neural Network Speech Isolation}{}% 37
@@ -61,4 +62,14 @@
 \BOOKMARK [0][-]{chapter.8}{8 Conclusion}{}% 29
 \BOOKMARK [0][-]{chapter*.30}{Bibliography}{}% 30
 \BOOKMARK [0][-]{appendix.A}{A Appendix A name}{}% 31
+>>>>>>> Stashed changes
+=======
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Recording samples}{section.5.4}% 35
+\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Filtering}{section.5.4}% 36
+\BOOKMARK [1][-]{section.5.5}{5.5 Conclusion}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{6 Neural Network Speech Isolation}{}% 38
+\BOOKMARK [0][-]{chapter.7}{7 Results}{}% 39
+\BOOKMARK [0][-]{chapter.8}{8 Future Work}{}% 40
+\BOOKMARK [0][-]{chapter.9}{9 Conclusion}{}% 41
+\BOOKMARK [0][-]{appendix.A}{A Appendix A name}{}% 42
 >>>>>>> Stashed changes
