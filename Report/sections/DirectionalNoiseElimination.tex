@@ -67,82 +67,48 @@ recording with just one person first see figure \ref{fig:RanzvanRecSetup}.\\
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=.8\textwidth]{Illustrations/razvanWithSetup.jpg}
+	\includegraphics[width=.7\textwidth]{Illustrations/razvanWithSetup.jpg}
 	\caption{Setup for recording with a person}
 	\label{fig:RanzvanRecSetup}
 \end{figure}
 
 Then we looked at collected data:\\
-When person spoke from the center, recordings (Figures  \ref{fig:C} and \ref{fig:closeC}) show that 
-recordings match in phase. Green graph is data, captured by left microphone and yellow graph is data, captured by right microphone. \\
+When person spoke from the center, (Figure \ref{fig:C}) shows that recordings match in phase. Green graph is 
+data, captured by left microphone and yellow graph is data, captured by right microphone.
 \begin{figure}[htp]
-\centering
-\begin{minipage}{.55\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{Illustrations/DataC.png}
+  \includegraphics[width=0.75\linewidth]{Illustrations/DataC.png}
   \caption{Data from speaker in the center}
   \label{fig:C}
-\end{minipage}%
-\begin{minipage}{.55\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{Illustrations/DataC_with_Markers.png}
-  \caption{The same data, just zoomed in}
-  \label{fig:closeC}
-\end{minipage}
 \end{figure}
+\\
+\\
 
-When person spoke from the right, right microphone data led left microphone (Figures  
-\ref{fig:R} and \ref{fig:closeR}), here blue graph is left microphone data and orange graph represents right microphone data.\\
+When person spoke from the right, right microphone data led left microphone (Figure \ref{fig:R}), here blue graph is left microphone data and orange graph represents right microphone data.\\
 \begin{figure}[htp]
-\centering
-\begin{minipage}{.55\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{Illustrations/DataR.png}
+  \includegraphics[width=0.75\linewidth]{Illustrations/DataR.png}
   \caption{Data from speaker in the right side}
   \label{fig:R}
-\end{minipage}%
-\begin{minipage}{.55\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{Illustrations/DataR_with_Markers.png}
-  \caption{The same data, just zoomed in}
-  \label{fig:closeR}
-\end{minipage}
 \end{figure}
 
-When he spoke from the left, left microphone was leading the right (Figures  \ref{fig:L} and \ref{fig:closeL}) pink graph is left microphone data and purple graph shows right microphone data.
+When he spoke from the left, left microphone was leading the right (Figure \ref{fig:L}) pink graph is left microphone data and purple graph shows right microphone data.\\
+
  
 \begin{figure}[htp]
-\centering
-\begin{minipage}{.55\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{Illustrations/DataL.png}
+  \includegraphics[width=0.75\linewidth]{Illustrations/DataL.png}
   \caption{Data from speaker in the left side}
   \label{fig:L}
-\end{minipage}%
-\begin{minipage}{.55\textwidth}
-  \centering
-  \includegraphics[width=1\linewidth]{Illustrations/DataL_with_Markers.png}
-  \caption{The same data, just zoomed in}
-  \label{fig:closeL}
-\end{minipage}
 \end{figure}
 
-<<<<<<< HEAD
-=======
- and when he spoke from the left, lift microphone was leading (Figures  \ref{fig:L}, \ref{fig:closeL})
- \todo[inline]{"For range -1 to 1 20*log10(x) corresponds to dB" Mention?}
+\todo[inline]{"For range -1 to 1 20*log10(x) corresponds to dB" Mention?}
  
- \begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/DataL.png}
-	\caption{Data from speaker in the left side}
-	\label{fig:L}
-\end{figure}
->>>>>>> master
 
 All of the directional filtering is done by applying the logic discussed in the Idea for filtering section to 
 the Matlab script.\\
 First we took data from the recording with only one person, shifted left microphone to match right microphone 
-data in phase, then subtracted right microphone data from shifted left microphone data - got "Noise". To finish filtering 
+data in phase, then subtracted right microphone data from shifted left microphone data - got "Noise". To finish filtering we tried to subtract "Noise" from the Right microphone data.\\
+
 
 \section{Conclusion}

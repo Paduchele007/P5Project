@@ -11,9 +11,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Problem Description}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Problem Delimitation}{4}{section.2.2}
+\contentsline {section}{\numberline {2.2}Problem Delimitation}{3}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Initiating Problem}{4}{section.2.3}
+\contentsline {subsubsection}{Vertical Sound Filtering}{3}{subsubsection*.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Development}{5}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -45,7 +45,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Setting up the scene}{7}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{8}{paragraph*.22}
+\contentsline {paragraph}{}{8}{paragraph*.21}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Analog to digital conversion}{8}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
@@ -65,7 +65,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.3}Filtering}{11}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Conclusion}{13}{section.4.5}
+\contentsline {section}{\numberline {4.5}Conclusion}{14}{section.4.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Neural Network Speech Isolation}{15}{chapter.5}
 \defcounter {refsection}{0}\relax 
