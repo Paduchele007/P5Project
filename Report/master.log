@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.24)  4 DEC 2018 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.24)  5 DEC 2018 13:29
 entering extended mode
 **./master.tex
 (master.tex
@@ -1442,7 +1442,11 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count337
 \@quotereset=\count338
-(master.aux)
+(master.aux
+
+LaTeX Warning: Label `fig:recSetup' multiply defined.
+
+)
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1460,8 +1464,7 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Try loading font information for T1+pplx on input line 5.
-
-("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pplx.fd"
+ ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1pplx.fd"
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 )
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
@@ -1613,13 +1616,13 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 42.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 42.
-<AAUgraphics/aau_logo_circle_en.pdf, id=142, 77.28876pt x 77.28876pt>
+<AAUgraphics/aau_logo_circle_en.pdf, id=134, 77.28876pt x 77.28876pt>
 File: AAUgraphics/aau_logo_circle_en.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_logo_circle_en.pdf>
 Package pdftex.def Info: AAUgraphics/aau_logo_circle_en.pdf  used on input line
  45.
 (pdftex.def)             Requested size: 119.49974pt x 119.51091pt.
-<AAUgraphics/aau_waves.pdf, id=143, 598.235pt x 845.1575pt>
+<AAUgraphics/aau_waves.pdf, id=135, 598.235pt x 845.1575pt>
 File: AAUgraphics/aau_waves.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_waves.pdf>
 Package pdftex.def Info: AAUgraphics/aau_waves.pdf  used on input line 48.
@@ -1641,7 +1644,7 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 ]) (sections/titlepages.tex
 \titlepageleftcolumnwidth=\skip95
 \titlepagerightcolumnwidth=\skip96
-<AAUgraphics/aau_logo_en.pdf, id=166, 115.43124pt x 77.28876pt>
+<AAUgraphics/aau_logo_en.pdf, id=158, 115.43124pt x 77.28876pt>
 File: AAUgraphics/aau_logo_en.pdf Graphic file (type pdf)
 <use AAUgraphics/aau_logo_en.pdf>
 Package pdftex.def Info: AAUgraphics/aau_logo_en.pdf  used on input line 31.
@@ -1686,20 +1689,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6] (master.tdo
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (136.71555pt too wide) in paragraph at lines 6--6
- [][] [][][][] []$\T1/cmtt/m/n/10.95 https : / / www . everydayhearing . com / 
-hearing-[]loss / articles / state-[]of-[]hearing-[]healthcare-[]2017 / 
+Overfull \hbox (14.0594pt too wide) in paragraph at lines 12--12
+ \T1/cmtt/m/n/10.95 the _ Facial _ Anthropometric _ Data _ of _ Korean _ Pilots
+ _ for _ Oxygen _ Mask _ 
  []
 
 
-Overfull \hbox (14.0594pt too wide) in paragraph at lines 16--16
- \T1/cmtt/m/n/10.95 the _ Facial _ Anthropometric _ Data _ of _ Korean _ Pilots
- _ for _ Oxygen _ Mask _ 
+Overfull \hbox (136.71555pt too wide) in paragraph at lines 20--20
+ [][] [][][][] []$\T1/cmtt/m/n/10.95 https : / / www . everydayhearing . com / 
+hearing-[]loss / articles / state-[]of-[]hearing-[]healthcare-[]2017 / 
  []
 
 )
@@ -1717,59 +1720,19 @@ Overfull \hbox (14.0594pt too wide) in paragraph at lines 16--16
 
 ] (sections/introduction.tex
 Chapter 1.
-
-LaTeX Warning: Reference `ch:ch2label' on page 1 undefined on input line 2.
-
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 8.
-Package hyperref Info: bookmark level for unknown exa defaults to 0 on input li
-ne 10.
-
-Overfull \hbox (1.555pt too wide) in paragraph at lines 19--19
-|[]\T1/pplx/b/n/14.4 How Does Sec-tions, Sub-sec-tions, and Sub-sec-tions Look?
-| 
- []
-
-LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 21.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 29.
-[1
+) (sections/ProblemAnalysis.tex [1
 
 
-]) (sections/ProblemAnalysis.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2]
-Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-[3
+] [2
 
 
 ]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 17.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 17.
-) (sections/Development.tex
+Chapter 2.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 2.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 36.
+) (sections/Development.tex [3]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1778,6 +1741,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Chapter 3.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 3.
 
 LaTeX Warning: Citation 'Seaindia' on page 5 undefined on input line 10.
 
@@ -1801,7 +1766,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-<Illustrations/MicData.png, id=321, 284.56313pt x 394.47375pt>
+<Illustrations/MicData.png, id=294, 284.56313pt x 394.47375pt>
 File: Illustrations/MicData.png Graphic file (type png)
 <use Illustrations/MicData.png>
 Package pdftex.def Info: Illustrations/MicData.png  used on input line 33.
@@ -1814,6 +1779,10 @@ Overfull \hbox (18.88292pt too wide) in paragraph at lines 30--37
 a-sure-ments found in the datasheet[][][].
  []
 
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 38.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 38.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1829,12 +1798,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 Chapter 4.
-<Illustrations/2sources.jpg, id=336, 362.85562pt x 259.7203pt>
+<Illustrations/2sources.jpg, id=310, 362.85562pt x 259.7203pt>
 File: Illustrations/2sources.jpg Graphic file (type jpg)
 <use Illustrations/2sources.jpg>
 Package pdftex.def Info: Illustrations/2sources.jpg  used on input line 12.
 (pdftex.def)             Requested size: 260.76706pt x 186.65369pt.
-<Illustrations/IdeaDiagram.jpg, id=337, 517.18219pt x 194.97844pt>
+<Illustrations/IdeaDiagram.jpg, id=311, 517.18219pt x 194.97844pt>
 File: Illustrations/IdeaDiagram.jpg Graphic file (type jpg)
 <use Illustrations/IdeaDiagram.jpg>
 Package pdftex.def Info: Illustrations/IdeaDiagram.jpg  used on input line 24.
@@ -1847,7 +1816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--36
 
  []
 
-<Illustrations/JustSetup.jpg, id=346, 4082.25125pt x 3060.43375pt>
+<Illustrations/JustSetup.jpg, id=320, 4082.25125pt x 3060.43375pt>
 File: Illustrations/JustSetup.jpg Graphic file (type jpg)
 <use Illustrations/JustSetup.jpg>
 Package pdftex.def Info: Illustrations/JustSetup.jpg  used on input line 54.
@@ -1859,7 +1828,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10 <./Illustrations/IdeaDiagram.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 63--70
+File: Illustrations/JustSetup.jpg Graphic file (type jpg)
+<use Illustrations/JustSetup.jpg>
+Package pdftex.def Info: Illustrations/JustSetup.jpg  used on input line 65.
+(pdftex.def)             Requested size: 401.18387pt x 300.73769pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--77
 
  []
 
@@ -1870,77 +1844,70 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11 <./Illustrations/JustSetup.jpg>]
-<Illustrations/razvanWithSetup.jpg, id=358, 4175.6pt x 3131.7pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+<Illustrations/razvanWithSetup.jpg, id=338, 4175.6pt x 3131.7pt>
 File: Illustrations/razvanWithSetup.jpg Graphic file (type jpg)
 <use Illustrations/razvanWithSetup.jpg>
 Package pdftex.def Info: Illustrations/razvanWithSetup.jpg  used on input line 
-73.
-(pdftex.def)             Requested size: 320.94832pt x 240.69724pt.
+80.
+(pdftex.def)             Requested size: 260.76706pt x 195.53963pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
 
- []
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-<Illustrations/DataC.png, id=361, 593.96906pt x 359.09157pt>
+[13 <./Illustrations/razvanWithSetup.jpg>]
+<Illustrations/DataC.png, id=346, 593.96906pt x 359.09157pt>
 File: Illustrations/DataC.png Graphic file (type png)
 <use Illustrations/DataC.png>
-Package pdftex.def Info: Illustrations/DataC.png  used on input line 84.
-(pdftex.def)             Requested size: 320.94832pt x 194.03806pt.
-<Illustrations/DataC_with_Markers.png, id=362, 593.96906pt x 359.09157pt>
+Package pdftex.def Info: Illustrations/DataC.png  used on input line 93.
+(pdftex.def)             Requested size: 200.59193pt x 121.2731pt.
+<Illustrations/DataC_with_Markers.png, id=347, 593.96906pt x 359.09157pt>
 File: Illustrations/DataC_with_Markers.png Graphic file (type png)
 <use Illustrations/DataC_with_Markers.png>
 Package pdftex.def Info: Illustrations/DataC_with_Markers.png  used on input li
-ne 91.
-(pdftex.def)             Requested size: 320.94832pt x 194.03806pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-
- []
-
-<Illustrations/DataR.png, id=365, 593.96906pt x 359.09157pt>
+ne 99.
+(pdftex.def)             Requested size: 200.59193pt x 121.2731pt.
+<Illustrations/DataR.png, id=350, 593.96906pt x 359.09157pt>
 File: Illustrations/DataR.png Graphic file (type png)
 <use Illustrations/DataR.png>
-Package pdftex.def Info: Illustrations/DataR.png  used on input line 100.
-(pdftex.def)             Requested size: 320.94832pt x 194.03806pt.
-<Illustrations/DataR_with_Markers.png, id=366, 593.96906pt x 359.09157pt>
+Package pdftex.def Info: Illustrations/DataR.png  used on input line 111.
+(pdftex.def)             Requested size: 200.59193pt x 121.2731pt.
+<Illustrations/DataR_with_Markers.png, id=351, 593.96906pt x 359.09157pt>
 File: Illustrations/DataR_with_Markers.png Graphic file (type png)
 <use Illustrations/DataR_with_Markers.png>
 Package pdftex.def Info: Illustrations/DataR_with_Markers.png  used on input li
-ne 107.
-(pdftex.def)             Requested size: 320.94832pt x 194.03806pt.
-<Illustrations/DataL.png, id=369, 593.96906pt x 359.09157pt>
+ne 117.
+(pdftex.def)             Requested size: 200.59193pt x 121.2731pt.
+<Illustrations/DataL.png, id=354, 593.96906pt x 359.09157pt>
 File: Illustrations/DataL.png Graphic file (type png)
 <use Illustrations/DataL.png>
-Package pdftex.def Info: Illustrations/DataL.png  used on input line 116.
-(pdftex.def)             Requested size: 320.94832pt x 194.03806pt.
-<Illustrations/DataL_with_Markers.png, id=370, 593.96906pt x 359.09157pt>
+Package pdftex.def Info: Illustrations/DataL.png  used on input line 129.
+(pdftex.def)             Requested size: 200.59193pt x 121.2731pt.
+<Illustrations/DataL_with_Markers.png, id=355, 593.96906pt x 359.09157pt>
 File: Illustrations/DataL_with_Markers.png Graphic file (type png)
 <use Illustrations/DataL_with_Markers.png>
 Package pdftex.def Info: Illustrations/DataL_with_Markers.png  used on input li
-ne 123.
-(pdftex.def)             Requested size: 320.94832pt x 194.03806pt.
-) (sections/NeuralNetworkSpeechElimination.tex
+ne 135.
+(pdftex.def)             Requested size: 200.59193pt x 121.2731pt.
+)
+(sections/NeuralNetworkSpeechElimination.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./Illustrations/razvanWithSetup.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[13 <./Illustrations/DataC.png> <./Illustrations/DataC_with_Markers.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[14 <./Illustrations/DataR.png> <./Illustrations/DataR_with_Markers.png>]
+[14 <./Illustrations/DataC.png> <./Illustrations/DataC_with_Markers.png> <./Ill
+ustrations/DataR.png> <./Illustrations/DataR_with_Markers.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1963,16 +1930,42 @@ Chapter 6.
 
 ]
 Chapter 7.
-) (sections/conclusion.tex [21] [22
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
 
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+[21]) (sections/conclusion.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
 Chapter 8.
 )
 
 LaTeX Warning: Empty bibliography on input line 30.
 
-(sections/appAname.tex [23] [24
+(sections/appAname.tex [23
+
+
+] [24
 
 
 ]
@@ -1989,13 +1982,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `master.out' has not changed.
-(rerunfilecheck)             Checksum: 0852188586A90E19159C35CE6B7761CC;2253.
+(rerunfilecheck)             Checksum: F79638755A66E6B22BEDB53A7016200D;2077.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
 
@@ -2008,29 +2004,26 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27124 strings out of 493305
- 501442 string characters out of 3129802
+ 27081 strings out of 493305
+ 500762 string characters out of 3129802
  925735 words of memory out of 3000000
- 29977 multiletter control sequences out of 15000+200000
- 54254 words of font info for 95 fonts, out of 3000000 for 9000
+ 29948 multiletter control sequences out of 15000+200000
+ 52669 words of font info for 91 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
- 64i,14n,80p,986b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,14n,80p,981b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tlasi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 ectt0800.pk> <C:\Users\tlasi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
 ec\dpi600\ectt1095.pk>{C:/Users/tlasi/AppData/Local/Programs/MiKTeX 2.9/fonts/e
 nc/dvips/base/8r.enc} <C:\Users\tlasi\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
 jknappen\ec\dpi600\ecss1000.pk> <C:\Users\tlasi\AppData\Local\MiKTeX\2.9\fonts\
 pk\ljfour\jknappen\ec\dpi600\ecsx1000.pk><C:/Users/tlasi/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tlasi/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tla
-si/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:
-/Users/tlasi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.
-pfb><C:/Users/tlasi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/
-uplr8a.pfb><C:/Users/tlasi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/pa
-latino/uplri8a.pfb>
-Output written on master.pdf (35 pages, 2397949 bytes).
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tlasi/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/tlasi/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/t
+lasi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on master.pdf (35 pages, 2384563 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 597 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

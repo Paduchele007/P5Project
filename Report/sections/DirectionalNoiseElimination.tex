@@ -56,9 +56,16 @@ guides to know from which direction sound is coming from. (Figure \ref{fig:recSe
 	\label{fig:recSetup}
 \end{figure}
 
+Recording with two microphones was set in a quiet room with sound panels on the walls and curtains, which reduces echo. Using ruler as a guide microphones were set in place and then angles were marked as guides to know from which direction approximately sound comes from. (Figure \ref{fig:recSetup} ) 
 
 
 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=1\textwidth]{Illustrations/JustSetup.jpg}
+	\caption{Setup for recording}
+	\label{fig:recSetup}
+\end{figure}
 \subsection{Filtering}
 All of the directional filtering is done by applying the logic discussed before to the Matlab script.\\
 Prior to shifting signals and filtering, we had to remove any delays, induced by hardware or software. This 
@@ -70,59 +77,68 @@ recording with just one person first see figure \ref{fig:RanzvanRecSetup}.\\
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/razvanWithSetup.jpg}
+	\includegraphics[width=0.65\textwidth]{Illustrations/razvanWithSetup.jpg}
 	\caption{Setup for recording with a person}
 	\label{fig:RanzvanRecSetup}
 \end{figure}
+\newpage
 
-Then we looked at data, collected:\\
-When person spoke from the center, recordings (Figures  \ref{fig:C}, \ref{fig:closeC}) show that recordings 
+Then we looked at collected data:\\
+When person spoke from the center, recordings (Figures  \ref{fig:C} and \ref{fig:closeC}) show that recordings 
 match in phase.\\
-
 \begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/DataC.png}
-	\caption{Data from speaker in the center}
-	\label{fig:C}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{Illustrations/DataC.png}
+  \caption{Data from speaker in the center}
+  \label{fig:C}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{Illustrations/DataC_with_Markers.png}
+  \caption{Zoomed in the same data}
+  \label{fig:closeC}
+\end{minipage}
 \end{figure}
 
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/DataC_with_Markers.png}
-	\caption{Zoomed in data from speaker in the center}
-	\label{fig:closeC}
-\end{figure}
 When person spoke from the right, right microphone data led left microphone (Figures  
-\ref{fig:R}, \ref{fig:closeR})\\
-
+\ref{fig:R} and \ref{fig:closeR})\\
 \begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/DataR.png}
-	\caption{Data from speaker in the right side}
-	\label{fig:R}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{Illustrations/DataR.png}
+  \caption{Data from speaker in the right side}
+  \label{fig:R}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{Illustrations/DataR_with_Markers.png}
+  \caption{Zoomed in the same data}
+  \label{fig:closeR}
+\end{minipage}
 \end{figure}
 
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/DataR_with_Markers.png}
-	\caption{Zoomed in data from speaker in the right side}
-	\label{fig:closeR}
-\end{figure}
-
- and when he spoke from the left, lift microphone was leading (Figures  \ref{fig:L}, \ref{fig:closeL})
+When he spoke from the left, left microphone was leading the right (Figures  \ref{fig:L} and \ref{fig:closeL})
  
- \begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/DataL.png}
-	\caption{Data from speaker in the left side}
-	\label{fig:L}
+\begin{figure}[htp]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{Illustrations/DataL.png}
+  \caption{Data from speaker in the left side}
+  \label{fig:L}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{Illustrations/DataL_with_Markers.png}
+  \caption{Zoomed in the same data}
+  \label{fig:closeL}
+\end{minipage}
 \end{figure}
 
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/DataL_with_Markers.png}
-	\caption{Zoomed in data from speaker in the left side}
-	\label{fig:closeL}
-\end{figure}
+
+All of the directional filtering is done by applying the logic in the figure \ref{fig:IdeaDiagram} to the Matlab script. 
 
 \section{Conclusion}
