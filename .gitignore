@@ -5,4 +5,12 @@ Report/master\.toc
 
 *.toc
 
+*.aux
+
 *.log
+
+*.out
+
+Report/master\.pdf
+
+Report/master\.synctex\.gz
