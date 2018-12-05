@@ -12,7 +12,7 @@ end
  noise=transpose(noise);
 %% substract noise from original = filtered
 for i=1:l-delay
-    new(i)=Left(i)-noise(i); 
+    new(i)=Right(i)-noise(i); 
 end
 
 new=transpose(new);

@@ -5,6 +5,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Reading Guide}{2}{subsubsection*.5}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Problem Analysis}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Problem Description}{3}{section.2.1}
@@ -21,29 +23,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Microphones characteristics}{5}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{5}{paragraph*.5}
+\contentsline {paragraph}{}{5}{paragraph*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Our requirements for the microphones were: \\}{5}{paragraph*.6}
+\contentsline {paragraph}{Our requirements for the microphones were: \\}{5}{paragraph*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Affordable price\\}{6}{paragraph*.7}
+\contentsline {paragraph}{\IeC {\textbullet } Affordable price\\}{6}{paragraph*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Capability to capture the entire range of human hearing frequency\\}{6}{paragraph*.8}
+\contentsline {paragraph}{\IeC {\textbullet } Capability to capture the entire range of human hearing frequency\\}{6}{paragraph*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Appropriate size factor\\}{6}{paragraph*.9}
+\contentsline {paragraph}{\IeC {\textbullet } Appropriate size factor\\}{6}{paragraph*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } They must to be identical\\}{6}{paragraph*.10}
+\contentsline {paragraph}{\IeC {\textbullet } They must to be identical\\}{6}{paragraph*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Capability to connect multiple microphones to a single computer and record both at the same time\\}{6}{paragraph*.11}
+\contentsline {paragraph}{\IeC {\textbullet } Capability to connect multiple microphones to a single computer and record both at the same time\\}{6}{paragraph*.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.3}Microphones}{6}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.4}Distancing}{7}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{7}{paragraph*.14}
+\contentsline {paragraph}{}{7}{paragraph*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Setting up the scene}{7}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{8}{paragraph*.19}
+\contentsline {paragraph}{}{8}{paragraph*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}Analog to digital conversion}{8}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
@@ -61,28 +63,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.2}Recording samples}{11}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Filtering}{13}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}Filtering}{11}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Conclusion}{14}{section.4.5}
+\contentsline {section}{\numberline {4.5}Conclusion}{13}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Neural Network Speech Isolation}{17}{chapter.5}
+\contentsline {chapter}{\numberline {5}Neural Network Speech Isolation}{15}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Results}{19}{chapter.6}
+\contentsline {chapter}{\numberline {6}Results}{17}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Future Work}{21}{chapter.7}
+\contentsline {chapter}{\numberline {7}Discussion}{19}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.0.1}State of hearing aid}{21}{subsection.7.0.1}
+\contentsline {section}{\numberline {7.1}Future Work}{19}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}{paragraph*.31}
+\contentsline {paragraph}{}{19}{paragraph*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}{paragraph*.32}
+\contentsline {paragraph}{}{19}{paragraph*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{21}{paragraph*.33}
+\contentsline {paragraph}{}{19}{paragraph*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{22}{paragraph*.35}
+\contentsline {paragraph}{}{20}{paragraph*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{22}{paragraph*.36}
+\contentsline {paragraph}{}{20}{paragraph*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{23}{chapter.8}
+\contentsline {chapter}{\numberline {8}Conclusion}{21}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix A name}{25}{appendix.A}
+\contentsline {chapter}{\numberline {A}Appendix A name}{23}{appendix.A}
