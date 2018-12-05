@@ -1,14 +1,13 @@
 \chapter{Development}\label{ch:development}
-\section{Component List}
-\subsection{Introduction}
+\section{Introduction}
 To create the basis for development of this project two microphones and a structure to keep a constant distance between them were necessary.  
 
-\subsection{Microphones characteristics}
+\section{Microphone characteristics}
 \paragraph{}
 Firstly a decision had to be made whether to use a directional or omnidirectional microphone. 
 \paragraph{} Currently, due to capability of enhancing the sounds in front of the user while eliminating everything else, directional microphones more and more often are incorporated into hearing aids as an additional feature. The main flaw regarding these microphones is that its' user has a higher chance of missing out on surrounding signals, such as traffic. 
 \paragraph{} Since omnidirectional microphones provide less plosive sounds, less wind sounds and do not build up bass, it was considered a good option. The fact that it provides equally good audio quality at every angle made it the best choice for the aim of this project.
-
+\subsection{Requirements}
 \paragraph{Voice frequencies\\} Voice frequency ranges vary heavily depending on whether it sources from a male of a female. Fundamental voice frequency varies from 100Hz to 900 Hz for men and 350Hz to 3KHz for women. Including peaks to conserve natural sounding voice, a wider frequency range has to be considered. It rises to 8 KHz for males and 17KHz for females \cite{Seaindia}. Yet different researches often come up with different results. For example, in phone communications it is accepted to transmit frequency range between 400Hz and 3400Hz. This is the reason some peoples' voices transit poorly over the phone yet for most cases it works fine. This example allows to conclude that smaller frequency ranges could be acceptable but to conserve all of the properties of the human voice microphones do need to be capable of recording at 17kHz. 
 \paragraph{Our requirements for the microphones were: \\}
 
@@ -26,8 +25,8 @@ For the sake of simplicity regarding sampling and testing, it was agreed that it
 \subsection{Microphones}
 As requirements for microphones were set, it was first attempted to find them at the University. As it was found that University does not own any microphones that could be applied for the purpose of this project, it was agreed to purchase budget microphones that could come as close to the requirements raised for the project as possible. Bearing in mind that a month-long delivery from Asia is not a viable option, it was decided to order microphones available within an acceptable delivery time \todo{ microphone reference}.\\
 
-\subsection{Distancing}
-To maintain a constant distance it was decided to attempt modeling a rod with two microphone holders at it's ends. The distance chosen between the microphones was agreed on by referring to a research article in this area: 15.2 centimeters \todo{reference}. 
+\section{Distancing}
+To maintain a constant distance it was decided to attempt modeling a rod with two microphone holders at it's ends. The distance chosen between the microphones was agreed on by referring to a research article in this area: 15.2 centimeters \todo[inline]{\url{https://www.researchgate.net/publication/228749231_Analysis_of_the_Facial_Anthropometric_Data_of_Korean_Pilots_for_Oxygen_Mask_Design}}. 
 \paragraph{}
 Other parameters were found by following the measurements found in the datasheet \ref{fig:MicData}. These steps have led us towards the structure development, which after a few iterations has turned into the structure that was used for sampling \todo{illustration missing (3D model or real one)}.
 \begin{figure} [htp] 
@@ -37,13 +36,11 @@ Other parameters were found by following the measurements found in the datasheet
     \label{fig:MicData}
 \end{figure}
 
-\todo[inline,color=green]{\url{https://www.researchgate.net/publication/228749231_Analysis_of_the_Facial_Anthropometric_Data_of_Korean_Pilots_for_Oxygen_Mask_Design}}
-
 \section{Setting up the scene}
 Sampling was done in a lecture/ conference room with side noise: a server, maintaining the virtual conference platform (B107). This area was chosen because it had represented a real life conversation scenario. It is planned to conduct tests with a working system in a different environments to validate the effectiveness of it. Creating a set of samples in every different environment throughout the development phase would take a lot of time and therefore was considered unnecessary for the early stages. 
 \paragraph{}
 Since the sampling ratio of human ear can only reach up to 20kHz, 48kHz sampling frequency of the microphones the Nyquist frequency and therefore guarantees that there will not be any hearable audio quality losses.   
-\subsection{Analog to digital conversion}
+\section{Analog to digital conversion}
 Since the datasheet of the microphone does not provide any information on the Analog-to-Digital Converter that is used to process the data and there is not default ADC that is used for this process, the only potentially successful way to find the details about the ADC used for the signal processing is to open the microphone and look for the information on the ADC itself. Since the structure seemed to be glued together, we will not attempt to find the details of it and just rely on the specifications sheet provided by the manufacturer.  
 
  
