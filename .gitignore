@@ -15,3 +15,9 @@ Report/master\.pdf
 
 Report/master\.synctex\.gz
 *.vsdx
+
+sounds/SoundSamples/test_with_specific_distances_and_angle/mufinew\.flac
+
+sounds/SoundSamples/test_with_specific_distances_and_angle/mufinoise\.flac
+
+sounds/SoundSamples/test_with_specific_distances_and_angle/noise\.flac
