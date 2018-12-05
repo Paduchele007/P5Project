@@ -7,84 +7,84 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Reading Guide}{2}{subsubsection*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Problem Analysis}{3}{chapter.2}
+\contentsline {chapter}{\numberline {2}Problem Analysis}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Problem Description}{3}{section.2.1}
+\contentsline {section}{\numberline {2.1}Problem Description}{5}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Problem Delimitation}{3}{section.2.2}
+\contentsline {section}{\numberline {2.2}Problem Delimitation}{5}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vertical Sound Filtering}{3}{subsubsection*.7}
+\contentsline {subsubsection}{Vertical Sound Filtering}{5}{subsubsection*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Development}{5}{chapter.3}
+\contentsline {chapter}{\numberline {3}Development}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Component List}{5}{section.3.1}
+\contentsline {section}{\numberline {3.1}Component List}{7}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Introduction}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Introduction}{7}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Microphones characteristics}{5}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Microphones characteristics}{7}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{5}{paragraph*.8}
+\contentsline {paragraph}{}{7}{paragraph*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Our requirements for the microphones were: \\}{5}{paragraph*.9}
+\contentsline {paragraph}{Our requirements for the microphones were: \\}{7}{paragraph*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Affordable price\\}{6}{paragraph*.10}
+\contentsline {paragraph}{\IeC {\textbullet } Affordable price\\}{8}{paragraph*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Capability to capture the entire range of human hearing frequency\\}{6}{paragraph*.11}
+\contentsline {paragraph}{\IeC {\textbullet } Capability to capture the entire range of human hearing frequency\\}{8}{paragraph*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Appropriate size factor\\}{6}{paragraph*.12}
+\contentsline {paragraph}{\IeC {\textbullet } Appropriate size factor\\}{8}{paragraph*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } They must to be identical\\}{6}{paragraph*.13}
+\contentsline {paragraph}{\IeC {\textbullet } They must to be identical\\}{8}{paragraph*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\IeC {\textbullet } Capability to connect multiple microphones to a single computer and record both at the same time\\}{6}{paragraph*.14}
+\contentsline {paragraph}{\IeC {\textbullet } Capability to connect multiple microphones to a single computer and record both at the same time\\}{8}{paragraph*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Microphones}{6}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Microphones}{8}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Distancing}{7}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}Distancing}{9}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{7}{paragraph*.17}
+\contentsline {paragraph}{}{9}{paragraph*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Setting up the scene}{7}{section.3.2}
+\contentsline {section}{\numberline {3.2}Setting up the scene}{9}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{8}{paragraph*.21}
+\contentsline {paragraph}{}{10}{paragraph*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Analog to digital conversion}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Analog to digital conversion}{10}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Directional Noise Elimination}{9}{chapter.4}
+\contentsline {chapter}{\numberline {4}Directional Noise Elimination}{11}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Introduction}{9}{section.4.1}
+\contentsline {section}{\numberline {4.1}Introduction}{11}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Concept}{9}{section.4.2}
+\contentsline {section}{\numberline {4.2}Concept}{11}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Idea for filtering}{10}{section.4.3}
+\contentsline {section}{\numberline {4.3}Idea for filtering}{12}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Development}{10}{section.4.4}
+\contentsline {section}{\numberline {4.4}Development}{12}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Finding delay in samples}{10}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Finding delay in samples}{12}{subsection.4.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Recording samples}{11}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Recording samples}{13}{subsection.4.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.3}Filtering}{11}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3}Filtering}{13}{subsection.4.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Conclusion}{14}{section.4.5}
+\contentsline {section}{\numberline {4.5}Conclusion}{16}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Neural Network Speech Isolation}{15}{chapter.5}
+\contentsline {chapter}{\numberline {5}Neural Network Speech Isolation}{17}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Results}{17}{chapter.6}
+\contentsline {chapter}{\numberline {6}Results}{19}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Discussion}{19}{chapter.7}
+\contentsline {chapter}{\numberline {7}Discussion}{21}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Future Work}{19}{section.7.1}
+\contentsline {section}{\numberline {7.1}Future Work}{21}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{19}{paragraph*.33}
+\contentsline {paragraph}{}{21}{paragraph*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{19}{paragraph*.34}
+\contentsline {paragraph}{}{21}{paragraph*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{19}{paragraph*.35}
+\contentsline {paragraph}{}{21}{paragraph*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{20}{paragraph*.37}
+\contentsline {paragraph}{}{22}{paragraph*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{20}{paragraph*.38}
+\contentsline {paragraph}{}{22}{paragraph*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{21}{chapter.8}
+\contentsline {chapter}{\numberline {8}Conclusion}{23}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix A name}{23}{appendix.A}
+\contentsline {chapter}{\numberline {A}Appendix A name}{25}{appendix.A}

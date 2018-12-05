@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.24)  5 DEC 2018 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.24)  5 DEC 2018 16:51
 entering extended mode
 **./master.tex
 (master.tex
@@ -1686,18 +1686,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6] (master.tdo
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
 
 ("C:\Users\tlasi\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (14.0594pt too wide) in paragraph at lines 10--10
+Overfull \hbox (14.0594pt too wide) in paragraph at lines 12--12
  \T1/cmtt/m/n/10.95 the _ Facial _ Anthropometric _ Data _ of _ Korean _ Pilots
  _ for _ Oxygen _ Mask _ 
  []
 
 
-Overfull \hbox (136.71555pt too wide) in paragraph at lines 20--20
+Overfull \hbox (136.71555pt too wide) in paragraph at lines 24--24
  [][] [][][][] []$\T1/cmtt/m/n/10.95 https : / / www . everydayhearing . com / 
 hearing-[]loss / articles / state-[]of-[]hearing-[]healthcare-[]2017 / 
  []
@@ -1721,7 +1721,7 @@ Chapter 1.
 
 
 ]
-<Illustrations/personHearingAccuracy.jpg, id=263, 982.42032pt x 1029.09468pt>
+<Illustrations/personHearingAccuracy.jpg, id=267, 982.42032pt x 1029.09468pt>
 File: Illustrations/personHearingAccuracy.jpg Graphic file (type jpg)
 <use Illustrations/personHearingAccuracy.jpg>
 Package pdftex.def Info: Illustrations/personHearingAccuracy.jpg  used on input
@@ -1730,7 +1730,7 @@ Package pdftex.def Info: Illustrations/personHearingAccuracy.jpg  used on input
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 34.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 50.
+ine 57.
 ) (sections/ProblemAnalysis.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1739,13 +1739,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./Illustrations/personHearingAccuracy.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] [4
+
+
+]
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 2.
-) (sections/Development.tex [3
-
-
-] [4
+) (sections/Development.tex [5] [6
 
 
 ]
@@ -1753,14 +1760,14 @@ Chapter 3.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 3.
 
-LaTeX Warning: Citation 'Seaindia' on page 5 undefined on input line 10.
+LaTeX Warning: Citation 'Seaindia' on page 7 undefined on input line 10.
 
 
 LaTeX Font Warning: Font shape `OMS/pplx/bx/n' undefined
 (Font)              using `OMS/pplx/m/n' instead
 (Font)              for symbol `textbullet' on input line 13.
 
-[5]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -1771,8 +1778,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
-<Illustrations/MicData.png, id=296, 284.56313pt x 394.47375pt>
+[8]
+<Illustrations/MicData.png, id=308, 284.56313pt x 394.47375pt>
 File: Illustrations/MicData.png Graphic file (type png)
 <use Illustrations/MicData.png>
 Package pdftex.def Info: Illustrations/MicData.png  used on input line 33.
@@ -1793,37 +1800,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./Illustrations/MicData.png>]) (sections/DirectionalNoiseElimination.tex
+[9 <./Illustrations/MicData.png>]) (sections/DirectionalNoiseElimination.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[10]
 Chapter 4.
-<Illustrations/2sources.jpg, id=312, 362.85562pt x 259.7203pt>
+<Illustrations/2sources.jpg, id=325, 362.85562pt x 259.7203pt>
 File: Illustrations/2sources.jpg Graphic file (type jpg)
 <use Illustrations/2sources.jpg>
 Package pdftex.def Info: Illustrations/2sources.jpg  used on input line 12.
 (pdftex.def)             Requested size: 260.76706pt x 186.65369pt.
-<Illustrations/IdeaDiagram.jpg, id=313, 517.18219pt x 194.97844pt>
+<Illustrations/IdeaDiagram.jpg, id=326, 517.18219pt x 194.97844pt>
 File: Illustrations/IdeaDiagram.jpg Graphic file (type jpg)
 <use Illustrations/IdeaDiagram.jpg>
 Package pdftex.def Info: Illustrations/IdeaDiagram.jpg  used on input line 24.
 (pdftex.def)             Requested size: 401.18387pt x 151.2525pt.
-[9
+[11
 
 
  <./Illustrations/2sources.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 29--36
+Underfull \hbox (badness 10000) in paragraph at lines 29--40
 
  []
 
-<Illustrations/JustSetup.jpg, id=322, 4081.2475pt x 2274.4975pt>
+<Illustrations/JustSetup.jpg, id=334, 4081.2475pt x 2274.4975pt>
 File: Illustrations/JustSetup.jpg Graphic file (type jpg)
 <use Illustrations/JustSetup.jpg>
-Package pdftex.def Info: Illustrations/JustSetup.jpg  used on input line 54.
+Package pdftex.def Info: Illustrations/JustSetup.jpg  used on input line 64.
 (pdftex.def)             Requested size: 401.18387pt x 223.576pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1831,16 +1838,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10 <./Illustrations/IdeaDiagram.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 60--67
+[12 <./Illustrations/IdeaDiagram.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 70--77
 
  []
 
-<Illustrations/razvanWithSetup.jpg, id=329, 4175.6pt x 3131.7pt>
+<Illustrations/razvanWithSetup.jpg, id=341, 4175.6pt x 3131.7pt>
 File: Illustrations/razvanWithSetup.jpg Graphic file (type jpg)
 <use Illustrations/razvanWithSetup.jpg>
 Package pdftex.def Info: Illustrations/razvanWithSetup.jpg  used on input line 
-70.
+80.
 (pdftex.def)             Requested size: 280.82747pt x 210.59216pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1848,26 +1855,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./Illustrations/JustSetup.jpg>]
-<Illustrations/DataC.png, id=336, 593.96906pt x 359.09157pt>
+[13 <./Illustrations/JustSetup.jpg>]
+<Illustrations/DataC.png, id=348, 593.96906pt x 359.09157pt>
 File: Illustrations/DataC.png Graphic file (type png)
 <use Illustrations/DataC.png>
-Package pdftex.def Info: Illustrations/DataC.png  used on input line 80.
+Package pdftex.def Info: Illustrations/DataC.png  used on input line 90.
 (pdftex.def)             Requested size: 300.8879pt x 181.91238pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--86
+Underfull \hbox (badness 10000) in paragraph at lines 85--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--86
+Underfull \hbox (badness 10000) in paragraph at lines 85--96
 
  []
 
-<Illustrations/DataR.png, id=338, 593.96906pt x 359.09157pt>
+<Illustrations/DataR.png, id=350, 593.96906pt x 359.09157pt>
 File: Illustrations/DataR.png Graphic file (type png)
 <use Illustrations/DataR.png>
-Package pdftex.def Info: Illustrations/DataR.png  used on input line 90.
+Package pdftex.def Info: Illustrations/DataR.png  used on input line 100.
 (pdftex.def)             Requested size: 300.8879pt x 181.91238pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1875,28 +1882,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./Illustrations/razvanWithSetup.jpg> <./Illustrations/DataC.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+[14 <./Illustrations/razvanWithSetup.jpg> <./Illustrations/DataC.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-<Illustrations/DataL.png, id=346, 593.96906pt x 359.09157pt>
+<Illustrations/DataL.png, id=358, 593.96906pt x 359.09157pt>
 File: Illustrations/DataL.png Graphic file (type png)
 <use Illustrations/DataL.png>
-Package pdftex.def Info: Illustrations/DataL.png  used on input line 100.
+Package pdftex.def Info: Illustrations/DataL.png  used on input line 110.
 (pdftex.def)             Requested size: 300.8879pt x 181.91238pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./Illustrations/DataR.png> <./Illustrations/DataL.png>])
+[15 <./Illustrations/DataR.png> <./Illustrations/DataL.png>])
 (sections/NeuralNetworkSpeechElimination.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1904,17 +1906,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[16]
 Chapter 5.
-) (sections/Results.tex [15
+) (sections/Results.tex [17
 
 
-] [16
+] [18
 
 
 ]
 Chapter 6.
-) (sections/discussion.tex [17] [18
+) (sections/discussion.tex [19] [20
 
 
 ]
@@ -1934,28 +1936,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[19]) (sections/conclusion.tex
+[21]) (sections/conclusion.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[22]
 Chapter 8.
 )
 
 LaTeX Warning: Empty bibliography on input line 30.
 
-(sections/appAname.tex [21
+(sections/appAname.tex [23
 
 
-] [22
+] [24
 
 
 ]
 Appendix A.
-) [23]
+) [25]
 \tf@thm=\write9
 \openout9 = `master.thm'.
 
@@ -1986,10 +1988,10 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27062 strings out of 493305
- 500259 string characters out of 3129802
- 924735 words of memory out of 3000000
- 29932 multiletter control sequences out of 15000+200000
+ 27074 strings out of 493305
+ 500467 string characters out of 3129802
+ 925735 words of memory out of 3000000
+ 29940 multiletter control sequences out of 15000+200000
  52669 words of font info for 91 fonts, out of 3000000 for 9000
  1146 hyphenation exceptions out of 8191
  64i,14n,80p,981b,2257s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2003,9 +2005,9 @@ pk\ljfour\jknappen\ec\dpi600\ecsx1000.pk><C:/Users/tlasi/AppData/Local/Programs
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/tlasi/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/t
 lasi/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master.pdf (33 pages, 2046181 bytes).
+Output written on master.pdf (35 pages, 2049309 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
  321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

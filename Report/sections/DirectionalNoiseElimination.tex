@@ -26,26 +26,36 @@ certain delay.
 	\label{fig:IdeaDiagram}
 \end{figure}
 
-Filtering sound, based on the direction that it's coming from could work by taking data, recorded by one of the microphones, in this case (figure
-\ref{fig:IdeaDiagram}) we chose left microphone data. Then we shift this data by exact amount of samples, which would make the source we would like 
+Filtering sound, based on the direction that it's coming from could work by taking data, recorded by one of 
+the microphones, in this case (figure
+\ref{fig:IdeaDiagram}) we chose left microphone data. Then we shift this data by exact amount of samples, 
+which would make the source we would like 
 to separate recorded by left microphone, exactly aligned with same source, recorded by right microphone.\\
-Then by subtracting right microphone data from shifted left, we should get all the other sounds except the ones from source we would like to
+Then by subtracting right microphone data from shifted left, we should get all the other sounds except the 
+ones from source we would like to
 separate, this is what we will call noise in directional filtering.\\
-Separating could be done by taking the original data, putting it to one channel. Then subtracting noise from the original data should leave us only
+Separating could be done by taking the original data, putting it to one channel. Then subtracting noise from 
+the original data should leave us only
 with "clean" sound from the direction, we are interested in.\\
 \section{Development}
 \todo{MENTION WHERE EACH SUBSECTION COMES IN PLAY}
 \subsection{Finding delay in samples}
-By setting the angle of what we want to separate our signal at, we can calculate how big shift in samples that would account for. We are using this 
-delay later, in the directional filtering. Calculations involve using selected angle, gap between microphones, sampling frequency of used 
+By setting the angle of what we want to separate our signal at, we can calculate how big shift in samples 
+that would account for. We are using this 
+delay later, in the directional filtering. Calculations involve using selected angle, gap between 
+microphones, sampling frequency of used 
 microphones and the 
 speed of sound. \\
 \todo{DO WE WRITE ABOUT MATH AND EQUATIONS IN MATLAB HERE OR DO WE JUST SKIP IT.}
 \subsection{Recording samples}
-First, in order to record two microphones in separate tracks directly to computer, we need to give access to multiple inputs and outputs,  
-independently to computers' sound card. To achieve that audio driver caller ASIO4ALL was used. Using this driver, together with recording software, 
-which supports multiple input recording, we were able to record different situations with two microphones at the same time. \\
-\todo{process of setting up for first recordings. Last sentence counters delay paragraph in Filtering section (4.3.3)}
+First, in order to record two microphones in separate tracks directly to computer, we need to give access to 
+multiple inputs and outputs,  
+independently to computers' sound card. To achieve that audio driver caller ASIO4ALL was used. Using this 
+driver, together with recording software, 
+which supports multiple input recording, we were able to record different situations with two microphones at 
+the same time. \\
+\todo{process of setting up for first recordings. Last sentence counters delay paragraph in Filtering section 
+(4.3.3)}
 Recording with two microphones was set in a quiet room with sound panels on the walls and curtains, all of 
 which reduces echo. Using ruler as a guide microphones were set in place and then angles were marked as 
 guides to know from which direction sound is coming from. (Figure \ref{fig:recSetup}) 
@@ -108,7 +118,13 @@ When he spoke from the left, left microphone was leading the right (Figure \ref{
 All of the directional filtering is done by applying the logic discussed in the Idea for filtering section to 
 the Matlab script.\\
 First we took data from the recording with only one person, shifted left microphone to match right microphone 
-data in phase, then subtracted right microphone data from shifted left microphone data - got "Noise". To finish filtering we tried to subtract "Noise" from the Right microphone data.\\
-
+data in phase, then subtracted right microphone data from shifted left microphone data - got "Noise". To 
+finish filtering we tried to subtract "Noise" from the Right microphone data.\\
+After re-listening the output files from this filtering process (noise file and output file), we couldn't see 
+any difference in the output file, compared to the original data. The noise file contained enough data to 
+still hear what the person was saying. Our expectation was to hear relative silence in noise file and have a 
+bit more isolated output file.
+\todo[inline]{"Do we put graphs of noise, output and original data?}
+ 
 
 \section{Conclusion}
