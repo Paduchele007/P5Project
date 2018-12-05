@@ -1,41 +1,17 @@
-\chapter{Problem Analysis}\label{ProblemAnalysis}
+\chapter{Problem Analysis}\label{ch:problemAnalysis}
 \section{Problem Description}
-Humans have the ability to identify the source of a sound around them. In the 
-field of neuroscience, this capability is called sound localization. The brain
-can determine the location of a sound with very high precision, up to 2 degrees 
-of space. This comes from the brain's capacity to interpret information received
-from both ears.
+The project is about two different approaches towards speech filtering.
 
+The first, involves using two microphones in order to record a two or 
+more persons talking, from different angles.
+With the sound samples recorded, the next step involves handling them 
+in such a manner that allows to filter one voice out, and keep the other.
 
-Over the years, neuroscientists, have been trying to understand the mechanisms 
-within our brains that are able to determine the location of a sound. They have 
-identified two cues that are essential and sufficient for horizontal sound
-localization.
+Once one voice has been filtered out, the next step is using machine learning.
+This is done in order to filter out any other noises and return a speech as clean
+and as clear as possible.
 
-Figure XX shows a circle, and a person in the middle. The person is meant to be
-the listener, while the circle represents a perfectly flat plane around the listeners
-head. 
-
-In the 1790s, Giovanni Battista Venturi conducted experiments where he played a flute around 
-blindfolded people and asked them to point in his direction. He concluded that the sound
-amplitude difference between the two ears was the indication used for determining the direction.
-
-Much later, Malloch proposed that the difference in time between the two ears was the sign
-used for determining the direction of a sound.
-
-Years later, scientists found neurons in the auditory center of the brain
-specially adjusted for each indicator: time and intensity differences between the two ears.
-
-
-For example, sound coming from 
-the speaker would reach your left ear faster and be louder than the sound that 
-reaches your right ear. Your brain compares these differences and tells you 
-where the sound is coming from!
-
-\todo[inline]{modify paragraph above, add references, add picture, write about vertical,
-delimitate afterwards}
-
+The setup for recording the samples consists of only two microphones placed at
+approximately the same height as a persons mouth.
 \section{Problem Delimitation}
-\section{Initiating Problem}
-
-
+\subsubsection{Vertical Sound Filtering}

@@ -45,7 +45,7 @@ speed of sound. \\
 First, in order to record two microphones in separate tracks directly to computer, we need to give access to multiple inputs and outputs,  
 independently to computers' sound card. To achieve that audio driver caller ASIO4ALL was used. Using this driver, together with recording software, 
 which supports multiple input recording, we were able to record different situations with two microphones at the same time. \\
-\todo{process of setting up for first recordings}
+\todo{process of setting up for first recordings. Last sentence counters delay paragraph in Filtering section (4.3.3)}
 Recording with two microphones was set in a quiet room with sound panels on the walls and curtains, all of 
 which reduces echo. Using ruler as a guide microphones were set in place and then angles were marked as 
 guides to know from which direction sound is coming from. (Figure \ref{fig:recSetup}) 
@@ -138,6 +138,18 @@ When he spoke from the left, left microphone was leading the right (Figures  \re
 \end{minipage}
 \end{figure}
 
+<<<<<<< HEAD
+=======
+ and when he spoke from the left, lift microphone was leading (Figures  \ref{fig:L}, \ref{fig:closeL})
+ \todo[inline]{"For range -1 to 1 20*log10(x) corresponds to dB" Mention?}
+ 
+ \begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Illustrations/DataL.png}
+	\caption{Data from speaker in the left side}
+	\label{fig:L}
+\end{figure}
+>>>>>>> master
 
 All of the directional filtering is done by applying the logic in the figure \ref{fig:IdeaDiagram} to the Matlab script. 
 

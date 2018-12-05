@@ -1,19 +1,9 @@
 
-*.aux
-*.log
-*.gz
+*.tdo
 
-Report/master\.pdf
+Report/master\.toc
 
-
-
-Matlab/ratio\.asv
-
-*.asv
-
-*.vsdx
-
-*.~vsdx
+*.toc
 
 *.aux
 
@@ -21,10 +11,6 @@ Matlab/ratio\.asv
 
 *.out
 
-*.pdf
+Report/master\.pdf
 
-*.tdo
-
-*.toc
-
-*.synctex.gz
+Report/master\.synctex\.gz
