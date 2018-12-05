@@ -1,18 +1,49 @@
 \chapter{Introduction}\label{ch:introduction}
-This report documents the research and development of two different filtering
-methods.
+Humans have the ability to identify the source of a sound around them. In the 
+field of neuroscience, this capability is called sound localization. The brain
+can determine the location of a sound with very high precision, up to 2 degrees 
+of space. This comes from the brain's capacity to interpret information received
+from both ears.
 
-One that deals with very basic voice filtering. The other, relying on machine 
-learning in order to filter out noise and return a clearer speech.
+Over the years, neuroscientists, have been trying to understand the mechanisms 
+within our brains that are able to determine the location of a sound. They have 
+identified two cues that are essential and sufficient for horizontal sound
+localization.
 
-This report represents the summary of all the relevant work done.
-Chapter 2 gives some background and describes the problem. 
-The components used and measurement scenarios are presented in Chapter 3. 
-Chapter 4 explains how the voice filtering works how it behaves in different 
-scenarios. Chapter 5 deals with machine learning filtering. In Chapter 6, we 
-attempt to bring together both methods of filtering in order to achieve a 
-better result.
+In the 1790s, Giovanni Battista Venturi conducted experiments where he played a 
+flute around blindfolded people and asked them to point in his direction. 
+He concluded that the sound amplitude difference between the two ears was the 
+indicator used for determining the direction.
 
-Results are presented in Chapter 7. Chapter 8 proposes some applications where
-such filtering could be used. Chapter 9 and Chapter 10 draw conclusions and 
-talks about future work.
+Much later, Malloch proposed that the difference in time between the two ears 
+was the sign used for determining the direction of a sound.
+
+Years later, scientists found neurons in the auditory center of the brain
+specially adjusted for each indicator: time and intensity differences between 
+the two ears.
+
+\newpage
+
+Figure \ref{fig:humanHearingAccuracy} shows a circle, and a person in the middle. 
+The person is meant to be the listener, while the circle represents a perfectly 
+flat plane around the listeners head.
+ 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width = 0.6\textwidth]{Illustrations/personHearingAccuracy.jpg}
+	\caption{Human Hearing Accuracy}
+	\label{fig:humanHearingAccuracy}
+\end{figure}
+
+Sound coming from the speaker, would reach  the right year faster and be louder than 
+the sound that reaches the left year. The brain is able to compare the differences
+and tell where the sound is coming from.
+
+
+\subsubsection{Reading Guide}
+Chapter 2 deals with problem analysis. Chapter 3 describes the setup and components
+used for recording samples. Chapter 4 and 5 focuses on the two filtering methods
+tested. The results for both methods are presented in Chapter 6. Chapter 7 and 
+8 present a summary of the work done, suggest possible future uses of the research 
+presented and draw a conclusion of the work carried out.
+\todo[inline]{somebody read this and say what they think}
