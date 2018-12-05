@@ -20,41 +20,100 @@ returns a soundwave containing two signals. The aim is to filter out one of them
 by only using the two soundwaves available.
 
 In order to be able to do this, one assumption needs to be made. That is, that the 
-angle at which the source is located, is known.
+angle at which each source is located, is known.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.65\textwidth]{Illustrations/2sourcesWangles.jpg}
+	\includegraphics[width=0.67\textwidth]{Illustrations/2sourcesWangles.jpg}
 	\caption{Two Persons Talking With Known Angles}
 	\label{fig:2sourcesWangles}
 \end{figure}
 
 Figure \ref{fig:2sourcesWangles} represents the same scenario. However this time, the angles
-of the sound sources are known. By knowing the angle, the sampling frequnecy and the travelling
-speed of sound, the delay in samples can be determined.
+of the sound sources are known. The Sources and the Origin are represented with coordinates.
+This helps in determining the formulas that are needed in order to obtain the delay in samples.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.65\textwidth]{Illustrations/2sourcesWanglesAndPossition.jpg}
+	\includegraphics[width=0.67\textwidth]{Illustrations/2sourcesWanglesAndPossition.jpg}
 	\caption{Two Persons Talking With Known Angles}
 	\label{fig:2sourcesWanglesAndPossition}
 \end{figure}
 
 \newpage
 
-Figure \ref{fig:zoomedin} represents the delay between the two signals. One advantage
+Figure \ref{fig:zoomedin1} represents the delay between the two signals. One advantage
 is represented by the fact that, no matter the distance of the source, the delay between the
-signals is always the same.
+signals is always the same. By knowing the angle, the sampling frequnecy and the travelling
+speed of sound, the delay in samples can be determined.
+
+
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.65\textwidth]{Illustrations/delay.jpg}
+	\includegraphics[width=0.65\textwidth]{Illustrations/delayDrawingForEquations.jpg}
 	\caption{Delay}
-	\label{fig:zoomedin}
+	\label{fig:zoomedin1}
 \end{figure}
 
+\newpage
+\section{Mathematical Solution}
 
+Figure \ref{fig:zoomedin2} is a simplified version of Figure \ref{fig:zoomedin1} in order to better
+understand the mathematical proof of finding the delay in number of samples.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=1\textwidth]{Illustrations/mathematicalShit.jpg}
+	\caption{Mathematical Interpretation}
+	\label{fig:zoomedin2}
+\end{figure}
 
+Firstly, the distances SR and SL must be determined. This can be found by employing 
+basic trigonometry. This is done by independently finding out the sides of the triangles
+SyL  and SyR.
 
+\begin{equation}
+	yR = sin(\theta) - \dfrac{d}{2} 
+\end{equation}
+
+\begin{equation}
+	yL = sin(\theta) + \dfrac{d}{2}
+\end{equation}
+
+After the x-coordinates are determined, h is needed in order to calculate the y-coordinates.
+
+\begin{equation}
+	h = cos(\theta)
+\end{equation}
+
+\newpage
+Lastly, the sides SR and SL are determined.
+
+\begin{equation}
+	SR = \sqrt{h^2 + yR^2}
+\end{equation}
+
+\begin{equation}
+	SL = \sqrt{h^2 + yL^2}
+\end{equation}
+
+Once the distances are known, the difference in distance between the signals can be found.
+
+\begin{equation}
+	delay = SL - SR
+\end{equation}
+
+At this moment, the delay is expressed in distance. By knowing the speed of sound, the amount of
+time it takes to travel that distance can be found.
+
+\begin{equation}
+	delayInTime = \frac{delay}{speed of sound}
+\end{equation}
+
+The time, can be converted in amount of samples by multiplying it by the sampling frequency.
+
+\begin{equation}
+	delayInSamples = delayInTime * SamplingFrequncy
+\end{equation}
 
 \newpage
 \section{Idea for filtering}
