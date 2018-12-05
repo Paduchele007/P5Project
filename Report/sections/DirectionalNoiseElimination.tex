@@ -1,11 +1,11 @@
 \chapter{Directional Noise Elimination}\label{ch:directional}
-\section{Introduction}
-This chapter deals with directional filtering. The idea is presented and tested. The 
-results and conclusions will be shown afterwards.
+This chapter deals with directional filtering. In the beginning, the prerequisites for 
+the filtering idea are presented. Afterwards, the actual filtering idea is shown and explained.
+In the end, the results are presented, and a conclusion is drawn.
 \section{Concept}
 Figure \ref{fig:2sources} shows a scenario where directional filtering could be used.
-Source 1 and Source 2 are both talking simultaneously. At the Origin, two microphones 
-left (L) and right (R) are recording both signals.
+Source 1 and Source 2 are both talking simultaneously. At the origin, two microphones,
+left (L) and right (R) are fixed and recording.
 
 \begin{figure}[htp]
 	\centering
@@ -14,9 +14,49 @@ left (L) and right (R) are recording both signals.
 	\label{fig:2sources}
 \end{figure}
 
-Due to the placement of the sources, both microphones will record the sounds, with a 
-certain delay.
+Due to the nature of the setup, the microphones will record  both the speakers.
+However, both microphones record two persons talking. As a consequence, each microphone
+returns a soundwave containing two signals. The aim is to filter out one of them
+by only using the two soundwaves available.
 
+In order to be able to do this, one assumption needs to be made. That is, that the 
+angle at which the source is located, is known.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{Illustrations/2sourcesWangles.jpg}
+	\caption{Two Persons Talking With Known Angles}
+	\label{fig:2sourcesWangles}
+\end{figure}
+
+Figure \ref{fig:2sourcesWangles} represents the same scenario. However this time, the angles
+of the sound sources are known. By knowing the angle, the sampling frequnecy and the travelling
+speed of sound, the delay in samples can be determined.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{Illustrations/2sourcesWanglesAndPossition.jpg}
+	\caption{Two Persons Talking With Known Angles}
+	\label{fig:2sourcesWanglesAndPossition}
+\end{figure}
+
+\newpage
+
+Figure \ref{fig:zoomedin} represents the delay between the two signals. One advantage
+is represented by the fact that, no matter the distance of the source, the delay between the
+signals is always the same.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{Illustrations/delay.jpg}
+	\caption{Delay}
+	\label{fig:zoomedin}
+\end{figure}
+
+
+
+
+
+\newpage
 \section{Idea for filtering}
 
 \begin{figure}[htp]
