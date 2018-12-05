@@ -1,23 +1,15 @@
 
 *.aux
+
 *.log
+
 *.gz
-
-Report/master\.pdf
-
-
-
-Matlab/ratio\.asv
 
 *.asv
 
 *.vsdx
 
 *.~vsdx
-
-*.aux
-
-*.log
 
 *.out
 
