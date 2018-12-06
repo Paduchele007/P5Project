@@ -279,6 +279,44 @@ bit more isolated output file.
 \todo[inline]{"Do we put graphs of noise, output and original data?}
 
 
+\section{Synthetic Samples}
+  Because we couldn't get any visible or audible results with our filtering method of real recordings with two 
+microphones and one sound source and it was even worse with two sound sources at the same time, we have 
+decided to try recording each person separately, using one microphone and then synthetically articulate data, 
+as if we recorded two sound sources at the same time to two microphones by adding delay and gain on both 
+sources which made it look and sound realistically.\\
+  In order to create samples to sound as realistic as possible we had to look in delay differences as well as 
+gain loss over distance. \\
+Using synthetic samples also gives us more flexibility when testing the code, we just need to adjust the 
+angle that we want to place sources at. 
+  \subsection{Gain ratio}
+  Code for making synthetic samples needs angles that we want to place sources at and the gap between the 
+microphones. For shifting we can use code we did to calculate shift in delays from a given angle. Shift the signal 
+and then add gain ratio. \\
+  Relationship of sound strength is what we call gain ratio. Sound strength falls by a ratio of \( \frac{1}{2}
+\) when the distance is doubled. Which means that sound strength follows distance inverse-proportionally. 
+  By giving one of the microphones gain ratio of 1 we can calculate what is the ratio for the other 
+microphone. Figure \ref{fig:ratioDependence} illustrates the variables used in the equations.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.35\textwidth]{Illustrations/gainRatio.jpg}
+	\caption{Gain ratio dependence on distance}
+	\label{fig:ratioDependence}
+\end{figure}
+ \[\frac{r_L}{r_R} = \frac{dist_R}{dist_L} \]\\
+Using this proportion and keeping \(r_L\) as 1 we can calculate gain \(r_R\), which we will multiply with 
+right microphone data to get realistic gain loss. Distances \(dist_L\) and \(dist_R\) here are the same 
+distances, which we calculate in delay code. This means that in order to get the gain ratio for right 
+microphone we just need to divide distance to the left microphone (\(dist_L\)) by distance to the right 
+microphone (\(dist_R\)).
+\subsection{Adding recordings}
+First, audio recordings of sources are made the same size. Then parts of each source, which will go to the left 
+microphone are shifted according to the angle, we want to put that source at. Then, the part, which will go to the 
+right microphone is multiplied with gain ratio \(r\). The same is done with all of the sources we use. In the end, 
+all of the left and right microphone assigned sources will be summed to left microphone data and right microphone 
+data. 
+
+
  
 
 \section{Conclusion}
