@@ -8,9 +8,7 @@ as if we recorded two sound sources at the same time to two microphones by addin
 sources which made it look and sound realistically.\\
   In order to create samples to sound as realistic as possible we had to look in delay differences as well as 
 gain loss over distance. \\
-
-
-  Using synthetic samples also gives us more flexibility when testing the code, we just need to adjust the 
+Using synthetic samples also gives us more flexibility when testing the code, we just need to adjust the 
 angle that we want to place sources at. 
   \subsection{Gain ratio}
   Code for making synthetic samples needs angles that we want to place sources at and the gap between the 
@@ -32,3 +30,9 @@ right microphone data to get realistic gain loss. Distances \(dist_L\) and \(dis
 distances, which we calculate in delay code. This means that in order to get the gain ratio for right 
 microphone we just need to divide distance to the left microphone (\(dist_L\)) by distance to the right 
 microphone (\(dist_R\)).
+\subsection{Adding recordings}
+First, audio recordings of sources are made the same size. Then parts of each source, which will go to the left 
+microphone are shifted according to the angle, we want to put that source at. Then, the part, which will go to the 
+right microphone is multiplied with gain ratio \(r\). The same is done with all of the sources we use. In the end, 
+all of the left and right microphone assigned sources will be summed to left microphone data and right microphone 
+data. 
