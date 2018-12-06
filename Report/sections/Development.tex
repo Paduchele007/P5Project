@@ -42,6 +42,24 @@ Sampling was done in a lecture/ conference room with side noise: a server, maint
 Since the sampling ratio of human ear can only reach up to 20kHz, 48kHz sampling frequency of the microphones the Nyquist frequency and therefore guarantees that there will not be any hearable audio quality losses.   
 \section{Analog to digital conversion}
 Since the datasheet of the microphone does not provide any information on the Analog-to-Digital Converter that is used to process the data and there is not default ADC that is used for this process, the only potentially successful way to find the details about the ADC used for the signal processing is to open the microphone and look for the information on the ADC itself. Since the structure seemed to be glued together, we will not attempt to find the details of it and just rely on the specifications sheet provided by the manufacturer.  
+\subsection{Recording samples}
+First, in order to record two microphones in separate tracks directly to computer, we need to give access to 
+multiple inputs and outputs,  
+independently to computers' sound card. To achieve that audio driver caller ASIO4ALL was used. Using this 
+driver, together with recording software, 
+which supports multiple input recording, we were able to record different situations with two microphones at 
+the same time. \\
+\todo{process of setting up for first recordings. Last sentence counters delay paragraph in Filtering section 
+(4.3.3)}
+Recording with two microphones was set in a quiet room with sound panels on the walls and curtains, all of 
+which reduces echo. Using ruler as a guide microphones were set in place and then angles were marked as 
+guides to know from which direction sound is coming from. (Figure \ref{fig:recSetup}) 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=1\textwidth]{Illustrations/JustSetup.jpg}
+	\caption{Setup for recording}
+	\label{fig:recSetup}
+\end{figure}
 
  
 
