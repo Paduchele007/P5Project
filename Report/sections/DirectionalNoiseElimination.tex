@@ -14,6 +14,7 @@ left (L) and right (R) are fixed and recording.
 	\label{fig:2sources}
 \end{figure}
 
+\todo[inline]{maybe redo this, to eliminate middle line and write Origin}
 Due to the nature of the setup, the microphones will record  both the speakers.
 However, both microphones record two persons talking. As a consequence, each microphone
 returns a soundwave containing two signals. The aim is to filter out one of them
@@ -44,8 +45,11 @@ This helps in determining the formulas that are needed in order to obtain the de
 
 Figure \ref{fig:zoomedin1} represents the delay between the two signals. One advantage
 is represented by the fact that, no matter the distance of the source, the delay between the
-signals is always the same. By knowing the angle, the sampling frequnecy and the travelling
-speed of sound, the delay in samples can be determined.
+signals is always the same. The delay in samples is only dependent on the distance between the mics.
+By knowing the angle, the sampling frequnecy and the travelling speed of sound, the delay in 
+samples can be determined. By increasing the distance between the microphones, greater accuracy 
+could be obtained. However this would also result in a bigger difference in terms of signal gain.
+One signal would be significantly louder than the other to the point where filtering would not work.
 
 
 \begin{figure}[htp]
@@ -117,6 +121,12 @@ The time, can be converted in amount of samples by multiplying it by the samplin
 
 \newpage
 \section{Idea for filtering}
+With the angles of both sources known, one or the other source can be isolated. The only 
+sound source considered in this project was human voice. Therefore, the aim is to 
+separate the two voices, by only using the sound samples recorded by both microphones. 
+The data recorded by each microphone, contains two separate human speeches.
+Figure XX explains the process. Afterwards, a more visual example will be discussed,
+aimed at better describing the procedure. 
 
 \begin{figure}[htp]
 	\centering
@@ -125,46 +135,75 @@ The time, can be converted in amount of samples by multiplying it by the samplin
 	\label{fig:IdeaDiagram}
 \end{figure}
 
-Filtering sound, based on the direction that it's coming from could work by taking data, recorded by one of 
-the microphones, in this case (figure
-\ref{fig:IdeaDiagram}) we chose left microphone data. Then we shift this data by exact amount of samples, 
-which would make the source we would like 
-to separate recorded by left microphone, exactly aligned with same source, recorded by right microphone.\\
-Then by subtracting right microphone data from shifted left, we should get all the other sounds except the 
-ones from source we would like to
-separate, this is what we will call noise in directional filtering.\\
-Separating could be done by taking the original data, putting it to one channel. Then subtracting noise from 
-the original data should leave us only
-with "clean" sound from the direction, we are interested in.\\
-\section{Development}
-\todo{MENTION WHERE EACH SUBSECTION COMES IN PLAY}
-\subsection{Finding delay in samples}
-By setting the angle of what we want to separate our signal at, we can calculate how big shift in samples 
-that would account for. We are using this 
-delay later, in the directional filtering. Calculations involve using selected angle, gap between 
-microphones, sampling frequency of used 
-microphones and the 
-speed of sound. \\
-\todo{DO WE WRITE ABOUT MATH AND EQUATIONS IN MATLAB HERE OR DO WE JUST SKIP IT.}
-\subsection{Recording samples}
-First, in order to record two microphones in separate tracks directly to computer, we need to give access to 
-multiple inputs and outputs,  
-independently to computers' sound card. To achieve that audio driver caller ASIO4ALL was used. Using this 
-driver, together with recording software, 
-which supports multiple input recording, we were able to record different situations with two microphones at 
-the same time. \\
-\todo{process of setting up for first recordings. Last sentence counters delay paragraph in Filtering section 
-(4.3.3)}
-Recording with two microphones was set in a quiet room with sound panels on the walls and curtains, all of 
-which reduces echo. Using ruler as a guide microphones were set in place and then angles were marked as 
-guides to know from which direction sound is coming from. (Figure \ref{fig:recSetup}) 
+\todo[inline]{redo diagram}
+
+Both microphones record the same data. The only two differences, are the delay in time,
+and the gain difference. By shifting one recorded sample in order to match the other,
+and subtracting the signals, the matched data is eliminated. This means that by aligning 
+one speech, and then subtracting, the other speech is separated and obtained.
+
+\newpage
+
+\section{Visual Example}
+A visual example is explained below. Actual differences can even be seen on the waveforms themselves.
+The example is ideal, meaning there is no noise applied to the signals, and their purpose is to 
+prove the idea.
+
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=1\textwidth]{Illustrations/JustSetup.jpg}
-	\caption{Setup for recording}
-	\label{fig:recSetup}
+	\includegraphics[width=\textwidth]{Illustrations/source1.jpg}
+	\caption{First Source}
+	\label{fig:source1}
 \end{figure}
 
+Figure \ref{fig:source1} shows a simple sine wave. Source 1 is the original signal. Source 1-Right Shifted
+is the same signal just shifted to the right by 240 samples.
+
+\newpage
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\textwidth]{Illustrations/source2.jpg}
+	\caption{Second Source}
+	\label{fig:source2}
+\end{figure}
+
+
+Figure \ref{fig:source2} shows another sine wave, with a higher frequency and a lower amplitude. This 
+represents the second source. Source 2 is the original signal. Source 2 - Left Shifted is the same signal
+shifted to the left by 377 samples.
+
+Next step involves adding the signals.
+
+\begin{equation}
+	Source1 + Source2LeftShifted = LeftMicrophone
+	\label{eq:leftMicrophone}
+\end{equation}
+
+
+\begin{equation}
+	Source1RightShifted + Source2 = RightMicrophone
+	\label{eq:rightMicrophone}
+\end{equation}
+
+Equations \ref{eq:leftMicrophone} and \ref{eq:rightMicrophone} now have both signals from both sources.
+To better understand the equations, recall the scenario initially presented, shown in Figure
+\ref{fig:2sources2}.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{Illustrations/2sources.jpg}
+	\caption{Two Persons Talking}
+	\label{fig:2sources2}
+\end{figure}
+
+\newpage
+
+$LeftMicrophone$ contains $Source1$ and $Source2LeftShifted$. $RightMicrophone$ contains $Source2$
+and $Source1RightShifted$.
+
+
+\newpage
 \subsection{Filtering}
 All of the directional filtering is done by applying the logic discussed before to the Matlab script.\\
 Prior to shifting signals and filtering, we had to remove any delays, induced by hardware or software. This 
@@ -224,6 +263,8 @@ any difference in the output file, compared to the original data. The noise file
 still hear what the person was saying. Our expectation was to hear relative silence in noise file and have a 
 bit more isolated output file.
 \todo[inline]{"Do we put graphs of noise, output and original data?}
+
+
  
 
 \section{Conclusion}
