@@ -120,7 +120,7 @@ The time, can be converted in amount of samples by multiplying it by the samplin
 \end{equation}
 
 \newpage
-\section{Idea for filtering}
+\section{Filtering Idea}
 With the angles of both sources known, one or the other source can be isolated. The only 
 sound source considered in this project was human voice. Therefore, the aim is to 
 separate the two voices, by only using the sound samples recorded by both microphones. 
@@ -161,20 +161,18 @@ is the same signal just shifted to the right by 240 samples.
 
 \newpage
 
+Figure \ref{fig:source2} shows another sine wave, with a higher frequency and a lower amplitude. This 
+represents the second source. Source 2 is the original signal. Source 2 - Left Shifted is the same signal
+shifted to the left by 377 samples.
+
+
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=\textwidth]{Illustrations/source2.jpg}
 	\caption{Second Source}
 	\label{fig:source2}
 \end{figure}
-
-
-Figure \ref{fig:source2} shows another sine wave, with a higher frequency and a lower amplitude. This 
-represents the second source. Source 2 is the original signal. Source 2 - Left Shifted is the same signal
-shifted to the left by 377 samples.
-
 Next step involves adding the signals.
-
 \begin{equation}
 	Source1 + Source2LeftShifted = LeftMicrophone
 	\label{eq:leftMicrophone}
@@ -187,23 +185,39 @@ Next step involves adding the signals.
 \end{equation}
 
 Equations \ref{eq:leftMicrophone} and \ref{eq:rightMicrophone} now have both signals from both sources.
-To better understand the equations, recall the scenario initially presented, shown in Figure
-\ref{fig:2sources2}.
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.65\textwidth]{Illustrations/2sources.jpg}
-	\caption{Two Persons Talking}
-	\label{fig:2sources2}
-\end{figure}
-
 \newpage
-
 $LeftMicrophone$ contains $Source1$ and $Source2LeftShifted$. $RightMicrophone$ contains $Source2$
 and $Source1RightShifted$.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\textwidth]{Illustrations/source1And2.jpg}
+	\caption{Added Signals}
+	\label{fig:source1And2}
+\end{figure}
 
-
+They are represented in Figure \ref{fig:source1And2}. The summation of both signals can clearly 
+be seen above.
 \newpage
+\subsection*{Sound Separation}
+We aim at separating the sounds by only using the previous signals seen in Figure \ref{fig:source1And2}.
+Knowing the angles and the amount of delay in samples, the separation of the two signals reduces to
+a matter of matching and subtracting them. 
+
+Important to notice. The matched signal is the one filtered out.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\textwidth]{Illustrations/obtainedSource1And2.jpg}
+	\caption{Obtained Signals}
+	\label{fig:obtainedSignals}
+\end{figure}
+
+\subsection*{Observations}
+The signals seem to have a slight phase shift. Additionally, they have higher amplitudes, than the original
+signals. As of right now, we are not able to determine why. However the waveforms are very similar.
+All figure can be seen in Appendix X.
+\todo[inline]{remember to put stuff in appendix}
+\newpage
+
 \subsection{Filtering}
 All of the directional filtering is done by applying the logic discussed before to the Matlab script.\\
 Prior to shifting signals and filtering, we had to remove any delays, induced by hardware or software. This 
@@ -215,7 +229,7 @@ recording with just one person first see figure \ref{fig:RanzvanRecSetup}.\\
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=.7\textwidth]{Illustrations/razvanWithSetup.jpg}
+	\includegraphics[width=.\textwidth]{Illustrations/razvanWithSetup.jpg}
 	\caption{Setup for recording with a person}
 	\label{fig:RanzvanRecSetup}
 \end{figure}
