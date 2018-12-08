@@ -210,142 +210,152 @@ Important to notice. The matched signal is the one filtered out.
 	\label{fig:obtainedSignals}
 \end{figure}
 
+Figure \ref{fig:obtainedSignals} represents the obtained signals after matching and subtracting the signals
+in figure \ref{fig:source1And2}.
+
 \subsection*{Observations}
 The signals seem to have a slight phase shift. Additionally, they have higher amplitudes, than the original
 signals. As of right now, we are not able to determine why. However the waveforms are very similar.
 All figure can be seen in Appendix X.
 \todo[inline]{remember to put stuff in appendix}
 \newpage
-
 \section{Filtering}
-All of the directional filtering is done by applying the logic discussed before to the Matlab script.\\
-Prior to shifting signals and filtering, we had to remove any delays, induced by hardware or software. This 
-issue was resolved by starting every recording with loud, sharp sound like a clap or a finger snap right in 
-the middle of the microphones. Using this sound in the beginning we could match loudest peaks, thus 
-eliminating hardware and software induced delay. \\
-\subsection{One sound source}
-To see if we can get the samples, which show that logic behind direction of delay is correct, we set up a 
-recording with just one person first see figure \ref{fig:RanzvanRecSetup}.
+All of the directional filtering is done by applying the logic discussed before. Prior to shifting signals 
+and do the actual filtering, we had to remove any other delays, introduced by hardware and software.
 
+We attempted to resolve this issue by introducing a loud sound, such as a finger snap, or a clap at the 
+start of every recording session. Using that, we matched the highest peaks, and eliminated a big part
+of the delay caused by anything else besides the distance between the microphones.
 
-Then we looked at collected data:\\
-When person spoke from the center, (Figure \ref{fig:C}) shows that recordings match in phase. Green graph is 
-data, captured by left microphone and yellow graph is data, captured by right microphone.
+\subsection{One Source}
+Initially, a recording by only one person sitting in the center, meaning 0$^\circ$, was recorded, to observe
+if after all the other delays were eliminated, the data would match.
+
+Figure \ref{fig:C} represents the data collected. As can be observed on the figure, the two signals match in
+phase, and have fairly similar amplitudes.
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.75\linewidth]{Illustrations/DataC.png}
-  \caption{Data from speaker in the center}
+  \includegraphics[width=0.8\linewidth]{Illustrations/DataC.png}
+  \caption{Center Sound Source}
   \label{fig:C}
 \end{figure}
 
-When person spoke from the right, right microphone data led left microphone (Figure \ref{fig:R}), here blue graph is left microphone data and orange graph represents right microphone data.\\
+\newpage
+
+When recording with the sound source coming from the right of the setup, the right microphone data leads
+the left microphone data as seen in Figure \ref{fig:R}.
+
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.75\linewidth]{Illustrations/DataR.png}
-  \caption{Data from speaker in the right side}
+  \includegraphics[width=0.8\linewidth]{Illustrations/DataR.png}
+  \caption{Right Sound Source}
   \label{fig:R}
 \end{figure}
 
-When he spoke from the left, left microphone was leading the right (Figure \ref{fig:L}) pink graph is left microphone data and purple graph shows right microphone data.
+Another recording was taken, this time with a sound source coming from the left. The results can be seen in
+Figure \ref{fig:L}.
+
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.75\linewidth]{Illustrations/DataL.png}
-  \caption{Data from speaker in the left side}
+  \includegraphics[width=0.8\linewidth]{Illustrations/DataL.png}
+  \caption{Left Sound Source}
   \label{fig:L}
 \end{figure}
 
-All of the directional filtering is done by applying the logic discussed in the Idea for filtering section to 
-the Matlab script.\\
-First we took data from the recording with only one person, shifted left microphone to match right microphone 
-data in phase, then subtracted right microphone data from shifted left microphone data - got "Separated" signal.\\
-After re-listening the separated signal from this filtering process, separated signal contained enough data to 
-still hear what the person was saying even though the goal was to hear relative silence, sound level dropped 
-significantly. This can be seen in figure \ref{fig:oneSourceSepAndOG}.
+\newpage
+An early attempt at filtering speech, was done on only one person. The data was firstly matched, and then 
+subtracted. The result of it, can be seen in Figure \ref{fig:oneSourceSepAndOG}. The green data represents 
+the original recorded signal, while the blue data represents the filtered data. Ideally, the blue data would
+have very low amplitude, and should be inaudible.
+
+However, after listening to the signal, it still contained enough data to hear what the person that should be
+filtered out, is saying. Even though the goal was relative silence, the sound level dropped significantly.
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.7\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
-  \caption{Data comparison of separated and original signals of one person talking}
+  \includegraphics[width=\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
+  \caption{Data Comparison One Source}
   \label{fig:oneSourceSepAndOG}
 \end{figure}
 
-\subsection{Two sound sources}
-When we saw a significant decrease of sound level, but we could still hear what was going on, we assumed, that it 
-might be because of no other sounds were present and when we get two sources, the one we opt to hear will be loud 
-enough in comparison for separation to work. So we applied the same process to the samples we got from two people 
-talking at the same time as to what we did with only one person talking.\\
+\newpage
 
-After shifting left microphone we could see some data line up with the right microphone data in figure 
-\ref{fig:2sourcesShifted}., which seems like it could work and it would separate the unwanted sounds from the samples. 
+\subsection{Two Sources}
+The same separation method was applied for two sources. Due to no other sounds being present,
+we assumed that this might be one of the reasons we were able to still hear some of the original speech
+that was intended to be filtered out. If other sound would be present, maybe their strength would overcome
+the signal that was intended to be filtered out.
+
+After shifting the left microphone data, some data lines up with the right microphone data in Figure 
+\ref{fig:2sourcesShifted}, which suggests it could work and it would separate the unwanted sounds from the samples. 
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.7\linewidth]{Illustrations/twoSourcesShiftedandOriginal.png}
-  \caption{Two sources at the same time, in the graph: shifted left microphone data and right microphone data}
+  \includegraphics[width=1\linewidth]{Illustrations/twoSourcesShiftedandOriginal.png}
+  \caption{Two Sources, Aligned Data}
   \label{fig:2sourcesShifted}
 \end{figure}
-
-Then we compared output data to original data (see figure \ref{fig:2sourcesSeparated} and not many visual 
-differences were seen as well. Also, when listening to the output, we couldn't hear any audible difference from 
-the original sample either.
-
+\newpage
+The separated data was compared to the original data. The comparison can be seen in figure \ref{fig:2sourcesSeparated}.
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.7\linewidth]{Illustrations/twoSourcesSeparatedandOriginal.png}
-  \caption{Two sources at the same time, in the graph: separated signal data and right microphone data}
+  \includegraphics[width=0.8\linewidth]{Illustrations/twoSourcesSeparatedandOriginal.png}
+  \caption{Separated Signal And Original Signal}
   \label{fig:2sourcesSeparated}
 \end{figure}
-We considered this a failed attempt, but not because of the method, rather because of the 
-equipment used, which was not ideal - both of the microphones didn't capture the sound waves 
-identically. This can be seen when we do loud clap directly in the center of the microphones. 
-Ideally, microphones would register identical waveform, but in the figure \ref{fig:clap} we can 
-see that the sound wave of a clap is registered a bit differently by right and left 
-microphones.
+
+This was deemed as a failed attempt. However not necessarily because of the method, but rather 
+because of the, equipment used and environment to record the samples, which were not ideal. Neither
+of the microphones captured the sound waves identically. This can be seen in Figure \ref{fig:clap}.
+The clap at the beginning of the recordings can be represented. Ideally, microphones would register 
+identical waveform, but in the figure they are clearly different.
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.7\linewidth]{Illustrations/clap.png}
+  \includegraphics[width=0.8\linewidth]{Illustrations/clap.png}
   \caption{Clap in the beginning of recording}
   \label{fig:clap}
 \end{figure}
+\newpage
 
 \section{Synthetic Samples}
-  Because we couldn't get any visible or audible results with our filtering method of real recordings with two 
-microphones and one sound source and it was even worse with two sound sources at the same time, we have 
-decided to try recording each person separately, using one microphone and then synthetically articulate data, 
-as if we recorded two sound sources at the same time to two microphones by adding delay and gain on both 
-sources which made it look and sound realistically.\\
-  In order to create samples to sound as realistic as possible we had to look in delay differences as well as 
-gain loss over distance. \\
-Using synthetic samples also gives us more flexibility when testing the code, we just need to adjust the 
-angle that we want to place sources at. 
-  \subsection{Gain ratio}
-  Code for making synthetic samples needs angles that we want to place sources at and the gap between the 
-microphones. For shifting we can use code we did to calculate shift in delays from a given angle. Shift the signal 
-and then add gain ratio. \\
-  Relationship of sound strength is what we call gain ratio. Sound strength falls by a ratio of \( \frac{1}{2}
-\) when the distance is doubled. Which means that sound strength follows distance inverse-proportionally. 
-  By giving one of the microphones gain ratio of 1 we can calculate what is the ratio for the other 
-microphone. Figure \ref{fig:ratioDependence} illustrates the variables used in the equations.
+Failing to observe any noticeable separation when using real samples, we have decided to attempt the same
+separation method using synthetic samples. This was done in order to find out if the method was in itself 
+wrong, or something else had a bigger impact, due to which we were unable to see any differences.
+
+Synthetic samples were made, by recording one person talking, and then articulating the data to take
+delay and gain into account, in an attempt to make them sound as real as possible.
+
+Using synthetic samples also allowed for more flexibility when testing the code, by being able to adjust 
+the angle of the source. 
+\subsubsection{Gain ratio}
+A gain need to be multiplied with one of the signals, to account for the distance difference. If one source
+is closer to one microphone than the other, the signal from that source needs to have a higher strength, to 
+mimic real behavior of the scenario.
+
+Sound strength falls by a ratio of 0.5 when the distance is doubled. Meaning that sound strength follows 
+distance inverse-proportionally.
+ 
+By giving one of the microphones gain ratio of 1, the ratio for the other signal can be determined. Figure 
+\ref{fig:ratioDependence} illustrates the variables used in the equations.
+
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.35\textwidth]{Illustrations/gainRatio.jpg}
-	\caption{Gain ratio dependence on distance}
+	\caption{Gain Ratio}
 	\label{fig:ratioDependence}
 \end{figure}
- \[\frac{r_L}{r_R} = \frac{dist_R}{dist_L} \]\\
-Using this proportion and keeping \(r_L\) as 1 we can calculate gain \(r_R\), which we will multiply with 
-right microphone data to get realistic gain loss. Distances \(dist_L\) and \(dist_R\) here are the same 
-distances, which we calculate in delay code. This means that in order to get the gain ratio for right 
-microphone we just need to divide distance to the left microphone (\(dist_L\)) by distance to the right 
-microphone (\(dist_R\)).
-\subsection{Adding recordings}
-First, audio recordings of sources are made the same size. Then parts of each source, which will go to the left 
-microphone are shifted according to the angle, we want to put that source at. Then, the part, which will go to the 
-right microphone is multiplied with gain ratio \(r\). The same is done with all of the sources we use. In the end, 
-all of the left and right microphone assigned sources will be summed to left microphone data and right microphone 
-data. 
-
-
+\begin{equation}
+	\frac{r_L}{r_R} = \frac{dist_R}{dist_L}
+\end{equation}
  
-
-\section{Conclusion}
+Using this proportion and keeping \(r_L\) as 1, the gain \(r_R\) will be multiplied with 
+right microphone data to get realistic gain loss. Distances \(dist_L\) and \(dist_R\) here are the same 
+distances, which are calculate in the delay code. This means that in order to get the gain ratio for right 
+microphone, the distance to the left microphone (\(dist_L\)) needs to be divided by distance to the right 
+microphone (\(dist_R\)).
+\subsubsection{Adding recordings}
+Firstly, each recording is shifted by an amount of samples, corresponding to the angle we want. Afterwards,
+they are multiplied by their respective gains. Lastly, they are cut down to the same size to make the adding
+easier.
+Right Microphone corresponding to each source will be multiplied by the gain, while Left Microphone  
+corresponding to each source will be shifted. 
