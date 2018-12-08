@@ -1,0 +1,2 @@
+80 000 total cycles
+changes sample each 50 cycles

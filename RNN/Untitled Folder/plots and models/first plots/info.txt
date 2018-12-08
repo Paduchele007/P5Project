@@ -1,0 +1,2 @@
+trained for 2000 epochs/cycles
+changed samples each 500 epochs/cycles
