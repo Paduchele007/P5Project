@@ -19,16 +19,35 @@ According to the Nyquist rate of signal processing, the sample rate should be at
 As we can see in figure \todo{add here nr} if the sampling rate is too small, the signal will be aliased and will get a wrong representation of the signal.
 
 \subsection{Fourier Transform}
-As useful as the amplitude might be, for a closer inspection of a signal it is not enough to differentiate human speech from different sound sources. Any sound signal can be recreated from a combination of sinusoidal signals at different frequencies.  For that reason the Fourier Transform can be used to decompose the sound in multiple frequencies. By transforming the signal from the time domain to the frequency domain we can get a lot more information about a specific signal.
+As useful as the amplitude might be, for a closer inspection of a signal it is not enough to differentiate human speech from different sound sources. Any sound signal can be recreated from a combination of sinusoidal signals at different frequencies.  For that reason the Fourier Transform can be used to decompose the sound in multiple frequencies. By transforming the signal from the time domain to the frequency domain we can get a lot more information about a specific signal. By plotting these, we will get the amplitude of each frequency over the whole signal.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Illustrations/fftSignals.png}
+	\includegraphics[width=0.6\textwidth]{Illustrations/fftSignals.png}
 	\caption{FFT representation of a sine wave and a noisy one}
 	\label{fig:fftSignal}
 \end{figure}
-
+\newpage
 As we can see in figure \todo{add nr for picture} besides being able to differentiate between different sound sources, especially clean speech, as it was said in a different sections, we know the frequencies in which human voice is so we can see it easier in a frequency domain representation , we can identify noise easier too.
 
 \subsection{Spectrogram of a signal}
+Except for perfect examples, just a Fourier transform plot will not be that useful as some sound sources can be only in a part of the full sample and by viewing the plot over the whole sample it will not be accurate enough for filtering. For this reason a spectrogram can be used, which instead of taking the Fourier transform over the whole sound sample, it will make multiple ones over 0.25 second frames. By doing this we can get 3D plot, where we can have the X axis for time or samples, Y axis for the frequencies and color for the amplitude. By doing this a really clear representation of the signal can be made from which multiple aspects of the signal can be seen and used.
 
+\todo{ADD picture of spectrogram with speech from matlab}
+
+\subsection{Mel-frequency cepstrum}
+A Mel-frequency cepstrum is made out of a multitude of Mel-Frequency cepstral coefficients(MFCCs). Those are taken from a cepstral representation of the audio sample(or a spectrum of a spectrum).
+This can be really useful especially for speech identification as the frequency bands are spaced equally on the Mel scale instead of linearly spaced frequency used in a normal cepstrum. The mel scale is more useful for this case as it better approximates how humans actually perceive sound.
+\todo{maybe photo, most probably photo} 
+
+
+Besides this, instead of using the full cepstrum, only 24 bands can be used, by using instead the Bark scale.
+The bark scale is psychoacoustical scale that represents the first 24 critical bands of hearing. This can easily be made as mel scale and Bark scale are apparently proportional to each other as 1 Bark is approximately equal to 100 mels.\todo{add reference}
+By doing this, memory and processing power can be saved by using only 24 bands instead of thousands.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=1\textwidth]{Illustrations/Bark_scale.png}
+	\caption{The 24 bands of the Bark Scale}
+	\label{fig:BarkScale}
+\end{figure}
+\newpage
