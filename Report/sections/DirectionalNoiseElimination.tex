@@ -218,12 +218,13 @@ All figure can be seen in Appendix X.
 \todo[inline]{remember to put stuff in appendix}
 \newpage
 
-\subsection{Filtering}
+\section{Filtering}
 All of the directional filtering is done by applying the logic discussed before to the Matlab script.\\
 Prior to shifting signals and filtering, we had to remove any delays, induced by hardware or software. This 
 issue was resolved by starting every recording with loud, sharp sound like a clap or a finger snap right in 
 the middle of the microphones. Using this sound in the beginning we could match loudest peaks, thus 
 eliminating hardware and software induced delay. \\
+\subsection{One sound source}
 To see if we can get the samples, which show that logic behind direction of delay is correct, we set up a 
 recording with just one person first see figure \ref{fig:RanzvanRecSetup}.
 
@@ -252,18 +253,13 @@ When person spoke from the right, right microphone data led left microphone (Fig
   \label{fig:R}
 \end{figure}
 
-When he spoke from the left, left microphone was leading the right (Figure \ref{fig:L}) pink graph is left microphone data and purple graph shows right microphone data.\\
-
- 
+When he spoke from the left, left microphone was leading the right (Figure \ref{fig:L}) pink graph is left microphone data and purple graph shows right microphone data.
 \begin{figure}[htp]
   \centering
   \includegraphics[width=0.75\linewidth]{Illustrations/DataL.png}
   \caption{Data from speaker in the left side}
   \label{fig:L}
 \end{figure}
-
-\todo[inline]{"For range -1 to 1 20*log10(x) corresponds to dB" Mention?}
- 
 
 All of the directional filtering is done by applying the logic discussed in the Idea for filtering section to 
 the Matlab script.\\
@@ -275,9 +271,35 @@ significantly. This can be seen in figure \ref{fig:oneSourceSepAndOG}.
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.75\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
+  \includegraphics[width=0.7\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
   \caption{Data comparison of separated and original signals of one person talking}
   \label{fig:oneSourceSepAndOG}
+\end{figure}
+
+\subsection{Two sound sources}
+When we saw a significant decrease of sound level, but we could still hear what was going on, we assumed, that it 
+might be because of no other sounds were present and when we get two sources, the one we opted to hear will be loud 
+enough in comparison for separation to work. So we applied the same process to the samples we got from two people 
+talking at the same time as to what we did with one with only one person talking.\\
+
+After shifting left microphone we could see some data line up with the right microphone data in figure 
+\ref{fig:somelabel}., which seems like it could work and it would separate the unwanted sounds from the samples. But 
+when listening to the output, we couldn't hear any audible difference from the original sample. 
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
+  \caption{This is not the picture, i will make one sometime which will be shiftedL signal on right}
+  \label{fig:somelabel}
+\end{figure}
+
+Then we compared output data to original data (see figure \ref{fig:someOtherlabel} and not many visual differences were seen as well
+
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
+  \caption{This is not the picture, i will make one sometime which will be separated signal on right}
+  \label{fig:someOtherlabel}
 \end{figure}
 
 \section{Synthetic Samples}
