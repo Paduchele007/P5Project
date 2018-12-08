@@ -278,28 +278,41 @@ significantly. This can be seen in figure \ref{fig:oneSourceSepAndOG}.
 
 \subsection{Two sound sources}
 When we saw a significant decrease of sound level, but we could still hear what was going on, we assumed, that it 
-might be because of no other sounds were present and when we get two sources, the one we opted to hear will be loud 
+might be because of no other sounds were present and when we get two sources, the one we opt to hear will be loud 
 enough in comparison for separation to work. So we applied the same process to the samples we got from two people 
-talking at the same time as to what we did with one with only one person talking.\\
+talking at the same time as to what we did with only one person talking.\\
 
 After shifting left microphone we could see some data line up with the right microphone data in figure 
-\ref{fig:somelabel}., which seems like it could work and it would separate the unwanted sounds from the samples. But 
-when listening to the output, we couldn't hear any audible difference from the original sample. 
+\ref{fig:2sourcesShifted}., which seems like it could work and it would separate the unwanted sounds from the samples. 
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.7\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
-  \caption{This is not the picture, i will make one sometime which will be shiftedL signal on right}
-  \label{fig:somelabel}
+  \includegraphics[width=0.7\linewidth]{Illustrations/twoSourcesShiftedandOriginal.png}
+  \caption{Two sources at the same time, in the graph: shifted left microphone data and right microphone data}
+  \label{fig:2sourcesShifted}
 \end{figure}
 
-Then we compared output data to original data (see figure \ref{fig:someOtherlabel} and not many visual differences were seen as well
+Then we compared output data to original data (see figure \ref{fig:2sourcesSeparated} and not many visual 
+differences were seen as well. Also, when listening to the output, we couldn't hear any audible difference from 
+the original sample either.
 
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.7\linewidth]{Illustrations/OnePersonOriginalAndSeparated.png}
-  \caption{This is not the picture, i will make one sometime which will be separated signal on right}
-  \label{fig:someOtherlabel}
+  \includegraphics[width=0.7\linewidth]{Illustrations/twoSourcesSeparatedandOriginal.png}
+  \caption{Two sources at the same time, in the graph: separated signal data and right microphone data}
+  \label{fig:2sourcesSeparated}
+\end{figure}
+We considered this a failed attempt, but not because of the method, rather because of the 
+equipment used, which was not ideal - both of the microphones didn't capture the sound waves 
+identically. This can be seen when we do loud clap directly in the center of the microphones. 
+Ideally, microphones would register identical waveform, but in the figure \ref{fig:clap} we can 
+see that the sound wave of a clap is registered a bit differently by right and left 
+microphones.
+\begin{figure}[htp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{Illustrations/clap.png}
+  \caption{Clap in the beginning of recording}
+  \label{fig:clap}
 \end{figure}
 
 \section{Synthetic Samples}
