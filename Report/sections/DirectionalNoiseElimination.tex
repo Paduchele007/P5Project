@@ -1,4 +1,4 @@
-\chapter{Directional Noise Elimination}\label{ch:directional}
+\chapter{Directional Sound Separation}\label{ch:directional}
 This chapter deals with directional filtering. In the beginning, the prerequisites for 
 the filtering idea are presented. Afterwards, the actual filtering idea is shown and explained.
 In the end, the results are presented, and a conclusion is drawn.
@@ -14,7 +14,6 @@ left (L) and right (R) are fixed and recording.
 	\label{fig:2sources}
 \end{figure}
 
-\todo[inline]{maybe redo this, to eliminate middle line and write Origin}
 Due to the nature of the setup, the microphones will record  both the speakers.
 However, both microphones record two persons talking. As a consequence, each microphone
 returns a soundwave containing two signals. The aim is to filter out one of them
@@ -228,12 +227,6 @@ eliminating hardware and software induced delay. \\
 To see if we can get the samples, which show that logic behind direction of delay is correct, we set up a 
 recording with just one person first see figure \ref{fig:RanzvanRecSetup}.
 
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Illustrations/razvanWithSetup.jpg}
-	\caption{Setup for recording with a person}
-	\label{fig:RanzvanRecSetup}
-\end{figure}
 
 Then we looked at collected data:\\
 When person spoke from the center, (Figure \ref{fig:C}) shows that recordings match in phase. Green graph is 
