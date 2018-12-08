@@ -1,52 +1,27 @@
 \chapter{Introduction}\label{ch:introduction}
-Humans have the ability to identify the source of a sound around them. In the 
-field of neuroscience, this capability is called sound localization. The brain
-can determine the location of a sound with very high precision, up to 2 degrees 
-of space. This comes from the brain's capacity to interpret information received
-from both ears.
-
-Over the years, neuroscientists, have been trying to understand the mechanisms 
-within our brains that are able to determine the location of a sound. They have 
-identified two cues that are essential and sufficient for horizontal sound
-localization.
-
-In the 1790s, Giovanni Battista Venturi conducted experiments where he played a 
-flute around blindfolded people and asked them to point in his direction. 
-He concluded that the sound amplitude difference between the two ears was the 
-indicator used for determining the direction.
-
-Much later, Malloch proposed that the difference in time between the two ears 
-was the sign used for determining the direction of a sound.
-
-Years later, scientists found neurons in the auditory center of the brain
-specially adjusted for each indicator: time and intensity differences between 
-the two ears.
-
-\newpage
-
-Figure \ref{fig:humanHearingAccuracy} shows a circle, and a person in the middle. 
-The person is meant to be the listener, while the circle represents a perfectly 
-flat plane around the listeners head.
  
-\begin{figure}[htp]
+ One problem affecting 5\% of world population and approximately 15\% of adults aged 18 and over with and increasing rate with age which grows to almost 50\% for persons aged 75 and older is hearing loss.
+ This is quite an important impairment as it effects the quality of day to day life being harder for the individual to take part in social events and different daily activities. Besides the obvious problem of hearing loss is that about 16\% of adults aged between 20 and 69 years who could benefit from a hearing aid have never used one. This is partially because of the stigma that comes from using a hearing apparatus.
+ \todo[inline]{add references}
+ 
+ \begin{figure}[htp]
 	\centering
-	\includegraphics[width = 0.6\textwidth]{Illustrations/personHearingAccuracy.jpg}
-	\caption{Human Hearing Accuracy}
-	\label{fig:humanHearingAccuracy}
+	\includegraphics[width = 0.6\textwidth]{Illustrations/glasses_with_hearing_stuff.jpg}
+	\caption{Bruckhoff hearing aid glasses with bone conduction technology}
+	\label{fig:BoneConductionGlasses}
 \end{figure}
+ 
+By using a glasses frame with bone conduction technology this can be greatly improved, as glasses are more socially acceptable. Besides the social aspect, a glass frame can fit bigger batteries, more powerful electronics for digital filtering processing time and two microphones with which more complex filtering and speech recognition algorithms can be applied.
+\todo[inline]{add references}
 
-Sound coming from the speaker, would reach  the right year faster and be louder than 
-the sound that reaches the left year. The brain is able to compare the differences
-and tell where the sound is coming from.
+With all these being said, the project will involve two filtering methods using both microphones to achieve, theoretically, a better speech perception and understanding.
 
-Vertical sound localization behaves differently. Humans are able to determine the source
-in the vertical dimension, by making use of the frequency profile of the sound, determined
-by the size of a persons external ear, called the auricle.
+The first, involves using two microphones in order to record a two or 
+more sound sources, from different angles.
+With the sound samples recorded, the next step involves handling them 
+in such a manner that allows to filter one source out, and keep the other.
 
-The external ear is able to enhance different frequencies, based on the origin in the vertical
-plane. Figure XX better showcases the phenomenon. 
-
-
+Once one source has been filtered out, the next step is a neural network algorithm to filter the remaining noise from that direction and return a speech as clean and as clear as possible, in this way taking care of any noise that was happening in front or behind the person we want to hear more clearly.
 \subsubsection{Reading Guide}
 Chapter 2 deals with problem analysis. Chapter 3 describes the setup and components
 used for recording samples. Chapter 4 and 5 focuses on the two filtering methods
