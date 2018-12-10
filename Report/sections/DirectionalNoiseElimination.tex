@@ -260,6 +260,7 @@ Figure \ref{fig:L}.
 \end{figure}
 
 \newpage
+\subsection*{Results}
 An early attempt at filtering speech, was done on only one person. The data was firstly matched, and then 
 subtracted. The result of it, can be seen in Figure \ref{fig:oneSourceSepAndOG}. The green data represents 
 the original recorded signal, while the blue data represents the filtered data. Ideally, the blue data would
@@ -284,7 +285,8 @@ that was intended to be filtered out. If other sound would be present, maybe the
 the signal that was intended to be filtered out.
 
 After shifting the left microphone data, some data lines up with the right microphone data in Figure 
-\ref{fig:2sourcesShifted}, which suggests it could work and it would separate the unwanted sounds from the samples. 
+\ref{fig:2sourcesShifted}, which suggests it could work and it would separate the unwanted sounds from the 
+samples. 
 
 \begin{figure}[htp]
   \centering
@@ -296,11 +298,11 @@ After shifting the left microphone data, some data lines up with the right micro
 The separated data was compared to the original data. The comparison can be seen in figure \ref{fig:2sourcesSeparated}.
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.8\linewidth]{Illustrations/twoSourcesSeparatedandOriginal.png}
+  \includegraphics[width=0.7\linewidth]{Illustrations/twoSourcesSeparatedandOriginal.png}
   \caption{Separated Signal And Original Signal}
   \label{fig:2sourcesSeparated}
 \end{figure}
-
+\subsection*{Results}
 This was deemed as a failed attempt. However not necessarily because of the method, but rather 
 because of the, equipment used and environment to record the samples, which were not ideal. Neither
 of the microphones captured the sound waves identically. This can be seen in Figure \ref{fig:clap}.
@@ -308,7 +310,7 @@ The clap at the beginning of the recordings can be represented. Ideally, microph
 identical waveform, but in the figure they are clearly different.
 \begin{figure}[htp]
   \centering
-  \includegraphics[width=0.8\linewidth]{Illustrations/clap.png}
+  \includegraphics[width=0.7\linewidth]{Illustrations/clap.png}
   \caption{Clap in the beginning of recording}
   \label{fig:clap}
 \end{figure}
@@ -324,10 +326,10 @@ delay and gain into account, in an attempt to make them sound as real as possibl
 
 Using synthetic samples also allowed for more flexibility when testing the code, by being able to adjust 
 the angle of the source. 
-\subsubsection{Gain ratio}
-A gain need to be multiplied with one of the signals, to account for the distance difference. If one source
-is closer to one microphone than the other, the signal from that source needs to have a higher strength, to 
-mimic real behavior of the scenario.
+\subsection*{Gain ratio}
+A gain need to be multiplied with one of the signals, to account for the distance difference. If one 
+source is closer to one microphone than the other, the signal from that source needs to have a higher 
+strength, to mimic real behavior of the scenario.
 
 Sound strength falls by a ratio of 0.5 when the distance is doubled. Meaning that sound strength follows 
 distance inverse-proportionally.
@@ -350,9 +352,15 @@ right microphone data to get realistic gain loss. Distances \(dist_L\) and \(dis
 distances, which are calculate in the delay code. This means that in order to get the gain ratio for right 
 microphone, the distance to the left microphone (\(dist_L\)) needs to be divided by distance to the right 
 microphone (\(dist_R\)).
-\subsubsection{Adding recordings}
-Firstly, each recording is shifted by an amount of samples, corresponding to the angle we want. Afterwards,
-they are multiplied by their respective gains. Lastly, they are cut down to the same size to make the adding
-easier.
+\subsection*{Adding recordings}
+Firstly, each recording is shifted by an amount of samples, corresponding to the angle we want. 
+Afterwards, they are multiplied by their respective gains. Lastly, they are cut down to the same size to 
+make the adding easier.
 Right Microphone corresponding to each source will be multiplied by the gain, while Left Microphone  
-corresponding to each source will be shifted. 
+corresponding to each source will be shifted.
+\subsection*{Results} 
+The speech separation was attempted successfully with synthetic samples. Either of the sources can be 
+separated and clearly heard. The filtering method however, has some limitations. If the angle between
+the sources is too big, the gains of each signals are significant enough to not be able to filter them
+out completely, just by subtracting. We are hoping that by using machine learning, this issue could
+be solved as well.
