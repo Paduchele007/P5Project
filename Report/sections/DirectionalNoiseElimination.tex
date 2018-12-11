@@ -118,9 +118,23 @@ The time, can be converted in amount of samples by multiplying it by the samplin
 	delayInSamples = delayInTime \cdot SamplingFrequncy
 \end{equation}
 
+There are 2 variables influencing the delay (the gap between microphones is 
+set constant). Angle of where the source is placed at and the distance to it have 
+to be measured with a help of sensors. To determine whether we need to measure both 
+of them, we looked at how different angles and distances to the source affect the 
+delay (see figure \ref{fig:anglesDistDelay}).
 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=1\textwidth]{Illustrations/distanceMatters.png}
+	\caption{Angle and distance to the source effect on delay in samples}
+	\label{fig:anglesDistDelay}
+\end{figure}
 
-
+From the graph above we can clearly see, that just after *insert a distance from 
+the graph* distance stops affecting the delay. Based on this finding, we have 
+decided to set distance to 1 meter to simplify. By doing so, we could remove 
+distance from our calculations.
 
 
 
