@@ -61,8 +61,8 @@ One signal would be significantly louder than the other to the point where filte
 \newpage
 \section{Mathematical Solution}
 
-Figure \ref{fig:zoomedin2} is a simplified version of Figure \ref{fig:zoomedin1} in order to better
-understand the mathematical proof of finding the delay in number of samples.
+Figure \ref{fig:zoomedin2} is a more detailed version of Figure \ref{fig:zoomedin1} in order to better
+understand and explain the mathematical proof of finding the delay in number of samples.
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=1\textwidth]{Illustrations/mathematicalShit.jpg}
@@ -71,32 +71,32 @@ understand the mathematical proof of finding the delay in number of samples.
 \end{figure}
 
 Firstly, the distances SR and SL must be determined. This can be found by employing 
-basic trigonometry. This is done by independently finding out the sides of the triangles
-SyL  and SyR.
-
+basic trigonometry. This is done by independently finding out the sides SA, AR and AL of the triangles
+$\triangle$SAL  and $\triangle$SAR.
+Distance SR' is equal to SR, based on the fact that angles $\angle$SRR' = $\angle$SR'R. Distance LR is denoted as "gap" and SL as "h" to make it easier to follow the equations. C is the center point between left and right microphones.
 \begin{equation}
-	yR = sin(\theta) - \dfrac{d}{2} 
+	AR = sin(\theta) \cdot CS  - \dfrac{gap}{2} 
 \end{equation}
 
 \begin{equation}
-	yL = sin(\theta) + \dfrac{d}{2}
+	AL = sin(\theta) \cdot CS + \dfrac{gap}{2}
 \end{equation}
 
 After the x-coordinates are determined, h is needed in order to calculate the y-coordinates.
 
 \begin{equation}
-	h = cos(\theta)
+	h = cos(\theta) \cdot CS
 \end{equation}
 
 \newpage
 Lastly, the sides SR and SL are determined.
 
 \begin{equation}
-	SR = \sqrt{h^2 + yR^2}
+	SR = \sqrt{h^2 + AR^2}
 \end{equation}
 
 \begin{equation}
-	SL = \sqrt{h^2 + yL^2}
+	SL = \sqrt{h^2 + AL^2}
 \end{equation}
 
 Once the distances are known, the difference in distance between the signals can be found.
@@ -109,14 +109,30 @@ At this moment, the delay is expressed in distance. By knowing the speed of soun
 time it takes to travel that distance can be found.
 
 \begin{equation}
-	delayInTime = \frac{delay}{speed of sound}
+	delayInTime = \frac{delay}{speed  of  sound}
 \end{equation}
 
 The time, can be converted in amount of samples by multiplying it by the sampling frequency.
 
 \begin{equation}
-	delayInSamples = delayInTime * SamplingFrequncy
+	delayInSamples = delayInTime \cdot SamplingFrequncy
 \end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \section{Filtering Idea}
