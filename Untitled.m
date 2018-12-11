@@ -15,7 +15,7 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Source 1', 'interpreter', 'latex', 'FontSize', 14);
+title('Signal1', 'interpreter', 'latex', 'FontSize', 14);
 
 subplot(2,1,2);
 plot(t(a:b),y1(a:b));
@@ -23,7 +23,7 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Source 1 - Right Shifted', 'interpreter', 'latex', 'FontSize', 14);
+title('Signal1(240)', 'interpreter', 'latex', 'FontSize', 14);
 
 x = 0.34 * cos(2 * pi * t);      
 x1 = shiftFunction(-377,x);
@@ -35,7 +35,7 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Source 2', 'interpreter', 'latex', 'FontSize', 14);
+title('Signal2', 'interpreter', 'latex', 'FontSize', 14);
 
 subplot(2,1,2);
 plot(t(a:b),x1(a:b));
@@ -43,7 +43,7 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Source 2 - Left Shifted', 'interpreter', 'latex', 'FontSize', 14);
+title('Signal2(-377)', 'interpreter', 'latex', 'FontSize', 14);
 
 
 z = y+x1;
@@ -56,7 +56,7 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Source 1 + Source 2-Left Shifted', 'interpreter', 'latex', 'FontSize', 14);
+title('Signal1 + Signal2(-377)', 'interpreter', 'latex', 'FontSize', 14);
 
 subplot(2,1,2);
 plot(t(a:b),z1(a:b));
@@ -64,7 +64,7 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Source 1-Right Shifted + Source 2', 'interpreter', 'latex', 'FontSize', 14);
+title('Signal1(240) + Signal2', 'interpreter', 'latex', 'FontSize', 14);
 
 
 
@@ -77,7 +77,7 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Obtained Source 1', 'interpreter', 'latex', 'FontSize', 14);
+title('ObtainedSignal1', 'interpreter', 'latex', 'FontSize', 14);
 
 subplot(2,1,2);
 zshifted2 = shiftFunction(-240,z1);
@@ -87,18 +87,4 @@ grid on;
 axis tight;
 ylabel('Amplitude', 'interpreter', 'latex', 'FontSize', 14);
 xlabel('Time[s]','interpreter', 'latex', 'FontSize', 14);
-title('Obtained Source 2', 'interpreter', 'latex', 'FontSize', 14);
-
-
-
-
-figure;
-subplot(2,1,1);
-plot(t(a:b),zshifted(a:b));
-grid on;
-axis tight;
-subplot(2,1,2);
-plot(t(a:b),z1(a:b));
-grid on;
-axis tight;
-
+title('ObtainedSignal2', 'interpreter', 'latex', 'FontSize', 14);
