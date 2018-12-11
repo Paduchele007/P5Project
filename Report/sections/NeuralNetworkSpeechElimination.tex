@@ -81,7 +81,7 @@ In figure \todo{add nr of figure}, representing an artificial neuron, all those 
 As stated in the last section, each neuron will have an activation function. Being biological inspired, it usually represents the rate of action potential in the cell, depending on the range and the case, this can be from 0 to 1 or from -1 to 1. In the range of 0 to 1, which resemble the biological neuron more, this can be seen as the neuron firing or not.
 
 Two of the most used activation function are:
-The sigmoid Function: Which maps the input from 0 to 1.This can be really useful where neurons have to predict the probability as the output.
+The sigmoid Function:
 
 \begin{itemize}
 \item The sigmoid Logistic Function: Which maps the input from 0 to 1.This can be really useful where neurons have to predict the probability as the output.
@@ -106,3 +106,11 @@ The sigmoid Function: Which maps the input from 0 to 1.This can be really useful
 \subsection{Types of Artificial Neural Networks}
 
 \subsubsection{Feed-Forward Networks}
+
+The feed-forward neural network is one the first methods invented and one of the simplest. As the name suggests, the information moves only forward from the input, through the hidden layers is it has any, to the output. All neurons are directly connected to the neurons from the next layer, they have no cycles or loops like other other neural networks that are going to be presented.
+
+Different types exists, as single layer perceptron, which have the inputs being fed directly in the output layer using a series of weights. Multi-layer perceptron is another one, which,compared with the single layer perceptron, has one or more hidden layers of neurons.
+In most cases a sigmoid activation function is going to be used for those types of neurons as they are usually used for classification purposes.In other types like Convolution neural networks,which are composed of one or more convolutional layers, have fully connected layers, meaning that all the lengths of the output vector will be equal with the input one.
+
+\subsubsection{Recurrent Neural Network}
+
