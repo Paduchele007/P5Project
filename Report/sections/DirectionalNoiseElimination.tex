@@ -146,22 +146,38 @@ A visual example is explained below. Actual differences can even be seen on the 
 The example is ideal, meaning there is no noise applied to the signals, and their purpose is to 
 prove the idea.
 
+To better understand the example the following notation is
+used to represent the amount of samples the signal has been shifted. 
+
+\begin{align}
+	Signal1(-389)
+	\label{eq:signal1}
+\end{align}
+\begin{align}
+	Signal2(254)
+	\label{eq:signal2}
+\end{align}
+
+Signal1 in Equation \ref{eq:signal1} has been shifted to the left by 389 samples. Meaning that, if 
+plotted, Signal1(-389) would be ahead of Signal1 by 389 samples.
+
+Signal2 in Equation \ref{eq:signal2} has been shifted to the right by 254 samples. Meaning that, if 
+plotted, Signal2(254) would be behind Signal2 by 254 samples.
+
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=\textwidth]{Illustrations/source1.jpg}
+	\includegraphics[width=0.8\textwidth]{Illustrations/source1.jpg}
 	\caption{First Source}
 	\label{fig:source1}
 \end{figure}
 
-Figure \ref{fig:source1} shows a simple sine wave. Source 1 is the original signal. Source 1-Right Shifted
-is the same signal just shifted to the right by 240 samples.
-
+Figure \ref{fig:source1} shows a simple sine wave. Signal1 is the original signal. Signal1(240) is the 
+same signal just shifted to the right by 240 samples.
 \newpage
 
 Figure \ref{fig:source2} shows another sine wave, with a higher frequency and a lower amplitude. This 
-represents the second source. Source 2 is the original signal. Source 2 - Left Shifted is the same signal
-shifted to the left by 377 samples.
-
+represents another signal. Signal2 is the original signal. Signal2(-377) is the same signal shifted to 
+the left by 377 samples.
 
 \begin{figure}[htp]
 	\centering
@@ -171,20 +187,19 @@ shifted to the left by 377 samples.
 \end{figure}
 Next step involves adding the signals.
 \begin{equation}
-	Source1 + Source2LeftShifted = LeftMicrophone
+	Signal1 + Signal2(-377) = LeftMicrophoneSignal
 	\label{eq:leftMicrophone}
 \end{equation}
 
-
 \begin{equation}
-	Source1RightShifted + Source2 = RightMicrophone
+	Signal1(240) + Signal2 = RightMicrophoneSignal
 	\label{eq:rightMicrophone}
 \end{equation}
 
 Equations \ref{eq:leftMicrophone} and \ref{eq:rightMicrophone} now have both signals from both sources.
 \newpage
-$LeftMicrophone$ contains $Source1$ and $Source2LeftShifted$. $RightMicrophone$ contains $Source2$
-and $Source1RightShifted$.
+$LeftMicrophoneSignal$ contains $Signal1$ and $Signal2(-377)$. $RightMicrophoneSignal$ contains 
+$Signal1(240)$ and $Signal2$.
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=\textwidth]{Illustrations/source1And2.jpg}
@@ -201,15 +216,39 @@ Knowing the angles and the amount of delay in samples, the separation of the two
 a matter of matching and subtracting them. 
 
 Important to notice. The matched signal is the one filtered out.
+
+As stated previously, we have chosen to only shift one signal for simplicity. Meaning, no matter
+what Signal we are trying to separate, we are either going to shift LeftMicrophoneSignal or 
+RightMicrophoneSignal. We have chosen to shift LeftMicrophoneSignal.
+
+Suppose we are trying to get Signal2 separated.
+First step is to match Signal1. Signal1 is part of LeftMicrophoneSignal, meaning LeftMicrophoneSignal
+has to be shifted by the same amount of samples as Signal1(240) in the opposite direction. That is 
+LeftMicrophoneSignal becomes LeftMicrophoneSignal1(-240).
+
+Next step, simply involves subtracting the two microphone signals as shown in Equation \ref{eq:obtainedSignal1}.
+
+\begin{equation}
+	LeftMicrophoneSignal(-240) - RightMicrophoneSignal = ObtainedSignal1
+	\label{eq:obtainedSignal1}
+\end{equation}
+
+Similarly, Signal2 can be obtained, as shown in Equation \ref{eq:obtainedSignal2}.
+
+\begin{equation}
+	LeftMicrophoneSignal(377) - RightMicrophoneSignal = ObtainedSignal2
+	\label{eq:obtainedSignal2}
+\end{equation}
+\newpage
+Figure \ref{fig:obtainedSignals} represents the obtained signals after matching and subtracting the 
+signals in figure \ref{fig:source1And2}.
+
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/obtainedSource1And2.jpg}
+	\includegraphics[width=\textwidth]{Illustrations/obtainedSource1And2.jpg}
 	\caption{Obtained Signals}
 	\label{fig:obtainedSignals}
 \end{figure}
-
-Figure \ref{fig:obtainedSignals} represents the obtained signals after matching and subtracting the signals
-in figure \ref{fig:source1And2}.
 
 The signals seem to have a slight phase shift. Additionally, they have higher amplitudes, than the original
 signals. As of right now, we are not able to determine why. However the waveforms are very similar.
