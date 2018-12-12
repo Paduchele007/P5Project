@@ -143,6 +143,7 @@ GRU, compared with RNN has an update gate and a reset gate, which solves one pro
 
 
 \subsubsection{The Update Gate}
+
 First operation made in the unit will be the calculation of the Update gate.
 \begin{equation}
   z_t =\sigma(W^{(z)}x_t + U^{(z)}h_{(t-1)})
@@ -159,4 +160,59 @@ This is a really important part of the unit as it will determine how much of the
 	\label{fig:GRUresetgate}
 \end{figure}
 
-The reset gate fucks your mom
+\subsubsection{The Reset Gate}
+The reset gate, compared with the update gate, will calculate how much of the past data to let go.
+\begin{equation}
+r_t=\sigma(W^{(r)}x_t+U^{(r)}h_{t-1})
+\end{equation}
+The formula is quite similar to the one from the update gate, the difference being in the weights used and the usage of the results in figure\todo{add nr of figure} we can see the same lines being used as in the update gate to gather data, multypling them with the weights, adding the results together and passing them to a sigmoid activation function.
+
+\subsubsection{Present memory}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Illustrations/GRUpresentmemory.png}
+	\caption{Present memory calculation step in the unit}
+	\label{fig:GRUpresentmemory}
+\end{figure}
+
+After calculating the gates, in the next two steps the final result will be calculated.
+Firstly the reset gate will be used to store usable information from the past in the present memory content.
+\begin{equation}
+h'_t=tanh(Wx_t+r_t \circ Uh_{t-1})
+\end{equation}
+
+Firstly the input $x_t$ and $h_{t-1}$ will be multiplied with their weights: $W$ and $U$ respectively. The element wise or Hadamard product will be taken between the reset gate $r_t$ and $Uh_{(t-1)}$.This will basically determine how much to remove from the past time steps. After that the results will be added together and passed to a tanh activation function.
+
+\subsubsection{Final memory at present time}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Illustrations/GRUlaststep.png}
+	\caption{Final memory at present time calculation in the unit}
+	\label{fig:GRUlaststep}
+\end{figure}
+
+In the last part of the gated recurrent unit, the new $h_t$ has to be calculated, which will hold the information for the current unit and pass it to the rest of the network.
+Now the update gate will be used to determine what to use from $h'_t$ current step and from the previous step $h_{(t-1)}$.
+
+\begin{equation}
+h_t=z_t \circ h_{t-1}+(1-z_t) \circ h'_t
+\end{equation}
+
+Firstly the gate $z_t$ and $h'_t$ will be multiplied element-wise, then $(1-z_t)$ and $h'_t$ will be multiplied element-wise also. The sum of those results will be the end result $h_t$. 
+
+Finally the end result, and the whole gated recurrent unit unfolded will look as in figure \todo{add figure nr}
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Illustrations/GRUunfolded.png}
+	\caption{The GRU unfolded with the past,present and future units}
+	\label{fig:GRUunfolded}
+\end{figure}
+
+\subsection{Regulation Methods}
+
+\subsection{Training methods}
+
+\subsection{Model Development}
