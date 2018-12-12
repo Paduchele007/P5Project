@@ -120,5 +120,40 @@ This can be really useful in some cases like translation, speech recognition, so
 
 \subsubsection{Gated Recurrent Unit Networks} 
 
-Gated Recurrent Unit Networks 
+Gated Recurrent Unit Networks are a type of recurrent neural networks firstly introduced by Kyunghyun Cho et al in 2014.\todo{add references all over the place} similar to LSTM networks but with fewer parameters, it has shown better results then LSTM in some cases. Usually used and with a good performance on speech signal modulation, music modelling and noise suppression, GRU networks will be one of the main network types that will be used in the building of our neural network.
 
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Illustrations/GRU.png}
+	\includegraphics[width=0.8\textwidth]{Illustrations/GRUsymbols.png}
+	\caption{Example of a single Gated Recurrent Unit}
+	\label{fig:GRU}
+\end{figure}
+
+
+GRU, compared with RNN has an update gate and a reset gate, which solves one problem that RRN had: the vanishing gradient problem. This is a problem that mostly happends with very deep neural networks, in which because of the way the gradient-based learning method works, the gradient can became really small or even disappear which will make the training very slow or even incapacitate the neural network and basically stop the training process not letting any weights being updated.
+
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Illustrations/GRUupdategate.png}
+	\caption{The update gate exemplified in the unit}
+	\label{fig:GRUupdategate}
+\end{figure}
+First operation made in the unit will be the calculation of the Update gate.
+\begin{equation}
+  Z_t =\sigma(W^{(Z)}x_t + U^{(z)}h_{(t-1)})
+\end{equation}
+
+As exemplified in figure \todo{add figure nr} both $x_t$ and $h_{t-1}$,which hold information from the last $t-1$ unit, will be multiplied by respective weights, $W^{(z)}$ and $U^{(z)}$ respectively. The results will be summed together and a sigmoid activation function is going to limit their range between 0 and 1.
+
+This is a really important part of the unit as it will determine how much of the past values will be taken in consideration and passed for future calculations. By doing this, the unit can remember a lot of steps in the past and eliminate the vanishing gradient problem had before in RNN networks.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Illustrations/GRUresetgate.png}
+	\caption{The Reset Gate exemplified in the unit}
+	\label{fig:GRUresetgate}
+\end{figure}
+
+The reset gate fucks your mom
