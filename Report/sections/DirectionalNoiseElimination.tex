@@ -468,16 +468,16 @@ and a difference of amplitude.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=\textwidth]{Illustrations/twoSourcesAndJustOneLater.png}
+	\includegraphics[width=.9\textwidth]{Illustrations/twoSourcesAndJustOneLater.png}
 	\caption{Split View of Signals}
 	\label{fig:SplitTwoSources}
 \end{figure}
-\newpage
+
 Further on, LeftMicrophoneData has to be shifted to match the phase of RightMicrophoneData.
 The results can be seen in Figure \ref{fig:SplitShifted}.
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/shiftedLeftAndRightSplitView.png}
+	\includegraphics[width=.9\textwidth]{Illustrations/shiftedLeftAndRightSplitView.png}
 	\caption{Split View of Shifted Signals}
 	\label{fig:SplitShifted}
 \end{figure}
@@ -489,10 +489,28 @@ separated, and only the other signal is left.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/rightAndSubtractedSplitView.png}
+	\includegraphics[width=.9\textwidth]{Illustrations/rightAndSubtractedSplitView.png}
 	\caption{Split View of Subtracted Signal}
 	\label{fig:SplitSeparated}
 \end{figure}
+\newpage
+\begin{minipage}{\textwidth}
+After separating the signals, the result can be seen in Figure \ref{fig:SplitSeparated}.
+Notice that the green signal nears zero to the right of the red line. To the left of the
+red line, the signal has a different waveform, suggesting the matched signal has been
+separated, and only the other signal is left.
+\end{minipage}
+\begin{minipage}{\textwidth}
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=\textwidth]{Illustrations/rightAndSubtractedSplitView.png}
+	\caption{Split View of Subtracted Signal}
+	\label{fig:SplitSeparated}
+\end{figure}
+\end{minipage}
+
+
+
 \newpage
 \subsection*{Results} 
 The speech separation was attempted successfully with synthetic samples. Either of 
@@ -501,3 +519,27 @@ some limitations. If the angle between the sources is too big, the gains of each
 signals are significant enough to not be able to filter them out completely just 
 by subtracting. We are hoping that by using machine learning, this issue could be 
 solved as well.
+
+\subsection*{Three sound sources} 
+As we could get acceptable results with two sound sources we have decided to continue with 
+our idea and expand on it to use it to separate one sound source from three sound sources.
+\\
+Samples addition as well as shifting parts are exactly the same as what has been used with 
+two sound sources. The difference came, when trying to separate one source from other two: 
+We have attempted to add two shifted signals, which we shifted to the sides both of the 
+sources we want to remove were placed at and then subtracting twice from this sum right 
+microphone data. \\
+Unfortunately, doing so only could separate one source in one case, we couldn't manage to 
+separate other two. Overall, this method shouldn't be successful, but the fact, that we 
+managed to make it work in one case is interesting. \todo{I don't know if we should write all this, sounds like we were just doing whatever without thinking about it too much, which was the case, but still, somehow we got something} \\
+The case, when separation worked we shifted signal to the side (INSERT A DELAY WITH A 
+SIGN) and other signal to the side (INSERT OTHER DELAY WITH A SIGN) and then added these 
+two together and removed right microphone data from this sum twice. After listening to the 
+result we could hear a lot from other two sources, but the one which we were aiming to 
+separate was still heard loud and clear.\\
+Possible improvements: in addition to shifting, try to add opposite gain which could make 
+the signals not only similar in phase but also in amplitude. This might help with the 
+sound which stays in the background and is a bit audible if we try to listen to it. 
+Applying this might also help with better and more consistent separation when working with 
+three sound sources. \todo{might need to remove it all or retype it}
+
