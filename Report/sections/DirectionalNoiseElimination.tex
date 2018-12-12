@@ -400,7 +400,8 @@ but rather because of the, equipment used and environment to record the samples,
 which were not ideal. Neither of the microphones captured the sound waves 
 identically. This can be seen in Figure \ref{fig:clap}. The clap at the beginning 
 of the recordings can be represented. Ideally, microphones would register identical 
-waveform, but in the figure they are clearly different.
+waveform, but in the figure they are clearly different.\\
+
 
 \begin{figure}[htp]
   \centering
@@ -422,6 +423,7 @@ possible.\\
 
 Using synthetic samples also allowed for more flexibility when testing the code, by 
 being able to adjust the angle of the source. 
+
 \subsection*{Gain ratio}
 A gain need to be multiplied with one of the signals, to account for the distance 
 difference. If one source is closer to one microphone than the other, the signal 
@@ -451,12 +453,44 @@ with right microphone data to get realistic gain loss. Distances \(dist_L\) and
 means that in order to get the gain ratio for right microphone, the distance to the 
 left microphone (\(dist_L\)) needs to be divided by distance to the right 
 microphone (\(dist_R\)).
+\newpage
 \subsection*{Adding recordings}
 Firstly, each recording is shifted by an amount of samples, corresponding to the 
 angle we want. Afterwards, they are multiplied by their respective gains. Lastly, 
 they are cut down to the same size to make the adding easier.Right Microphone 
 corresponding to each source will be multiplied by the gain, while Left Microphone  
-corresponding to each source will be shifted.
+corresponding to each source will be shifted. Figure \ref{fig:SplitTwoSources} 
+visualizes how two summed signals look like. In the figure we have made a split  
+view (the red line indicates the split), of the two sources summed up, compared to the 
+single source after the red line. 
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Illustrations/twoSourcesAndJustOneLater.png}
+	\caption{Split view of two sources added together}
+	\label{fig:SplitTwoSources}
+\end{figure}
+Further on, left microphone data has to be shifted to match the phase of right 
+microphone, results can be seen in the figure \ref{fig:SplitShifted}, which also 
+has split marked red.
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Illustrations/shiftedLeftAndRightSplitView.png}
+	\caption{Split view of shifted left microphone signal and right microphone signal}
+	\label{fig:SplitShifted}
+\end{figure}
+After separating the signals, in the figure \ref{fig:SplitSeparated} we can observe, 
+that in the part where one source is present, separated data stays near zero and at 
+the half, which has two sources in it, the output is more jagged which could mean, 
+that one of the sources has been filtered out, leaving the other one.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Illustrations/rightAndSubtractedSplitView.png}
+	\caption{Split view of subtracted signal and right microphone signal}
+	\label{fig:SplitSeparated}
+\end{figure}
+
 \subsection*{Results} 
 The speech separation was attempted successfully with synthetic samples. Either of 
 the sources can be separated and clearly heard. The filtering method however, has 
