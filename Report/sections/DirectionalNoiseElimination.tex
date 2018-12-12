@@ -457,44 +457,47 @@ microphone (\(dist_R\)).
 \subsection*{Adding recordings}
 Firstly, each recording is shifted by an amount of samples, corresponding to the 
 angle we want. Afterwards, they are multiplied by their respective gains. Lastly, 
-they are cut down to the same size to make the adding easier.Right Microphone 
-corresponding to each source will be multiplied by the gain, while Left Microphone  
+they are cut down to the same size to make the adding easier. RightMicrophoneSignal 
+corresponding to each source will be multiplied by the gain, while LeftMicrophoneSignal  
 corresponding to each source will be shifted. Figure \ref{fig:SplitTwoSources} 
-visualizes how two summed signals look like. In the figure we have made a split  
-view (the red line indicates the split), of the two sources summed up, compared to the 
-single source after the red line. 
+visualizes how two summed signals look like. The figure represents a split view of
+the added signals. Each signal is a sum of two other signals, shifted and multiplied
+by a specific gain. To the right of the red line, each signal is only comprised of
+one signal, to represent the matching of the signals. A slight delay is noticed
+and a difference of amplitude. 
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Illustrations/twoSourcesAndJustOneLater.png}
-	\caption{Split view of two sources added together}
+	\includegraphics[width=\textwidth]{Illustrations/twoSourcesAndJustOneLater.png}
+	\caption{Split View of Signals}
 	\label{fig:SplitTwoSources}
 \end{figure}
-Further on, left microphone data has to be shifted to match the phase of right 
-microphone, results can be seen in the figure \ref{fig:SplitShifted}, which also 
-has split marked red.
+\newpage
+Further on, LeftMicrophoneData has to be shifted to match the phase of RightMicrophoneData.
+The results can be seen in Figure \ref{fig:SplitShifted}.
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Illustrations/shiftedLeftAndRightSplitView.png}
-	\caption{Split view of shifted left microphone signal and right microphone signal}
+	\caption{Split View of Shifted Signals}
 	\label{fig:SplitShifted}
 \end{figure}
-After separating the signals, in the figure \ref{fig:SplitSeparated} we can observe, 
-that in the part where one source is present, separated data stays near zero and at 
-the half, which has two sources in it, the output is more jagged which could mean, 
-that one of the sources has been filtered out, leaving the other one.
+
+After separating the signals, the result can be seen in Figure \ref{fig:SplitSeparated}.
+Notice that the green signal nears zero to the right of the red line. To the left of the
+red line, the signal has a different waveform, suggesting the matched signal has been
+separated, and only the other signal is left.
 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Illustrations/rightAndSubtractedSplitView.png}
-	\caption{Split view of subtracted signal and right microphone signal}
+	\caption{Split View of Subtracted Signal}
 	\label{fig:SplitSeparated}
 \end{figure}
-
+\newpage
 \subsection*{Results} 
 The speech separation was attempted successfully with synthetic samples. Either of 
 the sources can be separated and clearly heard. The filtering method however, has 
 some limitations. If the angle between the sources is too big, the gains of each 
-signals are significant enough to not be able to filter them out completely, just 
+signals are significant enough to not be able to filter them out completely just 
 by subtracting. We are hoping that by using machine learning, this issue could be 
 solved as well.
