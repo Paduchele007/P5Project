@@ -161,13 +161,17 @@ Finally the end result, and the whole gated recurrent unit unfolded will look as
 	\label{fig:GRUunfolded}
 \end{figure}
 
-\subsection{Model Development}
+\section{Model Development}
+
+After The sample is filtered with the directional filter, noise from the specified direction will still remain. For that reason the goal of the project was to develop a neural network algorithm that will practically act as an adaptive filter to suppress the remaining noise. The neural network consists mostly of Recurrent neural network layers with Gated Recurrent units as they have been proven to be very effective for this specific case of eliminating noise. Further in the project, variations of the neural network with different layer configurations will be examined to see how they would act on this specific case, and different training methods too to see which will be the most efficient.
 
 \subsubsection{Regularization Methods}
 A big problem that can happen while training is over-fitting. By training on a set of data too much, or having a small dataset will result in an over-fitted neural network that will give really good results on data from the dataset, but when tests with new data are made, the prediction of the neural network will be far from the wanted result.
- 
+
+
 For that reason regularization methods can be used to ensure that the data will not be over-fitted. Those will be some layers in the neural network that will only be active during the training.
 One technique used in the project is the Dropout regularization method. This is one of the most effective methods, firtly introduced by Srivastava et al in 2014 \todo{add reference}. This works by giving each neuron a probability to be set to zero, in this way random neurons will be ignored or "dropped out". This works really well as no neuron will over specialize for only one feature, as if that happends, and that specific neuron is dropped out, other neuron will have to make predictions even without that neuron. This, in the end, will result in multiple independent internal representations being learned by the network. Otherwise, the neuron will rely too much on some of the features represented by other neurons and will result in complex co-adaptations.
+
 
 \begin{figure}[htp]
 	\centering
@@ -177,9 +181,57 @@ One technique used in the project is the Dropout regularization method. This is 
 \end{figure}
 
 This function can be better seen in figure \todo{add nr of figure}, as after applying dropout only some connections will be kept instead of all of them.
+\newpage
+\subsection{Data Preprocessing}
+
+For training and evaluating the Neural Network data was needed to create the dataset. As the objective of the neural network is to filter out noise from a noisy speech sample, samples of clean speech and noise were needed. The speech samples were taken from LibriSpeech \todo{add reference http://www.openslr.org/12/}. From there 100 hours of audio books with clean speech were taken.
+For the noise, approximately 16 GB of noise were collected in a freely available pack from \todo{add reference https://people.xiph.org/~jm/demo/rnnoise/}.
+
+all this data had to be processed as they come in different formats.
+To create a dataset big enough, and to avoid overfitting this process was automated and randomized. Firstly, a random sample of clean speech is taken, which is between 2 and 20 seconds. As most of the noise samples are around 1 minute, a random sample will be chosen, and from that sample a random section of the same length as the speech sample will be taken.
+
+By combining both of the samples the noisy sample that can be used is finished.
+The MFCC of both the noisy sample and the clean speech will be calculated as those will serve as the training data and target data respectively.
+
+\begin{lstlisting}[language=Python, caption=Noise sample gathering class]
+class noise:
+    def __init__(self,size):
+        self.size = size
+    
+    def choose_random(self):
+        path = r"C:\Users\Darius\Desktop\sound samples\training data for RNN\rnnoise_contributions"
+        files = os.listdir(path)
+        index = random.randrange(0, len(files))
+        if  files[index].endswith('.txt'):
+            index = index -1
+        file_path = os.path.join(path, files[index])
+        self.sample, fs = sf.read(file_path, channels=2, samplerate=24100,format='RAW', subtype='PCM_16')
+
+        i=0
+        while i!=1:
+            random_sequence = random.randrange(0,len(self.sample))
+            if random_sequence + self.size < len(self.sample):
+                i=1
+        self.sample = self.sample[random_sequence:]
+        self.sample = self.sample[:self.size ,:1]
+        
+        self.nfcc = python_speech_features.mfcc(self.sample,18000,0.025,0.01,24)
+        
+    def show_sample():
+        print(file_path)
+        plt.plot(self.sample)
+    def listen_sample(self):
+        sd.play(self.sample) 
+
+\end{lstlisting}
+
+Here, the class noise will do the whole process described and will be further used in the code to retrieve any parameters for the noise sample.
 
 \subsection{Training methods}
 
+\subsection{Different Neural Networks if we can}
+
+\subsection{Restults for NN}
 
 
 
