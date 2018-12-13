@@ -138,7 +138,7 @@ delay (see figure \ref{fig:anglesDistDelay}).
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Illustrations/distanceMatters.png}
-	\caption{Angle and distance to the source effect on delay in samples}
+	\caption{Angle and Distance Effects on Delay}
 	\label{fig:anglesDistDelay}
 \end{figure}
 
@@ -146,18 +146,6 @@ From the graph above we can see, that just after 30cm, distance stops affecting 
 delay significantly. Furthermore, since samples can only be integer numbers, we are 
 rounding down delays in samples to the closest integer. Based on this finding, we 
 have decided to set distance to 1 meter to simplify our calculations.
-
-
-
-
-
-
-
-
-
-
-
-
 
 \newpage
 \section{Filtering Idea}
@@ -354,8 +342,9 @@ The results can be seen in Figure \ref{fig:L}.
 \subsection*{Results}
 An early attempt at filtering speech, was done on only one person. The data was 
 firstly matched, and then subtracted. The result of it, can be seen in Figure 
-\ref{fig:oneSourceSepAndOG}. The green data represents the original recorded 
-signal, while the blue data represents the filtered data. Ideally, the blue data 
+\ref{fig:oneSourceSepAndOG}. 
+The green data represents the original recorded 
+signal, while the blue data represents the separated data. Ideally, the blue data 
 would have very low amplitude, and should be inaudible.
 
 However, after listening to the signal, it still contained enough data to hear what 
