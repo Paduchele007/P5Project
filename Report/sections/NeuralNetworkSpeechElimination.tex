@@ -211,8 +211,26 @@ Finally the end result, and the whole gated recurrent unit unfolded will look as
 	\label{fig:GRUunfolded}
 \end{figure}
 
-\subsection{Regulation Methods}
+\subsection{Model Development}
+
+\subsubsection{Regularization Methods}
+A big problem that can happen while training is over-fitting. By training on a set of data too much, or having a small dataset will result in an over-fitted neural network that will give really good results on data from the dataset, but when tests with new data are made, the prediction of the neural network will be far from the wanted result.
+ 
+For that reason regularization methods can be used to ensure that the data will not be over-fitted. Those will be some layers in the neural network that will only be active during the training.
+One technique used in the project is the Dropout regularization method. This is one of the most effective methods, firtly introduced by Srivastava et al in 2014 \todo{add reference}. This works by giving each neuron a probability to be set to zero, in this way random neurons will be ignored or "dropped out". This works really well as no neuron will over specialize for only one feature, as if that happends, and that specific neuron is dropped out, other neuron will have to make predictions even without that neuron. This, in the end, will result in multiple independent internal representations being learned by the network. Otherwise, the neuron will rely too much on some of the features represented by other neurons and will result in complex co-adaptations.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Illustrations/dropout.jpeg}
+	\caption{A representation of the dropout function during training}
+	\label{fig:dropout}
+\end{figure}
+
+This function can be better seen in figure \todo{add nr of figure}, as after applying dropout only some connections will be kept instead of all of them.
 
 \subsection{Training methods}
 
-\subsection{Model Development}
+
+
+
+
