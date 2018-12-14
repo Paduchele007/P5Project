@@ -206,7 +206,6 @@ class noise:
             index = index -1
         file_path = os.path.join(path, files[index])
         self.sample, fs = sf.read(file_path, channels=2, samplerate=24100,format='RAW', subtype='PCM_16')
-
         i=0
         while i!=1:
             random_sequence = random.randrange(0,len(self.sample))
@@ -214,8 +213,7 @@ class noise:
                 i=1
         self.sample = self.sample[random_sequence:]
         self.sample = self.sample[:self.size ,:1]
-        
-        self.nfcc = python_speech_features.mfcc(self.sample,18000,0.025,0.01,24)
+        self.nfcc   = python_speech_features.mfcc(self.sample,18000,0.025,0.01,24)
         
     def show_sample():
         print(file_path)
@@ -228,6 +226,11 @@ class noise:
 Here, the class noise will do the whole process described and will be further used in the code to retrieve any parameters for the noise sample.
 
 \subsection{Training methods}
+By gathering all the data described, a dataset could have been built, but to combine all the clean speech and noisy data and target dataset too would take a large amount of time, memory and processing power that were not available to us at the time. As even  a dataset of only 1000 samples already used more than 1.5 GB.
+
+Another option then building a large dataset was to use a generator and keras fit.generator() function to train the neural network instead. By doing that, a generator was able to be built that generates data for input and output of the neural network one batch at at time. This would not work in the tradition way as the neural network wouldn't be able to train more than one epoch, but the size of the dataset can be resized indefinitely.
+
+Multiple tests were made to research the reliability of both of those methods.
 
 \subsection{Different Neural Networks if we can}
 
