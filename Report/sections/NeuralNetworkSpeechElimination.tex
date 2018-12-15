@@ -256,10 +256,24 @@ All the models from the table are further discussed in the next section.
 
 \todo{add table with all things specified}
 
+Another note that could be made is that instead of using a classical stochastic gradient descent, as the optimization algorithm, adam(Adaptive moment estimation) was used which have some good benefits of being quite low on memory usage, is computationally efficient and and is appropriate for non-stationary objectives.
 
 \subsection{Comparison Between Different Models}
 
-In order to have a more optimized model, three neural network models were created and compared to assess their efficiency for our particular case.
+In order to have a more optimized model, three neural network models were created and compared to assess their efficiency for our particular case. The training parameters are the same as discussed  in the last section in order to have a proper comparison between them.
+
+
+The first model consists of two GRU layers and a fully connected layer as seen in figure todo[add figure nr}.
+\todo{add the graph for model 1 here}
+
+In the second model the two GRU layers were replaced by a Bidirectional GRU layer followed again by a fully connected layer as seen in figure todo[add figure nr}.
+
+\todo{add the graph for model 2 here}
+
+For the third model we decided to make a deeper model by adding another fully connected layer before the bidirectional GRU layer as seen the in the figure \todo[add figure nr}. Compared to model one and two , in model three a dropout function was added on the fully connected layers as well.
+
+\todo{add the graph for model 3 here}
+
 
 
 \subsection{Restults for NN}
