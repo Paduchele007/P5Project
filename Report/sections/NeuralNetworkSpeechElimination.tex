@@ -251,13 +251,25 @@ But as seen in\todo{add nr of figure that need to be added} the test results wer
 
 
 The dataset used contains 1000 samples for training and 400 samples for validation (roughly 30\%).All the samples consists of varying noise,speech samples and length to not overfit the neural network on specific parameters.
-The following table \todo{add nr of table} represents the batch size, dropout, learning rate, epochs and samples used for each model.
+Table \ref{tab:firsttable} represents the batch size, dropout, learning rate, epochs and samples used for each model.
 All the models from the table are further discussed in the next section.
 
-\todo{add table with all things specified}
-
+\begin{table}[htp]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Parameters         & Model 1 & Model 2 & Model 3 \\ \hline
+Batch Size         & 20      & 20      & 20      \\ \hline
+Dropout            & 0.15    & 0.15    & 0.15    \\ \hline
+Learning Rate      & 0.001   & 0.001   & 0.001   \\ \hline
+Training Samples   & 1000    & 1000    & 1000    \\ \hline
+Validation Samples & 400     & 400     & 400     \\ \hline
+Epochs             & 30      & 30      & 30      \\ \hline
+\end{tabular}
+\caption{Same Parameters Used On All Models}
+\label{tab:firsttable}
+\end{table}
 Another note that could be made is that instead of using a classical stochastic gradient descent, as the optimization algorithm, adam(Adaptive moment estimation) was used which have some good benefits of being quite low on memory usage, is computationally efficient and and is appropriate for non-stationary objectives.
-
 \subsection{Comparison Between Different Models}
 
 In order to have a more optimized model, three neural network models were created and compared to assess their efficiency for our particular case. The training parameters are the same as discussed  in the last section in order to have a proper comparison between them.
