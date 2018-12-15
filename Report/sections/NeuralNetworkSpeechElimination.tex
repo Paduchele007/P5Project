@@ -302,6 +302,41 @@ For the third model we decided to make a deeper model by adding another fully co
 
 
 
+In the following graphs the models were assessed using a Loss and Accuracy function. The loss function represents the mean square error of the predictions compared to the given output and the Accuracy is calculated as a percentage from 0 to 1 of the predictions that were exactly as the give output over the wrong predictions. The Blue line represents the red line represents the training data while the blue line represents the validation data.
+
+\todo{add graphs for all three models}
+
+As seen from the graphs, by adding a bidirectional layer the results are much better, but in the third deeper layer we can see that by making the layer too deep it needs more training to get to better results.
+
+\todo{add graph for model 2 with 60 epochs}
+
+For those reasons we decided to do another test by training model 2 with double the number of epochs. As seen in the graph, the neural network has further progress with better results but it still could benefit from a longer training as it still far from overfitted.
+
+\subsection{Model Description}
+
+As discussed in the last section, we decided to further train and develop the model two which is going to be further discussed and described in this section.
+
+\begin{lstlisting}[language=Python, caption=Noise sample gathering class]
+from keras.models import Sequential
+from keras.layers.core import Dense, Dropout
+from keras.layers import Activation, GRU, Bidirectional
+
+input_dim = 24
+
+model = Sequential()
+
+model.add(Bidirectional(GRU(input_dim,input_shape=(None,input_dim),activation='tanh',return_sequences=True)))
+
+model.add(Dropout(0.15))
+
+model.add(Dense(units=input_dim))
+
+model.add(Activation("linear"))
+
+model.build()
+model.compile(loss='mean_squared_error', optimizer='adam', metrics=['accuracy'])
+\end{lstlisting}
+
 
 \subsection{Restults for NN}
 
