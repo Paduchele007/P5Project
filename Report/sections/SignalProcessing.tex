@@ -103,3 +103,9 @@ By doing this, memory and processing power can be saved by using only 24 bands i
 	\caption{The 24 Bands of the Bark Scale}\cite{BARKSCALEPHTOT}
 	\label{fig:BarkScale}
 \end{figure}
+
+\section{Sample modulation using the MFCC}
+
+After the MFCCs were calculated from the sound sample, there isn't really a good way to get the sample back as only 24 band are not enough to get a similar sounding sound sample.
+So instead of doing that, the original sample can be modulated using other MFCC values. This,practically will act as a vocoder, as the original signal will be modulated using the spectrum envelope of another.
+To do this, the signal will be split in n signal and calculate the discrete fourier transform of each frame, derive the spectrum, and than modulates the spectrum with the coefficients from the MFC and then do inverse DFT to go back to the time domain.

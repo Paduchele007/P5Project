@@ -316,7 +316,7 @@ For those reasons we decided to do another test by training model 2 with double 
 
 As discussed in the last section, we decided to further train and develop the model two which is going to be further discussed and described in this section.
 
-\begin{lstlisting}[language=Python, caption=Noise sample gathering class]
+\begin{lstlisting}[language=Python, caption=Code for the model]
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout
 from keras.layers import Activation, GRU, Bidirectional
@@ -337,8 +337,26 @@ model.build()
 model.compile(loss='mean_squared_error', optimizer='adam', metrics=['accuracy'])
 \end{lstlisting}
 
+The Neural network input will accept an 3 dimensional array with the dimension of: number of samples on length of sample on 24.
+The number of samples will vary depending on the dataset, the length of the samples will vary to in order to not overfit the network, and lastly the 24 represents the 24 MFCC bands of each sample.
 
-\subsection{Restults for NN}
+
+The first layer is a Bidirectional GRU layer which will accept an input with the shape of (None,input\_ dim) which represents the length of the sample on 24.
+the activation function will be tanh.
+
+After the first layer a dropout function of 0.15 will be added
+
+The second layer will be a dense layer which is a fully connected layer followed by the activation function of the model, which was chosen as a linear one.
+
+In the end the model will be built and compiled with the mean  squared error loss function, accuracy metric and adam optimizer.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=1\textwidth]{Illustrations/tensorboard model of NN.png}
+	\caption{The full model Graph}
+	\label{fig:FullmodelGraph}
+\end{figure}
+
 
 
 
