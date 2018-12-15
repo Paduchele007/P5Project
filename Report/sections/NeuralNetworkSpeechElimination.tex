@@ -23,8 +23,8 @@ An artificial neuron is an elementary unit in an artificial neural network. As b
 	\caption{Example of an Artificial Neuron}
 	\label{fig:ArtificialNeuron}
 \end{figure}
-
-In figure \todo{add nr of figure}, representing an artificial neuron, all those functions can be seen. The neurons will be received, multiplied by a vector of weights, added together and sent to the activation function which will then give the output of the artificial neuron.
+\newpage
+In Figure \ref{fig:ArtificialNeuron}, representing an artificial neuron, all those functions can be seen. The neurons will be received, multiplied by a vector of weights, added together and sent to the activation function which will then give the output of the artificial neuron.
 
 \subsection{Activation Functions}
 
@@ -49,7 +49,7 @@ The sigmoid Function:
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Illustrations/sigmoidandtangent.jpeg}
-	\caption{Both sigmoid and tangent functions exemplified}
+	\caption{Sigmoid and Tangent Functions}
 	\label{fig:SigmoidAndTangent}
 \end{figure}
 
@@ -70,27 +70,22 @@ This can be really useful in some cases like translation, speech recognition, so
 \newpage
 \subsubsection{Gated Recurrent Unit Networks} 
 
-Gated Recurrent Unit Networks are a type of recurrent neural networks firstly introduced by Kyunghyun Cho et al in 2014.\todo{add references all over the place} similar to LSTM networks but with fewer parameters, it has shown better results then LSTM in some cases. Usually used and with a good performance on speech signal modulation, music modelling and noise suppression, GRU networks will be one of the main network types that will be used in the building of our neural network.
+Gated Recurrent Unit Networks are a type of recurrent neural networks firstly introduced 
+by Kyunghyun Cho et al in 2014.\todo{reference} similar to LSTM networks but with fewer 
+parameters, it has shown better results then LSTM in some cases. Figure \ref{fig:GRU} represents a single gated recurrent unit. 
+Usually used and with a good performance on speech signal modulation, music modelling and noise suppression, 
+GRU networks will be one of the main network types that will be used in the building of our neural network.
 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRU.png}
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRUsymbols.png}
-	\caption{Example of a single Gated Recurrent Unit}
+	\caption{Single Gated Recurrent Unit}
 	\label{fig:GRU}
 \end{figure}
 
 
 GRU, compared with RNN has an update gate and a reset gate, which solves one problem that RRN had: the vanishing gradient problem. This is a problem that mostly happends with very deep neural networks, in which because of the way the gradient-based learning method works, the gradient can became really small or even disappear which will make the training very slow or even incapacitate the neural network and basically stop the training process not letting any weights being updated.
-
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Illustrations/GRUupdategate.png}
-	\caption{The update gate exemplified in the unit}
-	\label{fig:GRUupdategate}
-\end{figure}
-
 
 \subsubsection{The Update Gate}
 
@@ -99,33 +94,33 @@ First operation made in the unit will be the calculation of the Update gate.
   z_t =\sigma(W^{(z)}x_t + U^{(z)}h_{(t-1)})
 \end{equation}
 
-As exemplified in figure \todo{add figure nr} both $x_t$ and $h_{t-1}$,which hold information from the last $t-1$ unit, will be multiplied by respective weights, $W^{(z)}$ and $U^{(z)}$ respectively. The results will be summed together and a sigmoid activation function is going to limit their range between 0 and 1.
-
-This is a really important part of the unit as it will determine how much of the past values will be taken in consideration and passed for future calculations. By doing this, the unit can remember a lot of steps in the past and eliminate the vanishing gradient problem had before in RNN networks.
+As exemplified in Figure \ref{fig:GRUupdategate} both $x_t$ and $h_{t-1}$,which hold information from the last $t-1$ unit, will be multiplied by respective weights, $W^{(z)}$ and $U^{(z)}$ respectively. The results will be summed together and a sigmoid activation function is going to limit their range between 0 and 1.
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Illustrations/GRUresetgate.png}
-	\caption{The Reset Gate exemplified in the unit}
-	\label{fig:GRUresetgate}
+	\includegraphics[width=0.7\textwidth]{Illustrations/GRUupdategate.png}
+	\caption{Update Gate}
+	\label{fig:GRUupdategate}
 \end{figure}
 
+This is a really important part of the unit as it will determine how much of the past values will be taken in consideration and passed for future calculations. By doing this, the unit can remember a lot of steps in the past and eliminate the vanishing gradient problem had before in RNN networks.
 \subsubsection{The Reset Gate}
 The reset gate, compared with the update gate, will calculate how much of the past data to let go.
 \begin{equation}
 r_t=\sigma(W^{(r)}x_t+U^{(r)}h_{t-1})
 \end{equation}
-The formula is quite similar to the one from the update gate, the difference being in the weights used and the usage of the results in figure\todo{add nr of figure} we can see the same lines being used as in the update gate to gather data, multypling them with the weights, adding the results together and passing them to a sigmoid activation function.
+The formula is quite similar to the one from the update gate, the difference being in the weights used and the usage of the results in Figure \ref{fig:GRUresetgate} we can see the same lines being used as in the update gate to gather data, multypling them with the weights, adding the results together and passing them to a sigmoid activation function.
 
-\subsubsection{Present memory}
 
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Illustrations/GRUpresentmemory.png}
-	\caption{Present memory calculation step in the unit}
-	\label{fig:GRUpresentmemory}
+	\includegraphics[width=0.7\textwidth]{Illustrations/GRUresetgate.png}
+	\caption{The Reset Gate}
+	\label{fig:GRUresetgate}
 \end{figure}
 
+\newpage
+\subsubsection{Present memory}
 After calculating the gates, in the next two steps the final result will be calculated.
 Firstly the reset gate will be used to store usable information from the past in the present memory content.
 \begin{equation}
@@ -133,26 +128,27 @@ h'_t=tanh(Wx_t+r_t \circ Uh_{t-1})
 \end{equation}
 
 Firstly the input $x_t$ and $h_{t-1}$ will be multiplied with their weights: $W$ and $U$ respectively. The element wise or Hadamard product will be taken between the reset gate $r_t$ and $Uh_{(t-1)}$.This will basically determine how much to remove from the past time steps. After that the results will be added together and passed to a tanh activation function.
-
-\subsubsection{Final memory at present time}
-
-\begin{figure}[htp]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Illustrations/GRUlaststep.png}
-	\caption{Final memory at present time calculation in the unit}
-	\label{fig:GRUlaststep}
-\end{figure}
-
+\newpage
+\subsubsection{Final Memory at Present Time}
 In the last part of the gated recurrent unit, the new $h_t$ has to be calculated, which will hold the information for the current unit and pass it to the rest of the network.
-Now the update gate will be used to determine what to use from $h'_t$ current step and from the previous step $h_{(t-1)}$.
+Now the update gate will be used to determine what to use from $h'_t$ current step and from the previous step $h_{(t-1)}$. This is shown in Figure \ref{fig:GRUlaststep}.
 
 \begin{equation}
 h_t=z_t \circ h_{t-1}+(1-z_t) \circ h'_t
 \end{equation}
 
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Illustrations/GRUlaststep.png}
+	\caption{Final Memory at Present Time Calculation}
+	\label{fig:GRUlaststep}
+\end{figure}
+
+
 Firstly the gate $z_t$ and $h'_t$ will be multiplied element-wise, then $(1-z_t)$ and $h'_t$ will be multiplied element-wise also. The sum of those results will be the end result $h_t$. 
 
-Finally the end result, and the whole gated recurrent unit unfolded will look as in figure \todo{add figure nr}
+Finally the end result, and the whole gated recurrent unit unfolded will look as in Figure \ref{fig:GRUunfolded}.
 
 \begin{figure}[htp]
 	\centering
@@ -161,6 +157,7 @@ Finally the end result, and the whole gated recurrent unit unfolded will look as
 	\label{fig:GRUunfolded}
 \end{figure}
 
+\newpage
 \subsubsection{Bidirectional Recurrent Neural Networks} 
 As mentioned, Recurrent neural networks are capable of are able to recall features from past states of the network but with a Bidirectional recurrent neural network the layer will be able to calculate the next state using both past and future states information. This is done by having two hidden recurrent neural network layers that with opposite directions connected together and to the same output. 
 
@@ -170,8 +167,7 @@ As mentioned, Recurrent neural networks are capable of are able to recall featur
 	\caption{A bidirectional recurrent neural network layer exemplifying the directional neurons}
 	\label{fig:BRNN}
 \end{figure}
-
-As seen in figure \todo{add figure nr.} the two layers get the same input and send the same output but the directions of the neurons are opposite.
+As seen in Figure \ref{fig:BRNN}, the two layers get the same input and send the same output but the directions of the neurons are opposite.
 
 This can be helpful in a multitude of cases as translation, handwriting recognition or, specific to our case, speech recognition and noise elimination, as in all of those cases, information about both the future and past can be helpful to calculate the present state 
 \section{Model Development}
@@ -189,11 +185,11 @@ One technique used in the project is the Dropout regularization method. This is 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/dropout.jpeg}
-	\caption{A representation of the dropout function during training}
+	\caption{Dropout Function During Training}
 	\label{fig:dropout}
 \end{figure}
 
-This function can be better seen in figure \todo{add nr of figure}, as after applying dropout only some connections will be kept instead of all of them.
+This function can be better seen in Figure \ref{fig:dropout}, as after applying dropout only some connections will be kept instead of all of them.
 \newpage
 \subsection{Data Preprocessing}
 
@@ -237,7 +233,7 @@ class noise:
 \end{lstlisting}
 
 Here, the class noise will do the whole process described and will be further used in the code to retrieve any parameters for the noise sample.
-
+\newpage
 \subsection{Training methods}
 By gathering all the data described, a dataset could have been built, but to combine all the clean speech and noisy data and target dataset too would take a large amount of time, memory and processing power that were not available to us at the time. As even  a dataset of only 1000 samples already used more than 1.5 GB.
 
@@ -245,42 +241,46 @@ Another option then building a large dataset was to use a generator and keras fi
 
 Multiple tests were made to research the reliability of both of those methods.
 
-\begin{figure}
+\begin{figure}[htp]
 \centering
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/losss1.jpg}
-	\caption{Loss graph of model trained with a dataset}
+	\caption{Loss Graph Trained With Dataset}
 	\label{fig:loss1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/accuracy1.jpg}
-	\caption{Accuracy graph of model with a dataset}
+	\caption{Accuracy Graph Trained With Dataset}
 	\label{fig:accuracy1}
 \end{minipage}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[htp]
 \centering
 \begin{minipage}{.5\textwidth}
 	\centering
+	\captionsetup{justification=centering,margin=2cm}
 	\includegraphics[width=1\linewidth]{Illustrations/losss1r.jpg}
-	\caption{Loss graph of model trained using generated data}
+	\caption{Loss Graph Trained with Generated Data}
 	\label{fig:loss1r}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 	\centering
+	\captionsetup{justification=centering,margin=2cm}
 	\includegraphics[width=1\linewidth]{Illustrations/accuracy1r.jpg}
-	\caption{Accuracy graph of model trained using generated data}
+	\caption{Accuracy Graph Trained with Generated Data}
 	\label{fig:accuracy1r}
 \end{minipage}
 \end{figure}
 
-But as seen in\todo{add nr of figure that need to be added} the test results were inconclusive so we decided to do the further tests with a more traditional approach of using a constructed dataset.
+But as seen in Figures \ref{fig:loss1}, \ref{fig:accuracy1}, \ref{fig:loss1r}, \ref{fig:accuracy1r}, the results were inconclusive so we 
+decided to do the further tests with a more traditional approach of using a constructed dataset.
 
 
-The dataset used contains 1000 samples for training and 400 samples for validation (roughly 30\%).All the samples consists of varying noise,speech samples and length to not overfit the neural network on specific parameters.
+The dataset used contains 1000 samples for training and 400 samples for validation (roughly 30\% from the total).All the samples consists of varying noise,speech samples and length to not overfit the neural network on specific parameters.
+\newpage
 Table \ref{tab:firsttable} represents the batch size, dropout, learning rate, epochs and samples used for each model.
 All the models from the table are further discussed in the next section.
 
@@ -300,15 +300,15 @@ Epochs             & 30      & 30      & 30      \\ \hline
 \label{tab:firsttable}
 \end{table}
 Another note that could be made is that instead of using a classical stochastic gradient descent, as the optimization algorithm, adam(Adaptive moment estimation) was used which have some good benefits of being quite low on memory usage, is computationally efficient and and is appropriate for non-stationary objectives.
+\newpage
 \subsection{Comparison Between Different Models}
-
 In order to have a more optimized model, three neural network models were created and compared to assess their efficiency for our particular case. The training parameters are the same as discussed  in the last section in order to have a proper comparison between them.
 
 
 The first model consists of two GRU layers and a fully connected layer as seen in Figure \ref{fig:firstModel}.
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Illustrations/Model1.jpg}
+	\includegraphics[width=0.45\textwidth]{Illustrations/Model1.jpg}
 	\caption{First Model}
 	\label{fig:firstModel}
 \end{figure}
@@ -316,36 +316,38 @@ The first model consists of two GRU layers and a fully connected layer as seen i
 In the second model the two GRU layers were replaced by a Bidirectional GRU layer followed again by a fully connected layer as seen in Figure \ref{fig:secondModel}.
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Illustrations/Model2.jpg}
+	\includegraphics[width=0.45\textwidth]{Illustrations/Model2.jpg}
 	\caption{Second Model}
 	\label{fig:secondModel}
 \end{figure}
-
-For the third model we decided to make a deeper model by adding another fully connected layer before the bidirectional GRU layer as seen the in the figure \todo{add figure nr}. Compared to model one and two , in model three a dropout function was added on the fully connected layers as well.
+\newpage
+For the third model we decided to make a deeper model by adding another fully connected layer before the bidirectional GRU layer as seen the in the Figure \ref{fig:thirdModel}  Compared to model one and two , in model three a dropout function was added on the fully connected layers as well.
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Illustrations/Model3.jpg}
+	\includegraphics[width=0.45\textwidth]{Illustrations/Model3.jpg}
 	\caption{Third Model}
 	\label{fig:thirdModel}
 \end{figure}
 
-
-
-
-In the following graphs the models were assessed using a Loss and Accuracy function. The loss function represents the mean square error of the predictions compared to the given output and the Accuracy is calculated as a percentage from 0 to 1 of the predictions that were exactly as the give output over the wrong predictions. The Blue line represents the red line represents the training data while the blue line represents the validation data.
+In Figures \ref{fig:loss2}, \ref{fig:accuracy2}, \ref{fig:loss3}, \ref{fig:accuracy3}, \ref{fig:loss4}, \ref{fig:accuracy4},
+the models were assessed using a Loss and Accuracy function. 
+The loss function represents the mean square error of the predictions compared to the 
+given output and the Accuracy is calculated as a percentage from 0 to 1 of the predictions 
+that were exactly as the give output over the wrong predictions. The Blue line represents the 
+red line represents the training data while the blue line represents the validation data.
 
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/losss2.jpg}
-	\caption{Loss graph of model 1}
+	\caption{Loss Graph First Model}
 	\label{fig:loss2}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/accuracy2.jpg}
-	\caption{Accuracy graph of model 1}
+	\caption{Accuracy Graph First Model}
 	\label{fig:accuracy2}
 \end{minipage}
 \end{figure}
@@ -355,13 +357,13 @@ In the following graphs the models were assessed using a Loss and Accuracy funct
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/losss3.jpg}
-	\caption{Loss graph of model 2}
+	\caption{Loss Graph Second Model}
 	\label{fig:loss3}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/accuracy3.jpg}
-	\caption{Accuracy graph of model 2}
+	\caption{Accuracy Graph Second Model}
 	\label{fig:accuracy3}
 \end{minipage}
 \end{figure}
@@ -371,48 +373,49 @@ In the following graphs the models were assessed using a Loss and Accuracy funct
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/losss4.jpg}
-	\caption{Loss graph of model 3}
+	\caption{Loss Graph Third Model}
 	\label{fig:loss4}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 	\centering
 	\includegraphics[width=1\linewidth]{Illustrations/accuracy4.jpg}
-	\caption{Accuracy graph of model 3}
+	\caption{Accuracy Graph Third Model}
 	\label{fig:accuracy4}
 \end{minipage}
 \end{figure}
 
+\newpage
+As seen from the graphs, by adding a bidirectional layer the results are much better,
+but in the third deeper layer we can see that by making the layer too deep it needs 
+more training to get to better results.
 
-As seen from the graphs, by adding a bidirectional layer the results are much better, but in the third deeper layer we can see that by making the layer too deep it needs more training to get to better results.
+For those reasons we decided to do another test by training model 2 with double the 
+number of epochs. As seen in Figures \ref{fig:loss5}, \ref{fig:accuracy5}, the neural network has further progress with 
+better results but it still could benefit from a longer training as it still far from overfitted.
 
-
-
-For those reasons we decided to do another test by training model 2 with double the number of epochs. As seen in the graph, the neural network has further progress with better results but it still could benefit from a longer training as it still far from overfitted.
-
-\todo{add graph for model 2 with 60 epochs}
-
-\begin{figure}
+\begin{figure}[htp]
 \centering
 \begin{minipage}{.5\textwidth}
 	\centering
+	\captionsetup{justification=centering,margin=2cm}
 	\includegraphics[width=1\linewidth]{Illustrations/losss5.jpg}
-	\caption{Loss graph of model 2 trained for 60 epochs}
+	\caption{Loss Graph Second Model, 60 epochs}
 	\label{fig:loss5}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 	\centering
+	\captionsetup{justification=centering,margin=2cm}
 	\includegraphics[width=1\linewidth]{Illustrations/accuracy5.jpg}
-	\caption{Accuracy graph of model 2 trained for 60 epochs}
+	\caption{Accuracy Graph Second Model, 60 epochs}
 	\label{fig:accuracy5}
 \end{minipage}
 \end{figure}
 
-
+\newpage
 \subsection{Model Description}
-
 As discussed in the last section, we decided to further train and develop the model two which is going to be further discussed and described in this section.
 
-\begin{lstlisting}[language=Python, caption=Code for the model]
+\begin{lstlisting}[language=Python, caption=Code for the model, label=lst:nnmodel]
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout
 from keras.layers import Activation, GRU, Bidirectional
@@ -445,10 +448,11 @@ After the first layer a dropout function of 0.15 will be added
 The second layer will be a dense layer which is a fully connected layer followed by the activation function of the model, which was chosen as a linear one.
 
 In the end the model will be built and compiled with the mean  squared error loss function, accuracy metric and adam optimizer.
-
+Listing \ref{lst:nnmodel} shows the code for the neural network. Figure \ref{fig:FullmodelGraph} represents the full model of the
+neural network.
 \begin{figure}[htp]
 	\centering
-	\includegraphics[width=1\textwidth]{Illustrations/tensorboard model of NN.png}
+	\includegraphics[width=1\textwidth]{Illustrations/tensorboardmodelofNN.png}
 	\caption{The full model Graph}
 	\label{fig:FullmodelGraph}
 \end{figure}
