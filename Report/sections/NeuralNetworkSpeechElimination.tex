@@ -245,7 +245,37 @@ Another option then building a large dataset was to use a generator and keras fi
 
 Multiple tests were made to research the reliability of both of those methods.
 
-\todo{add picture of both test}
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/losss1.jpg}
+	\caption{Loss graph of model trained with a dataset}
+	\label{fig:loss1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/accuracy1.jpg}
+	\caption{Accuracy graph of model with a dataset}
+	\label{fig:accuracy1}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/losss1r.jpg}
+	\caption{Loss graph of model trained using generated data}
+	\label{fig:loss1r}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/accuracy1r.jpg}
+	\caption{Accuracy graph of model trained using generated data}
+	\label{fig:accuracy1r}
+\end{minipage}
+\end{figure}
 
 But as seen in\todo{add nr of figure that need to be added} the test results were inconclusive so we decided to do the further tests with a more traditional approach of using a constructed dataset.
 
@@ -304,7 +334,54 @@ For the third model we decided to make a deeper model by adding another fully co
 
 In the following graphs the models were assessed using a Loss and Accuracy function. The loss function represents the mean square error of the predictions compared to the given output and the Accuracy is calculated as a percentage from 0 to 1 of the predictions that were exactly as the give output over the wrong predictions. The Blue line represents the red line represents the training data while the blue line represents the validation data.
 
-\todo{add graphs for all three models}
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/losss2.jpg}
+	\caption{Loss graph of model 1}
+	\label{fig:loss2}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/accuracy2.jpg}
+	\caption{Accuracy graph of model 1}
+	\label{fig:accuracy2}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/losss3.jpg}
+	\caption{Loss graph of model 2}
+	\label{fig:loss3}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/accuracy3.jpg}
+	\caption{Accuracy graph of model 2}
+	\label{fig:accuracy3}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/losss4.jpg}
+	\caption{Loss graph of model 3}
+	\label{fig:loss4}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/accuracy4.jpg}
+	\caption{Accuracy graph of model 3}
+	\label{fig:accuracy4}
+\end{minipage}
+\end{figure}
+
 
 As seen from the graphs, by adding a bidirectional layer the results are much better, but in the third deeper layer we can see that by making the layer too deep it needs more training to get to better results.
 
