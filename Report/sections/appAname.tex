@@ -1,2 +1,201 @@
-\chapter{Appendix A name}\label{ch:appAlabel}
-Here is the first appendix
+\chapter{Appendix A Neural Network Code}\label{ch:appAlabel}
+
+\begin{lstlisting}[language=Python, label=lst:imports]
+#basic imports
+
+import matplotlib.pyplot as plt
+import os
+import random
+import numpy as np
+import math, random
+import tensorflow as tf
+#os.environ['KERAS_BACKEND'] = 'tensorflow'
+import keras as ks
+import soundfile as sf
+import sounddevice as sd
+import python_speech_features
+
+%matplotlib inline
+np.random.seed(0)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:speechsample]
+#Finding speech sample
+class speech:
+    
+    def choose_random(self):
+        path = r"C:\Users\Darius\Desktop\sound samples\training data for RNN\LibriSpeech\train-clean-100"
+        for i in range (0,3):
+            files = os.listdir(path)
+            index = random.randrange(0, len(files))
+            while  files[index].endswith('.txt'):
+                #index = index + 1
+                index = random.randrange(0, len(files))
+            path  = os.path.join(path, files[index])
+        file_path = path
+        self.sample, fs2 = sf.read(file_path)
+        
+        self.size = len(self.sample)
+        self.nfcc = python_speech_features.mfcc(self.sample,18000,0.025,0.01,24)
+
+    def show_sample(self):
+        print(file_path)
+        plt.plot(self.sample)
+    def listen_sample(self):
+        sd.play(self.sample) 
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:noisesample]
+#Finding noise sample
+class noise:
+    def __init__(self,size):
+        self.size = size
+    
+    def choose_random(self):
+        path = r"C:\Users\Darius\Desktop\sound samples\training data for RNN\rnnoise_contributions"
+        files = os.listdir(path)
+        index = random.randrange(0, len(files))
+        if  files[index].endswith('.txt'):
+            index = index -1
+        file_path = os.path.join(path, files[index])
+        self.sample, fs = sf.read(file_path, channels=2, samplerate=24100,format='RAW', subtype='PCM_16')
+
+        i=0
+        while i!=1:
+            random_sequence = random.randrange(0,len(self.sample))
+            if random_sequence + self.size < len(self.sample):
+                i=1
+        self.sample = self.sample[random_sequence:]
+        self.sample = self.sample[:self.size ,:1]
+        
+        self.nfcc = python_speech_features.mfcc(self.sample,18000,0.025,0.01,24)
+        
+    def show_sample():
+        print(file_path)
+        plt.plot(self.sample)
+    def listen_sample(self):
+        sd.play(self.sample) 
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:imputsample]
+#making input sample 
+class combined_samples:
+    def __init__(self,speech_sample,noise_sample):
+        self.speech_sample = speech_sample
+        self.noise_sample  = noise_sample
+    
+    def combine_samples(self):
+        self.sample = [len(self.speech_sample)] * 0
+        self.sample = np.empty([len(self.speech_sample)])
+
+        for i in range(len(self.speech_sample)):
+            self.sample[i] = self.speech_sample[i] + self.noise_sample[i]
+        
+        self.size = len(self.sample)
+        self.nfcc = python_speech_features.mfcc(self.sample,18000,0.025,0.01,24)
+        
+    def show_sample(self):
+        plt.plot(self.sample)
+    def listen_sample(self):
+        sd.play(self.sample) 
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:trainingdata]
+# Training Data
+class training_data:
+    def get_data(self):
+        self.speechD = speech()
+        self.speechD.choose_random()
+        
+        self.noiseD = noise(self.speechD.size)
+        self.noiseD.choose_random()
+        
+        self.combined = combined_samples(self.speechD.sample , self.noiseD.sample)
+        self.combined.combine_samples()
+        
+        self.input = self.combined.nfcc
+        self.output= self.speechD.nfcc
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:gru nn]
+#Creating The GRU NN
+from keras.models import Sequential
+from keras.layers.core import Dense, Dropout, Activation
+from keras.layers import Activation, GRU, Flatten, Embedding, Bidirectional
+
+input_dim = 24
+max_dim = 2000
+
+
+model = Sequential()
+
+model.add(Bidirectional(GRU(input_dim,input_shape=(None,input_dim),activation='tanh',return_sequences=True)))
+
+model.add(Dropout(0.15))
+
+model.add(Dense(units=input_dim))
+
+model.add(Activation("linear"))
+
+
+model.build()
+model.compile(loss='mean_squared_error', optimizer='adam', metrics=['accuracy'])
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:summary]
+#printing the model and setting up the call backs
+model.summary()
+
+logs_dir= './event_logs_new'
+tbCallBack=ks.callbacks.TensorBoard(log_dir='./event_logs_new', histogram_freq=0,
+                            write_graph=True, write_images=True)
+
+from keras.utils.vis_utils import plot_model
+os.environ["PATH"] += os.pathsep + r"\\Users\\Darius\\Desktop\\RNN stuff\\graphviz\\"
+import pydot_ng as pydot
+plot_model(model, to_file='model_plot.png', show_shapes=True, show_layer_names=True)
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:datasetcreation]
+#dataset creation
+nrSamples=3000
+asta1=np.zeros(shape=(nrSamples,2000,24))
+asta2=np.zeros(shape=(nrSamples,2000,24))
+for i in range(nrSamples):
+    for j in range(len(d.input)):
+        for h in range(len(d.input[j])):
+            asta1[i][j][h]=d.input[j][h]
+            asta2[i][j][h]=d.output[j][h]
+    if(i%100==0):
+        print(i)
+    d.get_data()
+            
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:imports]
+#basic imports
+
+import matplotlib.pyplot as plt
+import os
+import random
+import numpy as np
+import math, random
+import tensorflow as tf
+#os.environ['KERAS_BACKEND'] = 'tensorflow'
+import keras as ks
+import soundfile as sf
+import sounddevice as sd
+import python_speech_features
+
+%matplotlib inline
+np.random.seed(0)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label=lst:training]
+#basic training the neural network
+
+model.fit(asta,asta2,callbacks=[TrainValTensorBoard(write_graph=True)],epochs=60,batch_size=20,validation_data=(valid1,valid2))
+\end{lstlisting}
+
