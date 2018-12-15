@@ -385,9 +385,28 @@ In the following graphs the models were assessed using a Loss and Accuracy funct
 
 As seen from the graphs, by adding a bidirectional layer the results are much better, but in the third deeper layer we can see that by making the layer too deep it needs more training to get to better results.
 
-\todo{add graph for model 2 with 60 epochs}
+
 
 For those reasons we decided to do another test by training model 2 with double the number of epochs. As seen in the graph, the neural network has further progress with better results but it still could benefit from a longer training as it still far from overfitted.
+
+\todo{add graph for model 2 with 60 epochs}
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/losss5.jpg}
+	\caption{Loss graph of model 2 trained for 60 epochs}
+	\label{fig:loss5}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\linewidth]{Illustrations/accuracy5.jpg}
+	\caption{Accuracy graph of model 2 trained for 60 epochs}
+	\label{fig:accuracy5}
+\end{minipage}
+\end{figure}
+
 
 \subsection{Model Description}
 
