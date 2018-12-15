@@ -161,6 +161,19 @@ Finally the end result, and the whole gated recurrent unit unfolded will look as
 	\label{fig:GRUunfolded}
 \end{figure}
 
+\subsubsection{Bidirectional Recurrent Neural Networks} 
+As mentioned, Recurrent neural networks are capable of are able to recall features from past states of the network but with a Bidirectional recurrent neural network the layer will be able to calculate the next state using both past and future states information. This is done by having two hidden recurrent neural network layers that with opposite directions connected together and to the same output. 
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Illustrations/BRNN.png}
+	\caption{A bidirectional recurrent neural network layer exemplifying the directional neurons}
+	\label{fig:BRNN}
+\end{figure}
+
+As seen in figure \todo{add figure nr.} the two layers get the same input and send the same output but the directions of the neurons are opposite.
+
+This can be helpful in a multitude of cases as translation, handwriting recognition or, specific to our case, speech recognition and noise elimination, as in all of those cases, information about both the future and past can be helpful to calculate the present state 
 \section{Model Development}
 
 After The sample is filtered with the directional filter, noise from the specified direction will still remain. For that reason the goal of the project was to develop a neural network algorithm that will practically act as an adaptive filter to suppress the remaining noise. The neural network consists mostly of Recurrent neural network layers with Gated Recurrent units as they have been proven to be very effective for this specific case of eliminating noise. Further in the project, variations of the neural network with different layer configurations will be examined to see how they would act on this specific case, and different training methods too to see which will be the most efficient.
@@ -232,7 +245,22 @@ Another option then building a large dataset was to use a generator and keras fi
 
 Multiple tests were made to research the reliability of both of those methods.
 
-\subsection{Different Neural Networks if we can}
+\todo{add picture of both test}
+
+But as seen in\todo{add nr of figure that need to be added} the test results were inconclusive so we decided to do the further tests with a more traditional approach of using a constructed dataset.
+
+
+The dataset used contains 1000 samples for training and 400 samples for validation (roughly 30\%).All the samples consists of varying noise,speech samples and length to not overfit the neural network on specific parameters.
+The following table \todo{add nr of table} represents the batch size, dropout, learning rate, epochs and samples used for each model.
+All the models from the table are further discussed in the next section.
+
+\todo{add table with all things specified}
+
+
+\subsection{Comparison Between Different Models}
+
+In order to have a more optimized model, three neural network models were created and compared to assess their efficiency for our particular case.
+
 
 \subsection{Restults for NN}
 
