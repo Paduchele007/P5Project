@@ -1,0 +1,4 @@
+1000 samples
+400 validation samples
+batch size 20
+epochs 60

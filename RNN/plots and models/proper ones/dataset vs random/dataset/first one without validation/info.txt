@@ -1,0 +1,3 @@
+1000 samples
+5 epochs 
+20 batch size
