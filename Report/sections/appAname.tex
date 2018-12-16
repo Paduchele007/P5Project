@@ -1,5 +1,162 @@
-\chapter{Appendix A Neural Network Code}\label{ch:appAlabel}
+\chapter{Appendix}
+\label{ch:appAlabel}
+\section{Directional filtering code}
+\begin{lstlisting}[language=Matlab, label=lst:delayDifference]
+% Gives distance for the signal to travel to each microphones 
+% 1st microphone is left 
+% 2nd microphone is right
+function [dist1, dist2] = dDifference(thetaRad,gap)
+d1=sin(thetaRad)+gap/2; %from y to 1'st mic           |theta
+d2=sin(thetaRad)-gap/2; %from y to 2'nd mic           |     o
+h=cos(thetaRad);       %                              |    /|
+dist1=sqrt(d1^2+h^2);  %                              |   / |
+dist2=sqrt(d2^2+h^2);  %                              |  /  |
+end                    %                              | /   |
+                       %                           1  |/ 2  |
+                       %                           o  x  o  y
+                       %                           |<--->|
+                       %                             gap
+\end{lstlisting}
 
+\begin{lstlisting}[language=Matlab, label=lst:ratioNsamples]
+%% Function gives ratio and delay, which can be used to realisticaly delay and add realistic gain to the signals
+%  Input: angle of the source(degrees), 
+%  angle is possitive in clockwise direction and 
+%  0 is right in the center, 90 is all the way to the right
+%  -90 would be all the way to the left
+%  and a gap between microphones in meters
+%
+%  Output:
+%  Ratio (r) will give a gain by how much we should multiply source,
+%  captured by Right microphone in relation to Left microphone
+%  
+%  Delay will give delay at which source, going to the Right microphone
+%  should be shifted in relation to Left microphone
+%  inspiration: 
+%  http://www.sengpielaudio.com/calculator-gainloss.htm
+%  http://www.sengpielaudio.com/calculator-distance.htm
+
+function [r, d] = ratioNsamples(theta,gap)
+v=343.22;
+thetaRad = deg2rad(theta);
+%% Distances to left and right mics
+[distL,distR] = dDifference(thetaRad, gap); % First source distances
+%% Ratio to multiply Right microphone
+r=distL/distR;
+%% Delay in samples
+d = round(((distL/v)-(distR/v))*48000);
+end
+\end{lstlisting}
+\begin{lstlisting}[language=Matlab, label=1st:realSamplesSeparationFunction]
+function [separated,shifted] = separation_of_real_samples(delay, Right, Left,l)
+%% delay so the phase matches
+
+for i=1:l-delay
+    shifted(i)=Left(i+delay);
+end
+shifted=transpose(shifted);
+%% substract signals from each other = get noise
+for i=1:l-delay
+    separated(i)=shifted(i)-Right(i);
+end
+ separated=transpose(separated);
+\end{lstlisting}
+
+\begin{lstlisting}[language=Matlab, label=lst:realSamplesSeparation]
+clc;
+clear;
+load('already_shifted_vectors.mat')
+l=length(dataLL)
+delay=8
+[Separated,shiftedL]=separation_of_real_samples(delay, dataLL, dataRL,l);
+\end{lstlisting}
+
+\begin{lstlisting}[language=Matlab, label=lst:shiftFunction]
+%% SHIFT FUNCTION 
+% this function shifts the signal by the amount samples and returns a shifted signal
+% input the signal the the delay in samples, negative or positive
+
+function[shifted] = shiftFunction(samples, signal)
+shifted = zeros(size(signal));
+if samples > 0
+   shifted(samples+1:end) = signal(1:end - samples);
+ elseif samples < 0
+   shifted(1:end + samples) = signal(-samples + 1:end);
+ end
+end
+\end{lstlisting}
+
+\begin{lstlisting}[language=Matlab, label=lst:syntheticSamplesCode]
+%% CLEANUP
+
+close all;
+clc;
+clear;
+gap=0.152;
+
+%% IMPORT SIGNALS
+
+signal1 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\Razvan.wav'];
+[a,Freq1] = audioread(signal1);
+w = (1:length(a)) / Freq1;
+
+signal2 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\Paulius.wav'];
+[b,Freq2] = audioread(signal2);
+x = (1:length(b)) / Freq2;
+
+
+%% RESIZE
+
+[r1, d1] = ratioNsamples(40, gap);
+[r2, d2] = ratioNsamples(-30, gap);
+
+resizedA = a(1:580000);
+resizedB = b(1:580000);
+
+%% SHIFT AND GAIN
+rightMicLeftChatRazvan = resizedA;
+leftMicLeftChatRazvan = shiftFunction(d1, resizedA);
+rightMicLeftChatRazvan = r1 * rightMicLeftChatRazvan;
+
+rightMicRightChatPaulius = resizedB;
+leftMicRightChatPaulius = shiftFunction(d2, resizedB);
+rightMicRightChatPaulius = r2 * rightMicRightChatPaulius;
+
+%% ADD SIGNALS FOR LEFT AND RIGHT MIC
+
+rightMicBothChatRazvanPaulius = rightMicLeftChatRazvan + rightMicRightChatPaulius;
+leftMicBothChatRazvanPaulius = leftMicLeftChatRazvan + leftMicRightChatPaulius;
+
+%% FILTER
+
+shiftedLeftMicBothChatRazvanPaulius = shiftFunction(-d1, leftMicBothChatRazvanPaulius);
+shiftedLeftMicBothChatRazvanPaulius1 = shiftFunction(-d2, leftMicBothChatRazvanPaulius);
+
+subtractedSignal1 = shiftedLeftMicBothChatRazvanPaulius - rightMicBothChatRazvanPaulius;
+subtractedSignal2 = shiftedLeftMicBothChatRazvanPaulius1 - rightMicBothChatRazvanPaulius;
+
+%% SAVE SIGNAL
+
+filename1 = 'subtractedSignalR.flac';
+audiowrite(filename1,subtractedSignal1,48000);
+filename2 = 'subtractedSignalP.flac';
+audiowrite(filename2,subtractedSignal2,48000);
+filename3 = 'leftMicBothChat.flac';
+audiowrite(filename3,leftMicBothChatRazvanPaulius,48000);
+filename4 = 'rightMicBothChat.flac';
+audiowrite(filename4, rightMicBothChatRazvanPaulius,48000);
+
+%% CLEAR VARIABLES
+
+clearvars Freq1 Freq2 Freq3 Freq4 signal1 signal2 signal3 signal4 w x y z
+clearvars filename1 filename2 filename3 filename4 a b resizedA resizedB
+\end{lstlisting}
+
+
+
+
+
+\section{Neural Network Code}
 \begin{lstlisting}[language=Python, label=lst:imports]
 #basic imports
 
