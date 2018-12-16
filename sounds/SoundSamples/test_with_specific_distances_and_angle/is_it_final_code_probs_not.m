@@ -1,4 +1,4 @@
-function [separated,shifted] = is_it_final_code_probs_not(delay, Right, Left,l)
+function [separated,shifted] = separation_of_real_samples(delay, Right, Left,l)
 %% delay so the phase matches
 
 for i=1:l-delay

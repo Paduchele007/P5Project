@@ -7,11 +7,11 @@ gap=0.152;
 
 %% IMPORT SIGNALS
 
-signal1 = ['D:\GitHub\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\razvan.wav'];
+signal1 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\Razvan.wav'];
 [a,Freq1] = audioread(signal1);
 w = (1:length(a)) / Freq1;
 
-signal2 = ['D:\GitHub\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\paulius.wav'];
+signal2 = ['C:\P5Project\Adobe Audition\1micRecording\1micRecording_Recorded\Paulius.wav'];
 [b,Freq2] = audioread(signal2);
 x = (1:length(b)) / Freq2;
 
