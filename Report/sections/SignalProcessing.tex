@@ -74,7 +74,7 @@ of speech and noise respectively. The difference can be clearly seen.
 \end{minipage}
 \end{figure}
 \newpage
-\section{Mel-frequency cepstrum}
+\section{Mel-Frequency Cepstrum}
 A Mel-frequency cepstrum is made out of a multitude of Mel-Frequency cepstral coefficients(MFCCs). 
 Those are taken from a cepstral representation of the audio sample(or a spectrum of a spectrum).
 This can be really useful especially for speech identification as the frequency bands are spaced 
@@ -104,7 +104,7 @@ By doing this, memory and processing power can be saved by using only 24 bands i
 	\label{fig:BarkScale}
 \end{figure}
 
-\section{Sample modulation using the MFCC}
+\section{MFCC Sample Modulation}
 
 After the MFCCs were calculated from the sound sample, there isn't really a good way to get the sample back as only 24 band are not enough to get a similar sounding sound sample.
 So instead of doing that, the original sample can be modulated using other MFCC values. This,practically will act as a vocoder, as the original signal will be modulated using the spectrum envelope of another.

@@ -20,7 +20,7 @@ An artificial neuron is an elementary unit in an artificial neural network. As b
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=1\textwidth]{Illustrations/artificialneuron.png}
-	\caption{Example of an Artificial Neuron}
+	\caption{Example of an Artificial Neuron}\cite{ARTIFICIALNEURON}
 	\label{fig:ArtificialNeuron}
 \end{figure}
 \newpage
@@ -49,7 +49,7 @@ The sigmoid Function:
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{Illustrations/sigmoidandtangent.jpeg}
-	\caption{Sigmoid and Tangent Functions}
+	\caption{Sigmoid and Tangent Functions}\cite{FUNCTION}
 	\label{fig:SigmoidAndTangent}
 \end{figure}
 
@@ -71,7 +71,7 @@ This can be really useful in some cases like translation, speech recognition, so
 \subsubsection{Gated Recurrent Unit Networks} 
 
 Gated Recurrent Unit Networks are a type of recurrent neural networks firstly introduced 
-by Kyunghyun Cho et al in 2014.\todo{reference} similar to LSTM networks but with fewer 
+by Kyunghyun Cho et al in 2014.\cite{GRU}. Similar to LSTM networks but with fewer 
 parameters, it has shown better results then LSTM in some cases. Figure \ref{fig:GRU} represents a single gated recurrent unit. 
 Usually used and with a good performance on speech signal modulation, music modelling and noise suppression, 
 GRU networks will be one of the main network types that will be used in the building of our neural network.
@@ -80,7 +80,7 @@ GRU networks will be one of the main network types that will be used in the buil
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRU.png}
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRUsymbols.png}
-	\caption{Single Gated Recurrent Unit}
+	\caption{Single Gated Recurrent Unit}\cite{GRUPHOTOS}
 	\label{fig:GRU}
 \end{figure}
 
@@ -99,7 +99,7 @@ As exemplified in Figure \ref{fig:GRUupdategate} both $x_t$ and $h_{t-1}$,which 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRUupdategate.png}
-	\caption{Update Gate}
+	\caption{Update Gate}\cite{GRUPHOTOS}
 	\label{fig:GRUupdategate}
 \end{figure}
 
@@ -115,7 +115,7 @@ The formula is quite similar to the one from the update gate, the difference bei
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRUresetgate.png}
-	\caption{The Reset Gate}
+	\caption{The Reset Gate}\cite{GRUPHOTOS}
 	\label{fig:GRUresetgate}
 \end{figure}
 
@@ -141,7 +141,7 @@ h_t=z_t \circ h_{t-1}+(1-z_t) \circ h'_t
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRUlaststep.png}
-	\caption{Final Memory at Present Time Calculation}
+	\caption{Final Memory at Present Time Calculation}\cite{GRUPHOTOS}
 	\label{fig:GRUlaststep}
 \end{figure}
 
@@ -153,7 +153,7 @@ Finally the end result, and the whole gated recurrent unit unfolded will look as
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/GRUunfolded.png}
-	\caption{The GRU unfolded with the past,present and future units}
+	\caption{Unfolded GRU, Past Present and Future Units}\cite{GRUPHOTOS}
 	\label{fig:GRUunfolded}
 \end{figure}
 
@@ -164,7 +164,7 @@ As mentioned, Recurrent neural networks are capable of are able to recall featur
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/BRNN.png}
-	\caption{A bidirectional recurrent neural network layer exemplifying the directional neurons}
+	\caption{Bidirectional Recurrent Neural Network}\cite{BIDIPHOTO}
 	\label{fig:BRNN}
 \end{figure}
 As seen in Figure \ref{fig:BRNN}, the two layers get the same input and send the same output but the directions of the neurons are opposite.
@@ -179,13 +179,13 @@ A big problem that can happen while training is over-fitting. By training on a s
 
 
 For that reason regularization methods can be used to ensure that the data will not be over-fitted. Those will be some layers in the neural network that will only be active during the training.
-One technique used in the project is the Dropout regularization method. This is one of the most effective methods, firtly introduced by Srivastava et al in 2014 \todo{add reference}. This works by giving each neuron a probability to be set to zero, in this way random neurons will be ignored or "dropped out". This works really well as no neuron will over specialize for only one feature, as if that happends, and that specific neuron is dropped out, other neuron will have to make predictions even without that neuron. This, in the end, will result in multiple independent internal representations being learned by the network. Otherwise, the neuron will rely too much on some of the features represented by other neurons and will result in complex co-adaptations.
+One technique used in the project is the Dropout regularization method. This is one of the most effective methods, firtly introduced by Srivastava et al in 2014.\cite{DROPOUT} This works by giving each neuron a probability to be set to zero, in this way random neurons will be ignored or "dropped out". This works really well as no neuron will over specialize for only one feature, as if that happends, and that specific neuron is dropped out, other neuron will have to make predictions even without that neuron. This, in the end, will result in multiple independent internal representations being learned by the network. Otherwise, the neuron will rely too much on some of the features represented by other neurons and will result in complex co-adaptations.
 
 
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Illustrations/dropout.jpeg}
-	\caption{Dropout Function During Training}
+	\caption{Dropout Function During Training}\cite{DROPOUT}
 	\label{fig:dropout}
 \end{figure}
 
@@ -193,8 +193,8 @@ This function can be better seen in Figure \ref{fig:dropout}, as after applying 
 \newpage
 \subsection{Data Preprocessing}
 
-For training and evaluating the Neural Network data was needed to create the dataset. As the objective of the neural network is to filter out noise from a noisy speech sample, samples of clean speech and noise were needed. The speech samples were taken from LibriSpeech \todo{add reference http://www.openslr.org/12/}. From there 100 hours of audio books with clean speech were taken.
-For the noise, approximately 16 GB of noise were collected in a freely available pack from \todo{add reference https://people.xiph.org/~jm/demo/rnnoise/}.
+For training and evaluating the Neural Network data was needed to create the dataset. As the objective of the neural network is to filter out noise from a noisy speech sample, samples of clean speech and noise were needed. The speech samples were taken from LibriSpeech.\cite{SPEECH} From there 100 hours of audio books with clean speech were taken.
+For the noise, approximately 16 GB of noise were collected in a freely available pack.\cite{NOISE}
 
 all this data had to be processed as they come in different formats.
 To create a dataset big enough, and to avoid overfitting this process was automated and randomized. Firstly, a random sample of clean speech is taken, which is between 2 and 20 seconds. As most of the noise samples are around 1 minute, a random sample will be chosen, and from that sample a random section of the same length as the speech sample will be taken.
@@ -234,7 +234,7 @@ class noise:
 
 Here, the class noise will do the whole process described and will be further used in the code to retrieve any parameters for the noise sample.
 \newpage
-\subsection{Training methods}
+\subsection{Training Methods}
 By gathering all the data described, a dataset could have been built, but to combine all the clean speech and noisy data and target dataset too would take a large amount of time, memory and processing power that were not available to us at the time. As even  a dataset of only 1000 samples already used more than 1.5 GB.
 
 Another option then building a large dataset was to use a generator and keras fit.generator() function to train the neural network instead. By doing that, a generator was able to be built that generates data for input and output of the neural network one batch at at time. This would not work in the tradition way as the neural network wouldn't be able to train more than one epoch, but the size of the dataset can be resized indefinitely.
@@ -453,7 +453,7 @@ neural network.
 \begin{figure}[htp]
 	\centering
 	\includegraphics[width=1\textwidth]{Illustrations/tensorboardmodelofNN.png}
-	\caption{The full model Graph}
+	\caption{The Full Model Graph}
 	\label{fig:FullmodelGraph}
 \end{figure}
 
